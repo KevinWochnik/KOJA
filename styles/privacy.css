@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  background-color: #fffdf8;
+  color: #1f1c16;
+  line-height: 1.6;
+}
+
+.privacy-page {
+  width: min(900px, 92%);
+  margin-inline: auto;
+  padding-block: clamp(2.5rem, 5vw, 4rem);
+}
+
+.privacy-page h1 {
+  margin-bottom: 1rem;
+  color: #bf5a36;
+}
+
+/*# sourceMappingURL=privacy.css.map */

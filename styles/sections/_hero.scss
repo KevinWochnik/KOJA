@@ -1,0 +1,7 @@
+@use "../base/variables" as v;
+
+.hero {
+  background: linear-gradient(120deg, #fdf7ec, #f6ece4);
+  border-radius: v.$radius-lg;
+  min-height: 40vh;
+}

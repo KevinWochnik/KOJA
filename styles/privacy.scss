@@ -1,0 +1,20 @@
+@use "base/variables" as v;
+@use "base/reset";
+
+body {
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  background-color: #fffdf8;
+  color: v.$color-text;
+  line-height: 1.6;
+}
+
+.privacy-page {
+  width: min(900px, 92%);
+  margin-inline: auto;
+  padding-block: clamp(2.5rem, 5vw, 4rem);
+}
+
+.privacy-page h1 {
+  margin-bottom: 1rem;
+  color: v.$color-accent;
+}
