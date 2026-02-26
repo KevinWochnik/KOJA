@@ -9,23 +9,6 @@
   padding: 0;
 }
 
-body {
-  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
-  background-color: #f6f4ef;
-  color: #1f1c16;
-  line-height: 1.5;
-}
-
-.wrapper {
-  width: min(1200px, 92%);
-  margin-inline: auto;
-}
-
-.wrapper > section {
-  padding-block: clamp(3rem, 6vw, 6rem);
-  border-bottom: 1px solid rgba(31, 28, 22, 0.12);
-}
-
 .hero {
   background: linear-gradient(120deg, #fdf7ec, #f6ece4);
   border-radius: 1rem;
@@ -81,6 +64,4 @@ body {
   background-color: #1f1c16;
   color: #f7efe5;
   min-height: 20vh;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
