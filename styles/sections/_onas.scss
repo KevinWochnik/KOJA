@@ -1,5 +1,11 @@
 @use "../base/variables" as v;
-.onas {
-  background-color: #fffdf8;
-  min-height: 28vh;
+
+.about {
+  padding: 128px 24px;
+  
+  .about__history{
+    text-transform: uppercase;
+
+  }
 }
+
