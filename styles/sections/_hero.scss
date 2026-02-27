@@ -1,11 +1,16 @@
 @use "../base/variables" as v;
 
 .logo-link{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 24px;
-  width: 100%;
+ position: absolute;
+ top: 40px;
+ left: 40px;
+ right: 40px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+  // padding: 0 24px;
+  // width: 100%;
+
 
   
 
@@ -17,6 +22,7 @@
   .burger{
     font-size: v.$fontSize-l;
     color: v.$color-secondary;
+    
   }
 }
 
@@ -45,11 +51,12 @@
 
   }
 
-  
+ 
 
   
 }
 .hero-cover {
+  position: relative;
   height: 100vh;
   background:
     linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.3)),
@@ -66,27 +73,41 @@
   row-gap: 20px;
   height: 100vh;
   padding: 0 24px;
-  // background-image: url(/images/hero-concrete.jpg);
-  // background-size: cover;
-  // background-position: center;
-
+  padding-top: 120px;
+  
   .hero-logo{
+    position: relative;
 font-size: v.$fontSize-mega;
 font-family:"DM Serif Display", sans-serif;
 color: v.$color-secondary; 
   }
+   .hero-logo::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    width: 60px;
+    height: 1px;
+    background-color: white;
+  }
+  
   .hero-title{
     font-size: v.$fontSize-xl ;
     font-family: "DM Serif Display", sans-serif;
     font-style: italic;
     color: v.$color-secondary;
+    font-weight: 400;
   }
   .hero-text{
     font-family:"Space Grotesk", sans-serif; 
     font-size: v.$fontSize-xs;
-    color: v.$color-number;
+    color: v.$color-muted-gray;
+    text-align: center;
   }
   button{
+    width: 220px;
+    white-space: nowrap;
+    text-align: center;
     font-family:"Space Grotesk", sans-serif;
     padding: 16px 32px;
     text-transform: uppercase;
@@ -100,37 +121,96 @@ color: v.$color-secondary;
 
   }
   .button__secondary{
-    font-size: v.$fontSize-s;
+    font-size: v.$fontSize-xxs;
     background-color: transparent;
     color: v.$color-secondary;
-    border: 1px solid v.$color-primary;
+    // border: 1px solid v.$color-primary;
+            border: 1px solid v.$color-secondary;
+
+    letter-spacing: 1px;
+    margin-top: -10px;
   }
   .link-shop{
-    font-size: v.$fontSize-xxs;
+    font-size: v.$fontSize-xs;
     font-family:"Space Grotesk", sans-serif; 
     color: v.$color-muted-gray;
     text-transform: uppercase;
     letter-spacing: 1px;
   }
+  .fa-arrow-right{
+    transform: rotate(320deg);
+  }
+  
+  .discover{
+    position: relative;
+  }
+  .discover::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -10px;
+    transform: translatex(-50%);
+    width: 60px;
+    height: 1px;
+    background-color: white;
+  }
   .discover-link{
     text-transform: uppercase;
     letter-spacing: 1px;
     color: v.$color-muted-gray;
+    font-size: v.$fontSize-xxs;
 
   }
   .fa-arrow-down{
         color: v.$color-muted-gray;
+            font-size: v.$fontSize-s;
+animation: arrow 2s linear infinite;
+padding-bottom: 10px;
 
   }
 
 }
 .features-grid{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
  row-gap: 20px;
   padding: 48px 24px;
-}
+  border-bottom: 1px solid rgb(222, 218, 211);
 
+  .features{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    width: 50%;
+  }
+  .fa-solid{
+    font-size: v.$fontSize-l;
+    color: rgb(193, 164, 139)
+  }
+  .features-text{
+    font-family:"Space Grotesk", sans-serif; 
+    font-size: v.$fontSize-xxs;
+    text-transform: uppercase;
+    color: v.$color-text-gray;
+    
+  }
+
+
+}
+@keyframes arrow{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(8px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
 
 
