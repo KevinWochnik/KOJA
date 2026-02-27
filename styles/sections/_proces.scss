@@ -1,6 +1,50 @@
 @use "../base/variables" as v;
-.proces {
-  background-color: #fff;
-  min-height: 28vh;
-}
 
+.proces__heading{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  row-gap:15px;
+  
+  .proces__span-text{
+    font-size: v.$fontSize-xs;
+    color: v.$color-text-gray;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  .accent__title{
+    font-size: v.$fontSize-xxxl;
+    font-weight: 400;
+  }
+
+}
+.button__container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+.proces__button{
+  
+  padding: 16px;
+  text-transform: uppercase;
+  width: 40%;
+  height: 80px;
+}
+.proces__button--c{
+  width: 80%;
+  height: auto;
+}
+}
+.proces__description {
+  font-size: v.$fontSize-s;
+  color: v.$color-text-gray;
+  margin-top: 80px;
+  text-align: center;
+}
+.proces__flow{
+  display: none;
+}
+.visible{
+  display: block;
+}

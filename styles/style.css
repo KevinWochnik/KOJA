@@ -32,11 +32,13 @@ a, span, p {
 }
 
 .logo-link {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  right: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 24px;
-  width: 100%;
 }
 .logo-link .logo {
   font-family: "DM Serif Display", sans-serif;
@@ -67,6 +69,7 @@ a, span, p {
 }
 
 .hero-cover {
+  position: relative;
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(/images/hero-concrete.jpg);
   background-size: cover;
@@ -81,24 +84,40 @@ a, span, p {
   row-gap: 20px;
   height: 100vh;
   padding: 0 24px;
+  padding-top: 120px;
 }
 .hero-content .hero-logo {
+  position: relative;
   font-size: 72px;
   font-family: "DM Serif Display", sans-serif;
   color: #f7f5f3;
+}
+.hero-content .hero-logo::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+  width: 60px;
+  height: 1px;
+  background-color: white;
 }
 .hero-content .hero-title {
   font-size: 24px;
   font-family: "DM Serif Display", sans-serif;
   font-style: italic;
   color: #f7f5f3;
+  font-weight: 400;
 }
 .hero-content .hero-text {
   font-family: "Space Grotesk", sans-serif;
   font-size: 14px;
-  color: rgba(194, 191, 188, 0.5019607843);
+  color: rgba(247, 245, 243, 0.4);
+  text-align: center;
 }
 .hero-content button {
+  width: 220px;
+  white-space: nowrap;
+  text-align: center;
   font-family: "Space Grotesk", sans-serif;
   padding: 16px 32px;
   text-transform: uppercase;
@@ -111,38 +130,93 @@ a, span, p {
   border: 1px solid #f7f5f3;
 }
 .hero-content .button__secondary {
-  font-size: 16px;
+  font-size: 12px;
   background-color: transparent;
   color: #f7f5f3;
-  border: 1px solid #2a2622;
+  border: 1px solid #f7f5f3;
+  letter-spacing: 1px;
+  margin-top: -10px;
 }
 .hero-content .link-shop {
-  font-size: 12px;
+  font-size: 14px;
   font-family: "Space Grotesk", sans-serif;
   color: rgba(247, 245, 243, 0.4);
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+.hero-content .fa-arrow-right {
+  transform: rotate(320deg);
+}
+.hero-content .discover {
+  position: relative;
+}
+.hero-content .discover::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -10px;
+  transform: translatex(-50%);
+  width: 60px;
+  height: 1px;
+  background-color: white;
+}
 .hero-content .discover-link {
   text-transform: uppercase;
   letter-spacing: 1px;
   color: rgba(247, 245, 243, 0.4);
+  font-size: 12px;
 }
 .hero-content .fa-arrow-down {
   color: rgba(247, 245, 243, 0.4);
+  font-size: 16px;
+  animation: arrow 2s linear infinite;
+  padding-bottom: 10px;
 }
 
 .features-grid {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   row-gap: 20px;
   padding: 48px 24px;
+  border-bottom: 1px solid rgb(222, 218, 211);
+}
+.features-grid .features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+  width: 50%;
+}
+.features-grid .fa-solid {
+  font-size: 20px;
+  color: rgb(193, 164, 139);
+}
+.features-grid .features-text {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #78736d;
 }
 
-.onas {
-  background-color: #fffdf8;
-  min-height: 28vh;
+@keyframes arrow {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.about {
+  padding: 128px 24px;
+}
+.about .about__history {
+  text-transform: uppercase;
 }
 
 .sklep {
@@ -155,9 +229,54 @@ a, span, p {
   min-height: 28vh;
 }
 
-.proces {
-  background-color: #fff;
-  min-height: 28vh;
+.proces__heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 15px;
+}
+.proces__heading .proces__span-text {
+  font-size: 14px;
+  color: #78736d;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.proces__heading .accent__title {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.button__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.button__container .proces__button {
+  padding: 16px;
+  text-transform: uppercase;
+  width: 40%;
+  height: 80px;
+}
+.button__container .proces__button--c {
+  width: 80%;
+  height: auto;
+}
+
+.proces__description {
+  font-size: 16px;
+  color: #78736d;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.proces__flow {
+  display: none;
+}
+
+.visible {
+  display: block;
 }
 
 .materialy {
