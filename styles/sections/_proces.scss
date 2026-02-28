@@ -17,19 +17,50 @@
     font-size: v.$fontSize-xxxl;
     font-weight: 400;
   }
+ 
 
+}
+.proces{
+  background-color: #f7f5f3;
 }
 .button__container{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-.proces__button{
+  margin-top:60px;
+  margin-bottom: 60px;
   
+.proces__button{
+  position: relative;
+  font-size: v.$fontSize-xxs;
+      font-family:"Space Grotesk", sans-serif; 
+
   padding: 16px;
   text-transform: uppercase;
   width: 40%;
   height: 80px;
+  letter-spacing: 1px;
+  color: v.$color-text-gray;
+  background-color: #f7f5f3;
+  border: 1px solid #e5e7eb;
+   white-space: normal;
+  word-break: break-word;
+  text-align: center;
+
+  .button-sub{
+    display: block;
+  }
+  .proces__button-letter{
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: v.$fontSize-xs;
+    color: #78736d66;
+    
+  }
+  
 }
 .proces__button--c{
   width: 80%;
@@ -41,10 +72,87 @@
   color: v.$color-text-gray;
   margin-top: 80px;
   text-align: center;
+  
+}
+.proces__flow-container--b{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 60px;
+  padding: 0px 24px;
+  margin-top: 60px;
+  display: none;
+    
+
+  
+}
+.proces__flow-container--c{
+   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 60px;
+  padding: 0px 24px;
+  margin-top: 60px;
+
+    .proces__flow--c{
+    display: flex;
+  gap: 10px;
+  
+  align-items: center;
+  border-bottom:1px solid v.$color-border;
+  padding-bottom: 20px;
+  display: none;
+
+  .proces__number--c{
+    width: 140px;
+    flex-shrink: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: v.$fontSize-xs;
+    font-family:"DM Serif Display", sans-serif;
+    color: v.$color-number;
+  }
+  .proces__text--c{
+    flex: 1;
+    font-size: v.$fontSize-xs;
+    color: v.$color-text-gray;
+
+  }
+  }
+}
+.proces__flow-container--a{
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 60px;
+    background-color: #f7f5f3;
+    padding: 0px 24px;
+
 }
 .proces__flow{
-  display: none;
-}
-.visible{
-  display: block;
-}
+  display: flex;
+  gap: 10px;
+  
+  align-items: center;
+  border-bottom:1px solid v.$color-border;
+  padding-bottom: 20px;
+  
+  
+  
+  }
+
+  .proces__number{
+    font-size:v.$fontSize-xxxl;
+    font-family:"DM Serif Display", sans-serif;
+    color: v.$color-number;
+    line-height: 1;
+    width: 60px;
+    flex-shrink: 0;
+    
+  }
+  .proces__text{
+    font-size: v.$fontSize-s;
+    color: v.$color-text-gray;
+  }
+
