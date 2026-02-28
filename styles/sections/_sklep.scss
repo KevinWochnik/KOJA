@@ -1,6 +1,278 @@
 @use "../base/variables" as v;
-.sklep {
-  background-color: #fff;
-  min-height: 28vh;
+.section__shop {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 64px;
+  background-color: v.$color-secondary;
+  padding: 96px 24px;
+
+  .shop__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    .shop__eyebrow {
+      text-transform: uppercase;
+      font-size: v.$fontSize-xs;
+      letter-spacing: 3px;
+      line-height: 20px;
+      color: v.$color-text-gray;
+    }
+    .shop__header-grid {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      row-gap: 16px;
+      .shop__title {
+        font-size: v.$fontSize-xxxl;
+        font-weight: 400;
+        color: v.$color-primary;
+      }
+      .shop__link {
+        align-self: flex-start;
+        border-bottom: 3px solid v.$color-border;
+        padding-bottom: 4px;
+        font-size: v.$fontSize-xxs;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        color: v.$color-text-gray;
+
+        .fa-arrow-right {
+          transform: rotate(320deg);
+          font-size: v.$fontSize-xxs;
+          
+          color: v.$color-text-gray;
+        }
+      }
+    }
+  }
+  .shop__category-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+    
+  }
+  .shop__category-container::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-top: 32px;
+    background-color: v.$color-border;
+    
+  }
+  .shop__category {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      .shop__category-title {
+        font-size: v.$fontSize-l;
+        font-weight: 400;
+        color: v.$color-primary;
+      }
+      .shop__category-text {
+        font-size: v.$fontSize-xs;
+        color: v.$color-text-gray;
+        font-weight: 300;
+      }
+    }
+    .shop__toolbar {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 16px;
+      .button-select {
+          font-size: v.$fontSize-xxs;
+          letter-spacing: 1.1px;
+          text-transform: uppercase;
+          background-color: transparent;
+          border: 1px solid v.$color-border;
+          
+          color: v.$color-text-gray;
+          cursor: pointer;
+        }
+      .shop__filter-toggle {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        .icon-filter {
+          font-size: v.$fontSize-xs;
+          color: v.$color-text-gray;
+          
+        }
+        .shop__filter-label {
+          font-size: v.$fontSize-xxs;
+          text-transform: uppercase;
+          letter-spacing: 2.5px;
+          color: v.$color-text-gray;
+        }
+      }
+      .shop__filters {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        
+        .shop__filter-button {
+          padding: 8px 14px;
+        }
+        .shop__filter-button--active {
+          border-color: v.$color-primary;
+          color: v.$color-primary;
+        }
+      }
+      .shop__actions {
+        display:flex;
+        gap: 8px;
+        align-items: flex-end;
+        .shop__select {
+          width: 45%;
+          flex-grow: 1;
+          padding: 8px 12px;
+        }
+      }
+    }
+    .shop__grid {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 32px;
+      .shop__card {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      
+        .shop__image-wrapper {
+        
+          overflow: hidden;
+          position: relative;
+          .shop__image {
+            display: block;
+            width: 100%;
+            height: 100%;
+           
+          }
+          .shop__badge {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            padding: 4px 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            background-color: v.$bgc-card-span;
+            color: v.$color-text-gray;
+          }
+        }
+        .shop__card-content {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          gap: 16px;
+          .shop__card-category {
+            text-transform: uppercase;
+            letter-spacing: 2.2px;
+            color: v.$color-text-gray;
+          }
+          .shop__card-title {
+            font-size: v.$fontSize-m;
+            color: v.$color-primary;
+            font-weight: 400;
+          }
+          .shop__description {
+            font-size: v.$fontSize-xs;
+            font-weight: 300;
+            line-height: 1.6;
+            padding-bottom: 4px;
+            color: v.$color-text-gray;
+          }
+          .shop__size {
+            font-size: v.$fontSize-xxs;
+            color: v.$color-text-gray-alfa;
+          }
+          .shop__size::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: v.$color-border;
+            margin-top: 16px;
+          }
+          .shop__card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .shop__price {
+              font-size: v.$fontSize-xl;
+              font-family: "DM Serif Display", sans-serif;
+              color: v.$color-primary;
+            }
+            .shop__button {
+              padding: 10px 16px;
+              border: 1px solid v.$color-border;
+              font-size: v.$fontSize-xxs;
+              text-transform: uppercase;
+              font-style: italic;
+              letter-spacing: 1.8px;
+              color: v.$color-text-gray-alfa;
+            }
+          }
+        }
+      }
+    }
+    
+  .shop__footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+    .shop__promotion {
+    
+    text-align: center;
+    border: 1px solid v.$color-border;
+    background-color: v.$bgc-card-second;
+    
+  
+
+    .info-text {
+      padding: 20px 24px;
+      font-size: v.$fontSize-xs;
+      font-family: "DM Serif Display", sans-serif;
+      line-height: 1.6;
+      color: v.$color-primary;
+     }
+     }
+  .shop__info::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: v.$color-border;
+    margin-bottom: 16px;
+   }
+  .shop__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    gap: 8px;
+    .shop__info-text {
+      font-weight: 300;
+      font-style: italic;
+      color: v.$color-text-gray-alfa;
+    }
+    .shop__info-from {
+      font-size: v.$fontSize-xs;    
+      
+    }
+    .shop__info-more {
+      font-size: v.$fontSize-xxs;
+    }
+  }
+  }  
+ 
+  
 }
 

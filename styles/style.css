@@ -341,9 +341,262 @@ a, span, p {
   color: #78736d;
 }
 
-.sklep {
-  background-color: #fff;
-  min-height: 28vh;
+.section__shop {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 64px;
+  background-color: #f7f5f3;
+  padding: 96px 24px;
+}
+.section__shop .shop__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+}
+.section__shop .shop__header .shop__eyebrow {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 3px;
+  line-height: 20px;
+  color: #78736d;
+}
+.section__shop .shop__header .shop__header-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 16px;
+}
+.section__shop .shop__header .shop__header-grid .shop__title {
+  font-size: 36px;
+  font-weight: 400;
+  color: #2a2622;
+}
+.section__shop .shop__header .shop__header-grid .shop__link {
+  align-self: flex-start;
+  border-bottom: 3px solid #dedad3;
+  padding-bottom: 4px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: #78736d;
+}
+.section__shop .shop__header .shop__header-grid .shop__link .fa-arrow-right {
+  transform: rotate(320deg);
+  font-size: 12px;
+  color: #78736d;
+}
+.section__shop .shop__category-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 32px;
+}
+.section__shop .shop__category-container::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin-top: 32px;
+  background-color: #dedad3;
+}
+.section__shop .shop__category {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.section__shop .shop__category .shop__category-title {
+  font-size: 20px;
+  font-weight: 400;
+  color: #2a2622;
+}
+.section__shop .shop__category .shop__category-text {
+  font-size: 14px;
+  color: #78736d;
+  font-weight: 300;
+}
+.section__shop .shop__toolbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+}
+.section__shop .shop__toolbar .button-select {
+  font-size: 12px;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid #dedad3;
+  color: #78736d;
+  cursor: pointer;
+}
+.section__shop .shop__toolbar .shop__filter-toggle {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.section__shop .shop__toolbar .shop__filter-toggle .icon-filter {
+  font-size: 14px;
+  color: #78736d;
+}
+.section__shop .shop__toolbar .shop__filter-toggle .shop__filter-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: #78736d;
+}
+.section__shop .shop__toolbar .shop__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.section__shop .shop__toolbar .shop__filters .shop__filter-button {
+  padding: 8px 14px;
+}
+.section__shop .shop__toolbar .shop__filters .shop__filter-button--active {
+  border-color: #2a2622;
+  color: #2a2622;
+}
+.section__shop .shop__toolbar .shop__actions {
+  display: flex;
+  gap: 8px;
+  align-items: flex-end;
+}
+.section__shop .shop__toolbar .shop__actions .shop__select {
+  width: 45%;
+  flex-grow: 1;
+  padding: 8px 12px;
+}
+.section__shop .shop__grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.section__shop .shop__grid .shop__card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.section__shop .shop__grid .shop__card .shop__image-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+.section__shop .shop__grid .shop__card .shop__image-wrapper .shop__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.section__shop .shop__grid .shop__card .shop__image-wrapper .shop__badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 4px 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: rgba(247, 245, 243, 0.8);
+  color: #78736d;
+}
+.section__shop .shop__grid .shop__card .shop__card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+}
+.section__shop .shop__grid .shop__card .shop__card-content .shop__card-category {
+  text-transform: uppercase;
+  letter-spacing: 2.2px;
+  color: #78736d;
+}
+.section__shop .shop__grid .shop__card .shop__card-content .shop__card-title {
+  font-size: 18px;
+  color: #2a2622;
+  font-weight: 400;
+}
+.section__shop .shop__grid .shop__card .shop__card-content .shop__description {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.6;
+  padding-bottom: 4px;
+  color: #78736d;
+}
+.section__shop .shop__grid .shop__card .shop__card-content .shop__size {
+  font-size: 12px;
+  color: rgba(120, 115, 109, 0.6);
+}
+.section__shop .shop__grid .shop__card .shop__card-content .shop__size::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #dedad3;
+  margin-top: 16px;
+}
+.section__shop .shop__grid .shop__card .shop__card-content .shop__card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section__shop .shop__grid .shop__card .shop__card-content .shop__card-footer .shop__price {
+  font-size: 24px;
+  font-family: "DM Serif Display", sans-serif;
+  color: #2a2622;
+}
+.section__shop .shop__grid .shop__card .shop__card-content .shop__card-footer .shop__button {
+  padding: 10px 16px;
+  border: 1px solid #dedad3;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 1.8px;
+  color: rgba(120, 115, 109, 0.6);
+}
+.section__shop .shop__footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 32px;
+}
+.section__shop .shop__footer .shop__promotion {
+  text-align: center;
+  border: 1px solid #dedad3;
+  background-color: rgba(193, 164, 139, 0.0509803922);
+}
+.section__shop .shop__footer .shop__promotion .info-text {
+  padding: 20px 24px;
+  font-size: 14px;
+  font-family: "DM Serif Display", sans-serif;
+  line-height: 1.6;
+  color: #2a2622;
+}
+.section__shop .shop__footer .shop__info::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #dedad3;
+  margin-bottom: 16px;
+}
+.section__shop .shop__footer .shop__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  gap: 8px;
+}
+.section__shop .shop__footer .shop__info .shop__info-text {
+  font-weight: 300;
+  font-style: italic;
+  color: rgba(120, 115, 109, 0.6);
+}
+.section__shop .shop__footer .shop__info .shop__info-from {
+  font-size: 14px;
+}
+.section__shop .shop__footer .shop__info .shop__info-more {
+  font-size: 12px;
 }
 
 .realizacje {
