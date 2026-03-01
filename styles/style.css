@@ -654,14 +654,128 @@ a, span, p {
   display: block;
 }
 
-.materialy {
-  background-color: #f8f2eb;
-  min-height: 28vh;
+.materials {
+  background-color: #f5f3f0;
+  padding-top: 100px;
 }
 
-.wymiar {
-  background-color: #fff;
-  min-height: 28vh;
+.materials__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 15px;
+  padding: 0px 24px;
+}
+
+.material {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+.material .material__eyebrow {
+  font-size: 14px;
+  color: #78736d;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.material .material__title {
+  font-size: 36px;
+  font-weight: 400;
+  color: #2a2622;
+}
+.material .material__description {
+  font-size: 18px;
+  color: #78736d;
+  margin-bottom: 85px;
+}
+
+.product__benefits {
+  display: flex;
+  gap: 20px;
+  padding: 25px 0;
+  border-bottom: 1px solid #e5e2dd;
+}
+.product__benefits .product__title {
+  font-size: 16px;
+  font-weight: 400;
+  color: #2a2622;
+}
+.product__benefits .product__text {
+  font-size: 14px;
+  color: #78736d;
+}
+.product__benefits .product__icon {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e5e7eb;
+  border-radius: 50%;
+  color: #2a2622;
+  font-size: 16px;
+}
+
+.product__content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.important__information {
+  padding: 26px 26px;
+  margin-top: 40px;
+  display: flex;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  border: 1px solid #e9e3da;
+  background-color: #f2ede7;
+}
+.important__information .alert__text {
+  font-size: 14px;
+  color: #78736d;
+}
+.important__information .fa-exclamation-triangle {
+  font-size: 16px;
+  color: #c1a48b;
+}
+
+.material__img {
+  margin-bottom: 50px;
+}
+
+.custom {
+  background-color: #f5f3f0;
+  padding-top: 100px;
+}
+
+.custom__container {
+  padding: 0px 24px;
+}
+
+.custom__intro {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.custom__intro .custom__span {
+  font-size: 14px;
+  color: #78736d;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.custom__intro .custom__title {
+  font-size: 36px;
+  font-weight: 400;
+  color: #2a2622;
+}
+
+.custom__text {
+  font-size: 18px;
+  color: #78736d;
+  margin-top: 50px;
 }
 
 .opinie {
