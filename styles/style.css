@@ -465,12 +465,11 @@ a, span, p {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 64px;
 }
 .section__shop .shop__wrapper .shop__grid .shop__card {
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 .section__shop .shop__wrapper .shop__grid .shop__card .shop__image-wrapper {
   overflow: hidden;
@@ -499,6 +498,9 @@ a, span, p {
   flex-direction: column;
   justify-content: space-between;
   gap: 16px;
+  padding: 15px;
+  border: 1px solid #dedad3;
+  border-top: none;
 }
 .section__shop .shop__wrapper .shop__grid .shop__card .shop__card-content .shop__card-category {
   text-transform: uppercase;
@@ -710,9 +712,106 @@ a, span, p {
   min-height: 28vh;
 }
 
-.opinie {
-  background-color: #fdf8f3;
-  min-height: 28vh;
+.section__opinions {
+  padding: 96px 24px;
+}
+.section__opinions .section__wrapper {
+  gap: 64px;
+}
+.section__opinions .section__wrapper .opinions__header {
+  text-align: center;
+}
+.section__opinions .section__wrapper .google-reviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+.section__opinions .section__wrapper .google-reviews .google-reviews__rating {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+.section__opinions .section__wrapper .google-reviews .google-reviews__rating .google-reviews__star {
+  font-size: 18px;
+  color: #c1a48b;
+}
+.section__opinions .section__wrapper .google-reviews .google-reviews__message {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 300;
+  color: #78736d;
+}
+.section__opinions .section__wrapper .google-reviews .google-reviews__source {
+  padding: 4px 12px;
+  text-transform: uppercase;
+  color: rgba(120, 115, 109, 0.6);
+  border: 1px solid #dedad3;
+}
+.section__opinions .section__wrapper .section__features::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #dedad3;
+  margin-bottom: 34px;
+}
+.section__opinions .section__wrapper .section__features {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+.section__opinions .section__wrapper .section__features .features__eyebrow {
+  text-align: center;
+}
+.section__opinions .section__wrapper .section__features .features__grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 32px;
+}
+.section__opinions .section__wrapper .section__features .features__grid .features__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 32px;
+  background-color: #f0eeea;
+}
+.section__opinions .section__wrapper .section__features .features__grid .features__card .features__icon-container {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #dedad3;
+  border-radius: 50%;
+}
+.section__opinions .section__wrapper .section__features .features__grid .features__card .features__icon-container .features__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  color: #78736d;
+}
+.section__opinions .section__wrapper .section__features .features__grid .features__card .features__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+}
+.section__opinions .section__wrapper .section__features .features__grid .features__card .features__content .features__title {
+  font-size: 16px;
+  font-weight: inherit;
+  font-family: "DM Serif Display", sans-serif;
+}
+.section__opinions .section__wrapper .section__features .features__grid .features__card .features__content .features__text {
+  font-size: 14px;
+  font-weight: 300;
+  color: #78736d;
+  line-height: 1.6;
 }
 
 .pomoc {

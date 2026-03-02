@@ -140,12 +140,12 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      gap: 32px;
+      gap: 64px;
 
       .shop__card {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+
 
         .shop__image-wrapper {
 
@@ -178,6 +178,9 @@
           flex-direction: column;
           justify-content: space-between;
           gap: 16px;
+          padding: 15px;
+          border: 1px solid v.$color-border;
+          border-top: none;
 
           .shop__card-category {
             text-transform: uppercase;
