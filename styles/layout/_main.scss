@@ -1,2 +1,30 @@
 @use "../base/variables" as v;
 
+.section__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.section__eyebrow {
+    font-size: v.$fontSize-xs;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: v.$color-text-gray;
+}
+
+.section__title {
+    font-size: v.$fontSize-xxxl;
+    font-style: italic;
+    font-weight: inherit;
+    color: v.$color-primary;
+}

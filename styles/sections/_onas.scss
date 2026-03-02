@@ -1,47 +1,31 @@
 @use "../base/variables" as v;
 
-.about {
+.section__about {
   padding: 128px 24px;
   background-color: #f7f5f3;
-  
-  .about__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+
+  .section__wrapper {
+
     row-gap: 80px;
-    
-    .about__heading {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      
-      .about__history {
-        font-size: v.$fontSize-xs;
-        text-transform: uppercase;
-        letter-spacing: 3px;
-        line-height: 20px;
-        color: v.$color-text-gray;
-      }
-      .about__title {
-        font-size: v.$fontSize-xxxl;
-        font-style: italic;
-      }
-    }
+
     .about__grid {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       gap: 48px;
+
       .about__content {
         display: flex;
         flex-direction: column;
         gap: 24px;
+
         .about__text {
           font-size: v.$fontSize-m;
           font-weight: 300;
           line-height: 1.6;
           color: v.$color-text-gray;
         }
+
         .about__text:nth-of-type(2)::after {
           content: "";
           display: block;
@@ -50,6 +34,7 @@
           margin-top: 24px;
           background-color: #dedad3;
         }
+
         .about__quote {
           font-size: v.$fontSize-l;
           font-style: italic;
@@ -62,6 +47,7 @@
           color: v.$color-primary;
         }
       }
+
       .about__stats {
         display: flex;
         flex-wrap: wrap;
@@ -76,12 +62,14 @@
           flex-grow: 1;
           padding-top: 24px;
           border-top: 1px solid v.$color-border;
+
           .stat__title {
             font-size: v.$fontSize-xxl;
             font-weight: 500;
             line-height: 36px;
             color: v.$color-primary;
           }
+
           .stat__slogan {
             font-size: v.$fontSize-xxs;
             text-transform: uppercase;
@@ -91,6 +79,7 @@
         }
       }
     }
+
     .about__features {
       display: flex;
       flex-direction: column;
@@ -120,23 +109,24 @@
             font-size: v.$fontSize-xl;
             color: v.$color-text-gray;
           }
-          
+
         }
+
         .feature__title {
-            font-size: v.$fontSize-m;
-            font-weight: 400;
-            line-height: 28px;
-            color: v.$color-primary;
-          }
-          .feature__text {
-            font-size: v.$fontSize-xs;
-            font-weight: 300;
-            line-height: 1.6;
-            color: v.$color-text-gray;
-          }
+          font-size: v.$fontSize-m;
+          font-weight: 400;
+          line-height: 28px;
+          color: v.$color-primary;
+        }
+
+        .feature__text {
+          font-size: v.$fontSize-xs;
+          font-weight: 300;
+          line-height: 1.6;
+          color: v.$color-text-gray;
+        }
       }
     }
   }
 
 }
-
