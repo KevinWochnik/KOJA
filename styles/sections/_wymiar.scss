@@ -1,61 +1,54 @@
 @use "../base/variables" as v;
-.custom{
+.custom {
   background-color: #f5f3f0;
-    padding-top: 100px;
+  padding-top: 100px;
 }
-.custom__container{
+.custom__container {
   padding: 0px 24px;
-<<<<<<< Updated upstream
-=======
 }
 
-.custom__intro{
+.custom__intro {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
 
-  .custom__span{
+  .custom__span {
     font-size: v.$fontSize-xs;
     color: v.$color-text-gray;
     text-transform: uppercase;
     letter-spacing: 2px;
   }
-  .custom__title{
+  .custom__title {
     font-size: v.$fontSize-xxxl;
     font-weight: 400;
     color: v.$color-primary;
-
   }
 }
-.custom__text{
+.custom__text {
   font-size: v.$fontSize-m;
   color: v.$color-text-gray;
   margin-top: 50px;
->>>>>>> Stashed changes
 }
 
-.custom__intro{
+.custom__intro {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
 
-  .custom__span{
+  .custom__span {
     font-size: v.$fontSize-xs;
     color: v.$color-text-gray;
     text-transform: uppercase;
     letter-spacing: 2px;
   }
-  .custom__title{
+  .custom__title {
     font-size: v.$fontSize-xxxl;
     font-weight: 400;
     color: v.$color-primary;
-
   }
 }
-.custom__text{
+.custom__text {
   font-size: v.$fontSize-m;
   color: v.$color-text-gray;
   margin-top: 50px;
 }
-
-
