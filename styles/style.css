@@ -423,7 +423,6 @@ a, span, p {
   cursor: pointer;
 }
 .section__shop .shop__wrapper .shop__toolbar .shop__filter-toggle {
-  width: -moz-fit-content;
   width: fit-content;
   display: flex;
   align-items: center;
@@ -480,8 +479,7 @@ a, span, p {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .section__shop .shop__wrapper .shop__grid .shop__card .shop__image-wrapper .shop__badge {
   position: absolute;
@@ -638,8 +636,7 @@ a, span, p {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .section__realizations .realizations__wrapper .realizations__grid .realizations__card .realizations__span {
   position: absolute;
@@ -670,17 +667,44 @@ a, span, p {
   font-weight: 400;
 }
 
+.proces {
+  background-color: #f7f5f3;
+}
+
 .button__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 .button__container .proces__button {
+  position: relative;
+  font-size: 12px;
+  font-family: "Space Grotesk", sans-serif;
   padding: 16px;
   text-transform: uppercase;
   width: 40%;
   height: 80px;
+  letter-spacing: 1px;
+  color: #78736d;
+  background-color: #f7f5f3;
+  border: 1px solid #e5e7eb;
+  white-space: normal;
+  word-break: break-word;
+  text-align: center;
+}
+.button__container .proces__button .button-sub {
+  display: block;
+}
+.button__container .proces__button .proces__button-letter {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: rgba(120, 115, 109, 0.4);
 }
 .button__container .proces__button--c {
   width: 80%;
@@ -694,12 +718,77 @@ a, span, p {
   text-align: center;
 }
 
-.proces__flow {
+.proces__flow-container--b {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 60px;
+  padding: 0px 24px;
+  margin-top: 60px;
   display: none;
 }
 
-.visible {
+.proces__flow-container--c {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 60px;
+  padding: 0px 24px;
+  margin-top: 60px;
+}
+.proces__flow-container--c .proces__flow--c {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-bottom: 1px solid #dedad3;
+  padding-bottom: 20px;
+  display: none;
+}
+.proces__flow-container--c .proces__flow--c .proces__number--c {
+  width: 140px;
+  flex-shrink: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-family: "DM Serif Display", sans-serif;
+  color: rgba(194, 191, 188, 0.5019607843);
+}
+.proces__flow-container--c .proces__flow--c .proces__text--c {
+  flex: 1;
+  font-size: 14px;
+  color: #78736d;
+}
+
+.proces__flow-container--a {
   display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 60px;
+  background-color: #f7f5f3;
+  padding: 0px 24px;
+}
+
+.proces__flow {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-bottom: 1px solid #dedad3;
+  padding-bottom: 20px;
+}
+
+.proces__number {
+  font-size: 36px;
+  font-family: "DM Serif Display", sans-serif;
+  color: rgba(194, 191, 188, 0.5019607843);
+  line-height: 1;
+  width: 60px;
+  flex-shrink: 0;
+}
+
+.proces__text {
+  font-size: 16px;
+  color: #78736d;
 }
 
 .materials {
@@ -776,8 +865,7 @@ a, span, p {
   padding: 26px 26px;
   margin-top: 40px;
   display: flex;
-  -moz-column-gap: 15px;
-       column-gap: 15px;
+  column-gap: 15px;
   border: 1px solid #e9e3da;
   background-color: #f2ede7;
 }
@@ -801,6 +889,29 @@ a, span, p {
 
 .custom__container {
   padding: 0px 24px;
+}
+
+.custom__intro {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.custom__intro .custom__span {
+  font-size: 14px;
+  color: #78736d;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.custom__intro .custom__title {
+  font-size: 36px;
+  font-weight: 400;
+  color: #2a2622;
+}
+
+.custom__text {
+  font-size: 18px;
+  color: #78736d;
+  margin-top: 50px;
 }
 
 .custom__intro {
@@ -942,4 +1053,6 @@ a, span, p {
   background-color: #1f1c16;
   color: #f7efe5;
   min-height: 20vh;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
