@@ -85,11 +85,11 @@
 
     </section>
     <!-- SEKCJA ONAS (KUNA) -->
-    <section class="section__about about">
-      <div class="about__container">
-        <div class="about__heading">
-          <p class="about__history">nasza historia</p>
-          <h2 class="about__title">O nas</h2>
+    <section class="section__about section">
+      <div class="about__wrapper section__wrapper ">
+        <div class="about__header section__header">
+          <p class="section__eyebrow">nasza historia</p>
+          <h2 class="section__title">O nas</h2>
         </div>
         <div class="about__grid">
           <div class="about__content">
@@ -156,11 +156,12 @@
         </div>
       </section>
     <!-- SEKCJA SKLEP (KUNA) -->
-    <section class="section__shop">
-      <div class="shop__header">
-        <p class="shop__eyebrow">Sklep</p>
+    <section class="section__shop section">
+      <div class="section__wrapper shop__wrapper">
+      <div class="shop__header section__header">
+        <p class="section__eyebrow">Sklep</p>
         <div class="shop__header-grid">
-          <h2 class="shop__title">Nasze produkty</h2>
+          <h2 class="section__title">Nasze produkty</h2>
           <a href="#" class="shop__link">Kup na Allegro <i class="fa-solid fa-arrow-right "></i></a>
         </div>
       </div>
@@ -308,10 +309,51 @@
           <p class="shop__info-text shop__info-from">Zakupy realizowane przez Allegro.</p>
           <p class="shop__info-text shop__info-more">Więcej wariantów i wymiary uzupełnimy wkrótce. (TODO: zdjęcia + wymiary)</p>
         </div>
+      
+      </div>
       </div>
     </section>
     <!-- SEKCJA REALIZACJE (KUNA) -->
-    <section class="realizacje"></section>
+    <section class="section__realizations section">
+      <div class="section__wrapper realizations__wrapper">
+        <div class="realizations__header-wrap ">
+          <div class="section__header">
+            <p class="section__eyebrow">Realizacje</p>
+            <h2 class="section__title">Nasze prace w przestrzeni</h2>
+          </div>
+          <div class="section__header-content">
+            <p class="realizations__text">Zobacz KOJA w codziennym świetle — wśród zieleni, na drewnie, w prostych wnętrzach.</p>
+            <p class="realizations__text-muted">Galeria rośnie — dodajemy kolejne aranżacje wraz z nowymi zdjęciami.</p>
+          </div>
+        </div>
+        <div class="realizations__grid">
+          <div class="realizations__card">
+            <img src="./images/gallery-1.jpg" alt="" class="realizations__image">
+            <span class="realizations__span">wizualizacja</span>
+          </div>
+          <div class="realizations__card">
+            <img src="./images/gallery-2.jpg" alt="" class="realizations__image">
+            <span class="realizations__span">wizualizacja</span>
+          </div>
+          <div class="realizations__card">
+            <img src="./images/gallery-3.jpg" alt="" class="realizations__image">
+            <span class="realizations__span">wizualizacja</span>
+          </div>
+          <div class="realizations__card">
+            <img src="./images/gallery-4.jpg" alt="" class="realizations__image">
+            <span class="realizations__span">wizualizacja</span>
+          </div>
+          <div class="realizations__card">
+            <img src="./images/gallery-5.jpg" alt="" class="realizations__image">
+            <span class="realizations__span">wizualizacja</span>
+          </div>
+          <div class="realizations__card">
+            <img src="./images/gallery-6.jpg" alt="" class="realizations__image">
+            <span class="realizations__span">wizualizacja</span>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- SEKCJA PROCES (MATI) -->
     <section class="proces">
       <div class="proces__heading">
@@ -541,7 +583,55 @@
       </div>
     </section>
     <!-- SEKCJA OPINIE (KUNA) -->
-    <section class="opinie"></section>
+    <section class="section__opinions section">
+      <div class="section__wrapper">
+        <div class="section__header opinions__header">
+          <p class="section__eyebrow">Opinie</p>
+          <h2 class="section__title">Co mówią klienci</h2>
+        </div>
+        <div class="google-reviews">
+          <div class="google-reviews__rating">
+            <i class="fa-solid fa-star google-reviews__star"></i>
+            <i class="fa-solid fa-star google-reviews__star"></i>
+            <i class="fa-solid fa-star google-reviews__star"></i>
+            <i class="fa-solid fa-star google-reviews__star"></i>
+            <i class="fa-solid fa-star google-reviews__star"></i>
+          </div>
+          <p class="google-reviews__message">
+          Opinie z Google pojawią się tutaj wkrótce.
+          </p>
+
+          <span class="google-reviews__source">ŹRÓDŁO: GOOGLE — TODO: PODMIANA
+          </span>
+        </div>
+        <section class="section__features">
+          <p class="section__eyebrow features__eyebrow">Na czym nam zależy</p>
+          <div class="features__grid">
+            <div class="features__card">
+              <div class="features__icon-container"><i class="fa-regular fa-clock features__icon"></i></div>
+              <div class="features__content">
+                <h3 class="features__title">Szybka wysyłka</h3>
+                <p class="features__text">Zwykle wysyłamy w 1 dzień, maksymalnie do 2 dni roboczych.</p>
+              </div>
+            </div>
+            <div class="features__card">
+              <div class="features__icon-container"><i class="fa-solid fa-gift features__icon"></i></div>
+              <div class="features__content">
+                <h3 class="features__title">Bezpieczne pakowanie</h3>
+                <p class="features__text">Każdy produkt jest starannie zabezpieczony na czas transportu.</p>
+              </div>
+            </div>
+            <div class="features__card">
+              <div class="features__icon-container"><i class="fa-solid fa-camera features__icon"></i></i></div>
+              <div class="features__content">
+                <h3 class="features__title">Zdjęcia „w domu” mile widziane</h3>
+                <p class="features__text">Jeśli podeślesz zdjęcie produktu w swojej przestrzeni, chętnie pokażemy je w galerii. Symboliczny rabat za opinię — do ustalenia.</p>
+               </div> 
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
     <!-- SEKCJA POMOC (MATI) -->
     <section class="pomoc"></section>
     <!-- SEKCJA KONTAKT (KUNA) -->
