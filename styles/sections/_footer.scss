@@ -1,6 +1,58 @@
 @use "../base/variables" as v;
+
 .footer {
-  background-color: #1f1c16;
-  color: #f7efe5;
+  background-color: v.$color-primary;
+
   min-height: 20vh;
+
+  .footer__wrapper {
+    padding: 40px 24px;
+    border-bottom: 1px solid v.$color-border-footer;
+
+    .footer__link-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      column-gap: 32px;
+      row-gap: 15px;
+
+      .footer__link {
+
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: v.$color-text-footer;
+      }
+
+    }
+  }
+
+  .footer__end {
+    padding: 40px 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 24px;
+
+    .logo--footer {
+      color: v.$color-secondary;
+      font-size: v.$fontSize-xl;
+      font-family: "DM Serif Display", sans-serif;
+    }
+
+    .footer__end-details {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 16px;
+
+      .footer__detail {
+        font-size: v.$fontSize-xxs;
+        color: v.$color-muted-gray;
+      }
+    }
+  }
 }

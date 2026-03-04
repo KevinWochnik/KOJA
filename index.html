@@ -85,7 +85,7 @@
 
     </section>
     <!-- SEKCJA ONAS (KUNA) -->
-    <section class="section__about section">
+    <section class="section__about section" id="about">
       <div class="about__wrapper section__wrapper ">
         <div class="about__header section__header">
           <p class="section__eyebrow">nasza historia</p>
@@ -156,7 +156,7 @@
       </div>
     </section>
     <!-- SEKCJA SKLEP (KUNA) -->
-    <section class="section__shop section">
+    <section class="section__shop section" id="shop">
       <div class="section__wrapper shop__wrapper">
         <div class="shop__header section__header">
           <p class="section__eyebrow">Sklep</p>
@@ -321,7 +321,7 @@
       </div>
     </section>
     <!-- SEKCJA REALIZACJE (KUNA) -->
-    <section class="section__realizations section">
+    <section class="section__realizations section" id="realizations">
       <div class="section__wrapper realizations__wrapper">
         <div class="realizations__header-wrap ">
           <div class="section__header">
@@ -363,7 +363,7 @@
       </div>
     </section>
     <!-- SEKCJA PROCES (MATI) -->
-    <section class="proces">
+    <section class="proces" id="proces">
       <div class="proces__heading">
         <span class="proces__span-text">proces</span>
         <h1 class="accent__title">Jak Powstać</h1>
@@ -462,7 +462,7 @@
 
     </section>
     <!-- SEKCJA MATERIALY (MATI) -->
-    <section class="materials">
+    <section class="materials" id="materials">
       <div class="materials__container">
         <div class="material">
           <span class="material__eyebrow">materiały</span>
@@ -533,7 +533,7 @@
 
     </section>
     <!-- SEKCJA NA WYMIAR (MATI) -->
-    <section class="custom">
+    <section class="custom" id="custom">
       <div class="custom__container">
         <div class="custom__intro">
           <span class="custom__span">indywidualny</span>
@@ -593,7 +593,7 @@
       </div>
     </section>
     <!-- SEKCJA OPINIE (KUNA) -->
-    <section class="section__opinions section">
+    <section class="section__opinions section" id="opinions">
       <div class="section__wrapper">
         <div class="section__header opinions__header">
           <p class="section__eyebrow">Opinie</p>
@@ -644,21 +644,122 @@
       </div>
     </section>
     <!-- SEKCJA POMOC (MATI) -->
-    <section class="pomoc"></section>
+    <section class="pomoc" id="faq"></section>
     <!-- SEKCJA KONTAKT (KUNA) -->
-    <section class="section__contact section">
+    <section class="section__contact section" id="contact">
       <div class="section__wrapper">
-        <div class="section__headeropinion__header">
+        <div class="section__header contact__header">
           <p class="section__eyebrow">kontakt</p>
           <h2 class="section__title">Twórzmy razem</h2>
-          <p class="opinion__header-text">Masz pytanie o produkt, dostępność albo chcesz wersję na wymiar? Napisz —
+          <p class="contact__header-text">Masz pytanie o produkt, dostępność albo chcesz wersję na wymiar? Napisz —
             wrócimy z odpowiedzią.</p>
-          <p class="opinion__header-text-muted">Odpowiadamy w ciągu 24–48 godzin.</p>
+          <p class="contact__header-text-muted">Odpowiadamy w ciągu 24–48 godzin.</p>
+        </div>
+        <div class="contact__grid">
+          <div class="contact__form">
+            <div class="contact__field">
+              <label for="name" class="contact__label">imię</label>
+              <input type="text" id="name" class="contact__input" placeholder="Twoje imię" required minlength="3">
+            </div>
+            <div class="contact__field">
+              <label for="email" class="contact__label">e-mail</label>
+              <input type="email" id="email" class="contact__input" placeholder="twoj@email.com" required minlength="3">
+            </div>
+            <div class="contact__field">
+              <label for="topic" class="contact__label">temat <span
+                  class="contact__label-span">(opcjonalnie)</span></label>
+              <input type="text" id="topic" class="contact__input" placeholder="np. Zapytanie o personalizację"
+                minlength="3">
+            </div>
+            <div class="contact__field">
+              <label for="messege" class="contact__label">wiadomość</label>
+              <textarea id="messege" class="contact__input" placeholder="Opisz swoje pytanie lub prośbę..." required
+                rows="4" maxlength="1000"></textarea>
+            </div>
+
+            <button class="form__button">wyślij wiadomość <i class="fa-solid fa-arrow-right"></i></button>
+
+            <div class="contact__details">
+              <a href="#" class="contact__detail">
+                <i class="fa-solid fa-envelope detail-icon"></i>
+                <p class="detail-text">hello@koja.studio</p>
+              </a>
+              <a href="#" class="contact__detail">
+                <i class="fa-solid fa-phone detail-icon"></i>
+                <p class="detail-text">+48 123 456 789</p>
+              </a>
+              <a href="#" class="contact__detail">
+                <i class="fa-solid fa-location-dot detail-icon"></i>
+                <p class="detail-text">Do uzupełnienia po założeniu działalności</p>
+              </a>
+            </div>
+            <div class="contact__social">
+              <p class="social__title">social media</p>
+              <div class="social__container">
+                <a href="#" class="social__link"><i class="fa-brands fa-square-instagram social__icon"></i>instagram
+                  w
+                  przygotowaniu</a>
+                <a href="#" class="social__link"><i class="fa-brands fa-square-facebook social__icon"></i>facebook w
+                  przygotowaniu</a>
+              </div>
+            </div>
+          </div>
+          <div class="contact__order">
+            <h3 class="contact__order-title">Zamówienia indywidualne</h3>
+
+            <p class="contact__order-description">Masz nietypową prośbę? Napisz do nas przez formularz — opisz czego
+              szukasz, a wrócimy z wceną i propozycją.</p>
+            <p class="contact__order-description">Standardowe zamówienia realizujemy przez <a
+                class="contact__order-description--link">Allegro</a>.</p>
+
+            <div class="contact__order-details">
+              <div class="contact__order-row">
+                <span class="contact__order-label">Czas odpowiedzi</span>
+                <span class="contact__order-value">24–48 h</span>
+              </div>
+
+              <div class="contact__order-row">
+                <span class="contact__order-label">Wysyłka</span>
+                <span class="contact__order-value">InPost do paczkomatu</span>
+              </div>
+
+              <div class="contact__order-row">
+                <span class="contact__order-label">Realizacja</span>
+                <span class="contact__order-value">Do 2 dni roboczych</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <!-- SEKCJA FOOTER (KUNA) -->
-    <section class="footer"></section>
+    <section class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__link-container">
+          <a href="#about" class="footer__link">o nas</a>
+          <a href="#shop" class="footer__link">sklep</a>
+          <a href="#galery" class="footer__link">galeria</a>
+          <a href="#proces" class="footer__link">proces</a>
+          <a href="#custom" class="footer__link">na wymiar</a>
+          <a href="#materials" class="footer__link">materiały</a>
+          <a href="#faq" class="footer__link">faq</a>
+          <a href="#contact" class="footer__link">kontakt</a>
+        </div>
+      </div>
+
+      <div class="footer__end">
+        <a href="" class="logo logo--footer">Koja</a>
+        <div class="footer__end-details">
+          <a href="" class="footer__detail">hello@koja.studio</a>
+          <p class="footer__detail">&copy;
+            <script>document.write(new Date().getFullYear())</script> Koja Solid Form
+          </p>
+          <a href="" class="footer__detail">Polityka przywatności</a>
+          <span class="footer__detail footer__detail--muted">Regulamin</span>
+        </div>
+      </div>
+
+    </section>
   </main>
 </body>
 

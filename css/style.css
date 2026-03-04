@@ -247,6 +247,7 @@ a, span, p {
 }
 .section__about {
   background-color: #f7f5f3;
+  background-color: red;
 }
 .section__about .section__wrapper {
   row-gap: 80px;
@@ -1044,7 +1045,6 @@ a, span, p {
 
 .section__contact {
   background-color: #f0eeea;
-  padding: 96px 24px;
 }
 
 .footer {
