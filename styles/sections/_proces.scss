@@ -7,6 +7,8 @@
   align-items: center;
   row-gap: 15px;
 
+  
+
   .proces__span-text {
     font-size: v.$fontSize-xs;
     color: v.$color-text-gray;
@@ -17,6 +19,16 @@
   .accent__title {
     font-size: v.$fontSize-xxxl;
     font-weight: 400;
+  }
+  @media(min-width:768px){
+    .accent__title{
+      font-size: 72px;
+    }
+  }
+}
+@media(min-width:768px){
+  .proces__heading{
+    padding-top: 80px;
   }
 }
 
@@ -48,6 +60,14 @@
     word-break: break-word;
     text-align: center;
 
+    &.active-button{
+      background-color: v.$color-primary;
+      color: v.$color-secondary;
+.proces__button-letter{
+  color: #c1a48b;
+}
+    }
+
     .button-sub {
       display: block;
     }
@@ -61,18 +81,52 @@
       color: #78736d66;
     }
   }
+  @media(min-width:768px){
+    .proces__button{
+      width: 30%;
+      height: 70px;
+    }
+  }
 
   .proces__button--c {
     width: 80%;
     height: auto;
   }
+   @media(min-width:768px){
+   .proces__button--c{
+    width: 30%;
+    height: 70px;
+    
+   } 
+  }
 }
+ @media(min-width:768px){
+   .button__container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+   } 
+  }
 
 .proces__description {
   font-size: v.$fontSize-s;
   color: v.$color-text-gray;
   margin-top: 80px;
   text-align: center;
+}
+@media(min-width:768px){
+  .proces__description{
+  font-size: v.$fontSize-m;
+  
+  text-align: center;
+  
+padding-top: 40px;
+ max-width: 520px;   
+ margin: 0 auto;
+ line-height: 1.6;
+ text-align: center;
+    
+  }
 }
 
 .proces__flow-container--b {
