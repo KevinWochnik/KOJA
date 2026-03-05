@@ -15,6 +15,10 @@
       justify-content: space-between;
       row-gap: 16px;
 
+      @media (min-width:768px) {
+        flex-direction: row;
+      }
+
 
       .shop__link {
         align-self: flex-start;
@@ -24,6 +28,10 @@
         text-transform: uppercase;
         letter-spacing: 2.5px;
         color: v.$color-text-gray;
+
+        @media (min-width:768px) {
+          align-self: flex-end;
+        }
 
         .fa-arrow-right {
           transform: rotate(320deg);
@@ -41,6 +49,10 @@
       justify-content: space-between;
       gap: 32px;
 
+      @media (min-width:768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
     }
 
     .shop__category-container::after {
@@ -57,6 +69,11 @@
       display: flex;
       flex-direction: column;
       gap: 8px;
+
+      @media (min-width:768px) {
+        flex-basis: 40%;
+        flex-grow: 1;
+      }
 
       .shop__category-title {
         font-size: v.$fontSize-l;
@@ -76,6 +93,13 @@
       flex-direction: column;
       justify-content: space-between;
       gap: 16px;
+
+      @media (min-width:768px) {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+      }
 
       .button-select {
         font-size: v.$fontSize-xxs;
@@ -113,6 +137,10 @@
         flex-wrap: wrap;
         gap: 8px;
 
+        @media (min-width:768px) {
+          flex-wrap: nowrap;
+        }
+
         .shop__filter-button {
           padding: 8px 14px;
         }
@@ -126,9 +154,14 @@
       .shop__actions {
         display: flex;
         gap: 8px;
-        align-items: flex-end;
+
+
+        @media (min-width:768px) {
+          margin-left: auto;
+        }
 
         .shop__select {
+          font-size: 11px;
           width: 45%;
           flex-grow: 1;
           padding: 8px 12px;
@@ -138,13 +171,22 @@
 
     .shop__grid {
       display: flex;
-      justify-content: space-between;
       flex-wrap: wrap;
-      gap: 64px;
+      gap: 32px;
+
+      @media (min-width:1200px) {}
 
       .shop__card {
         display: flex;
         flex-direction: column;
+
+        @media (min-width:768px) {
+          flex-basis: calc((100% - 32px) / 2);
+        }
+
+        @media (min-width:1200px) {
+          flex-basis: calc((100% - 64px) / 3);
+        }
 
 
         .shop__image-wrapper {
@@ -170,6 +212,10 @@
             letter-spacing: 2px;
             background-color: v.$bgc-card-span;
             color: v.$color-text-gray;
+
+            @media (min-width:768px) {
+              font-size: v.$fontSize-xxs;
+            }
           }
         }
 
@@ -177,6 +223,7 @@
           display: flex;
           flex-direction: column;
           justify-content: space-between;
+          flex-grow: 1;
           gap: 16px;
           padding: 15px;
           border: 1px solid v.$color-border;
@@ -186,12 +233,20 @@
             text-transform: uppercase;
             letter-spacing: 2.2px;
             color: v.$color-text-gray;
+
+            @media (min-width:768px) {
+              font-size: v.$fontSize-xxs;
+            }
           }
 
           .shop__card-title {
             font-size: v.$fontSize-m;
             color: v.$color-primary;
             font-weight: 400;
+
+            @media (min-width:768px) {
+              font-size: v.$fontSize-l;
+            }
           }
 
           .shop__description {
@@ -200,11 +255,19 @@
             line-height: 1.6;
             padding-bottom: 4px;
             color: v.$color-text-gray;
+
+            @media (min-width:768px) {
+              font-size: v.$fontSize-s;
+            }
           }
 
           .shop__size {
             font-size: v.$fontSize-xxs;
             color: v.$color-text-gray-alfa;
+
+            @media (min-width:768px) {
+              font-size: v.$fontSize-xs;
+            }
           }
 
           .shop__size::after {
@@ -225,6 +288,10 @@
               font-size: v.$fontSize-xl;
               font-family: "DM Serif Display", sans-serif;
               color: v.$color-primary;
+
+              @media (min-width:768px) {
+                font-size: v.$fontSize-xxl;
+              }
             }
 
             .shop__button {
@@ -235,6 +302,10 @@
               font-style: italic;
               letter-spacing: 1.8px;
               color: v.$color-text-gray-alfa;
+
+              @media (min-width:768px) {
+                // font-size: v.$fontSize-xs;
+              }
             }
           }
         }
@@ -260,7 +331,12 @@
           font-size: v.$fontSize-xs;
           font-family: "DM Serif Display", sans-serif;
           line-height: 1.6;
+          text-align: center;
           color: v.$color-primary;
+
+          @media (min-width:768px) {
+            font-size: v.$fontSize-s;
+          }
         }
       }
 

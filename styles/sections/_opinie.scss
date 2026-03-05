@@ -70,14 +70,22 @@
       justify-content: space-between;
       gap: 32px;
 
+      @media (min-width:768px) {
+        flex-direction: row;
+      }
+
       .features__card {
         position: relative;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         gap: 20px;
         padding: 32px;
         background-color: v.$bgc-card;
+
+        @media (min-width:768px) {
+          flex-basis: 30%;
+
+        }
 
         .features__icon-container {
           position: relative;

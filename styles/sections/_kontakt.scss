@@ -7,12 +7,13 @@
     gap: 80px;
 
     .contact__header {
-      text-align: center;
+      align-items: center;
 
       .contact__header-text {
         max-width: 450px;
         font-size: v.$fontSize-m;
         font-weight: 300;
+        text-align: center;
         line-height: 1.6;
         color: v.$color-text-gray;
       }
@@ -28,13 +29,22 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      row-gap: 64px;
+      gap: 64px;
+
+      @media (min-width: 1200px) {
+        flex-direction: row;
+      }
 
       .contact__form {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         row-gap: 24px;
+
+        @media (min-width: 1200px) {
+          flex-basis: 40%;
+          flex-grow: 1;
+        }
 
         .contact__field {
           display: flex;
@@ -144,6 +154,11 @@
         display: flex;
         flex-direction: column;
         gap: 30px;
+
+        @media (min-width: 1200px) {
+          flex-basis: 40%;
+          flex-grow: 1;
+        }
 
         .contact__order-title {
           font-size: v.$fontSize-xl;
