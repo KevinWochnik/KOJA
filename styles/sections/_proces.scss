@@ -199,8 +199,18 @@ padding-top: 40px;
   width: 60px;
   flex-shrink: 0;
 }
+@media(min-width:748px){
+  .proces__number{
+    font-size: 48px;
+  }
+}
 
 .proces__text {
   font-size: v.$fontSize-s;
   color: v.$color-text-gray;
+}
+@media(min-width:748px){
+  .proces__text{
+    font-size: v.$fontSize-s;
+  }
 }

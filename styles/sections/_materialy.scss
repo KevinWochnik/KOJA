@@ -32,6 +32,11 @@
     font-weight: 400;
     color: v.$color-primary;
   }
+  @media(min-width:748px){
+    .material__title{
+      font-size: 72px;
+    }
+  }
   .material__description{
     font-size: v.$fontSize-m;
     color: v.$color-text-gray;
@@ -53,6 +58,7 @@
     font-weight: 400;
     color:  v.$color-primary;
   }
+ 
  .product__text{
   font-size: v.$fontSize-xs;
   color: v.$color-text-gray;
@@ -97,4 +103,30 @@
 }
 .material__img{
   margin-bottom: 50px;
+   width: 100%;
+  height: auto;
+  display: block;
+}
+
+// 
+
+
+@media(min-width:768px){
+
+  .product__benefits-container{
+    display:flex;
+    gap:60px;
+    align-items:flex-start;
+  }
+
+  
+
+  .benefits-list{
+   
+    
+    
+    display:flex;
+    flex-direction:column;
+  }
+
 }

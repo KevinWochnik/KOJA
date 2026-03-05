@@ -916,11 +916,21 @@ a, span, p {
   flex-shrink: 0;
 }
 
+@media (min-width: 748px) {
+  .proces__number {
+    font-size: 48px;
+  }
+}
 .proces__text {
   font-size: 16px;
   color: #78736d;
 }
 
+@media (min-width: 748px) {
+  .proces__text {
+    font-size: 16px;
+  }
+}
 .materials {
   background-color: #f5f3f0;
   padding-top: 100px;
@@ -949,6 +959,11 @@ a, span, p {
   font-size: 36px;
   font-weight: 400;
   color: #2a2622;
+}
+@media (min-width: 748px) {
+  .material .material__title {
+    font-size: 72px;
+  }
 }
 .material .material__description {
   font-size: 18px;
@@ -1011,8 +1026,22 @@ a, span, p {
 
 .material__img {
   margin-bottom: 50px;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
+@media (min-width: 768px) {
+  .product__benefits-container {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+  }
+  .benefits-list {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .custom {
   background-color: #f5f3f0;
   padding-top: 100px;
@@ -1064,10 +1093,35 @@ a, span, p {
   font-weight: 400;
   color: #2a2622;
 }
-.custom__intro .custom__text {
+@media (min-width: 768px) {
+  .custom__intro .custom__title {
+    font-size: 72px;
+  }
+}
+
+@media (min-width: 768px) {
+  .orders__container {
+    display: flex;
+    gap: 40px;
+  }
+  .orders__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+    flex: 1;
+  }
+  .custom__options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex: 1;
+  }
+}
+.custom__text {
   font-size: 18px;
   color: #78736d;
-  margin-top: 50px;
+  margin-bottom: 40px;
   line-height: 1.6;
 }
 
@@ -1137,6 +1191,15 @@ a, span, p {
   border: 1px solid #dedad3;
 }
 
+@media (min-width: 768px) {
+  .custom__card {
+    flex-grow: 1;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    flex-basis: 48%;
+    padding: 38px;
+  }
+}
 .custom__icon {
   display: flex;
   justify-content: center;
@@ -1179,6 +1242,24 @@ a, span, p {
   font-style: italic;
 }
 
+@media (min-width: 768px) {
+  .orders__button {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    max-width: 260px;
+    gap: 15px;
+  }
+}
+@media (min-width: 768px) {
+  .custom__notice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: end;
+    width: 100%;
+  }
+}
 .section__opinions {
   padding: 96px 24px;
 }
