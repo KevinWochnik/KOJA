@@ -376,6 +376,7 @@ a, span, p {
   height: 56px;
   border: 1px solid #dedad3;
   border-radius: 50%;
+  transition: 0.3s;
 }
 .section__about .section__wrapper .about__features .about__feature .feature__icon-container .feature__icon {
   position: absolute;
@@ -384,6 +385,10 @@ a, span, p {
   transform: translate(-50%, -50%);
   font-size: 24px;
   color: #78736d;
+  transition: 0.3s;
+}
+.section__about .section__wrapper .about__features .about__feature .feature__icon-container:hover {
+  animation: wagging 0.5s linear both;
 }
 .section__about .section__wrapper .about__features .about__feature .feature__title {
   font-size: 18px;
@@ -396,7 +401,25 @@ a, span, p {
   line-height: 1.6;
   color: #78736d;
 }
+.section__about .section__wrapper .about__features .about__feature:hover .feature__icon-container {
+  border-color: #c1a48b;
+  color: #c1a48b;
+}
+.section__about .section__wrapper .about__features .about__feature:hover .feature__icon {
+  color: #c1a48b;
+}
 
+@keyframes wagging {
+  50% {
+    transform: scale(1.1) rotate(5deg);
+  }
+  75% {
+    transform: scale(1.05) rotate(3deg);
+  }
+  100% {
+    transform: scale(1.1) rotate(5deg);
+  }
+}
 .section__shop {
   background-color: #f7f5f3;
 }
@@ -422,16 +445,26 @@ a, span, p {
   text-transform: uppercase;
   letter-spacing: 2.5px;
   color: #78736d;
+  transition: 0.3s;
 }
 @media (min-width: 768px) {
   .section__shop .shop__wrapper .shop__header-grid .shop__link {
     align-self: flex-end;
   }
 }
-.section__shop .shop__wrapper .shop__header-grid .shop__link .fa-arrow-right {
+.section__shop .shop__wrapper .shop__header-grid .shop__link .arrow-rotate {
   transform: rotate(320deg);
   font-size: 12px;
   color: #78736d;
+  transition: 0.3s;
+}
+.section__shop .shop__wrapper .shop__header-grid .shop__link:hover,
+.section__shop .shop__wrapper .shop__header-grid .shop__link:hover .arrow-rotate {
+  color: #c1a48b;
+  border-color: #c1a48b;
+}
+.section__shop .shop__wrapper .shop__header-grid .shop__link:hover .arrow-rotate {
+  transform: translate(3px, -3px) rotate(320deg);
 }
 .section__shop .shop__wrapper .shop__category-container {
   display: flex;
@@ -496,6 +529,12 @@ a, span, p {
   border: 1px solid #dedad3;
   color: #78736d;
   cursor: pointer;
+}
+.section__shop .shop__wrapper .shop__toolbar .shop__filter-button {
+  transition: 0.2s;
+}
+.section__shop .shop__wrapper .shop__toolbar .shop__filter-button:hover {
+  border-color: #2a2622;
 }
 .section__shop .shop__wrapper .shop__toolbar .shop__filter-toggle {
   width: fit-content;
@@ -574,6 +613,7 @@ a, span, p {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: 0.3s;
 }
 .section__shop .shop__wrapper .shop__grid .shop__card .shop__image-wrapper .shop__badge {
   position: absolute;
@@ -589,6 +629,9 @@ a, span, p {
   .section__shop .shop__wrapper .shop__grid .shop__card .shop__image-wrapper .shop__badge {
     font-size: 12px;
   }
+}
+.section__shop .shop__wrapper .shop__grid .shop__card .shop__image-wrapper:hover .shop__image {
+  transform: scale(1.1);
 }
 .section__shop .shop__wrapper .shop__grid .shop__card .shop__card-content {
   display: flex;
@@ -796,6 +839,7 @@ a, span, p {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: 0.3s;
 }
 .section__realizations .realizations__wrapper .realizations__grid .realizations__card .realizations__span {
   position: absolute;
@@ -806,6 +850,9 @@ a, span, p {
   color: #78736d;
   text-transform: uppercase;
   letter-spacing: 1.5px;
+}
+.section__realizations .realizations__wrapper .realizations__grid .realizations__card:hover .realizations__image {
+  filter: brightness(70%);
 }
 
 .proces__heading {
@@ -1177,6 +1224,7 @@ a, span, p {
   height: 40px;
   border: 1px solid #dedad3;
   border-radius: 50%;
+  transition: 0.3s;
 }
 .section__wrapper .section__features .features__grid .features__card .features__icon-container .features__icon {
   position: absolute;
@@ -1185,6 +1233,7 @@ a, span, p {
   transform: translate(-50%, -50%);
   font-size: 16px;
   color: #78736d;
+  transition: 0.3s;
 }
 .section__wrapper .section__features .features__grid .features__card .features__content {
   display: flex;
@@ -1202,6 +1251,10 @@ a, span, p {
   font-weight: 300;
   color: #78736d;
   line-height: 1.6;
+}
+.section__wrapper .section__features .features__grid .features__card:hover .features__icon-container .features__icon {
+  color: #c1a48b;
+  border-color: #c1a48b;
 }
 
 .pomoc {
@@ -1298,6 +1351,11 @@ a, span, p {
   letter-spacing: 1.5px;
   color: #f7f5f3;
   background-color: #2a2622;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.section__contact .section__wrapper .contact__grid .contact__form .form__button:hover {
+  transform: scale(1.03);
 }
 .section__contact .section__wrapper .contact__grid .contact__form .contact__details {
   display: flex;
@@ -1311,8 +1369,17 @@ a, span, p {
   display: flex;
   align-items: center;
   column-gap: 10px;
+}
+.section__contact .section__wrapper .contact__grid .contact__form .contact__details .contact__detail .contact__detail-common {
   font-size: 14px;
   color: #78736d;
+  transition: 0.2s;
+}
+.section__contact .section__wrapper .contact__grid .contact__form .contact__details .contact__detail:hover .contact__icon {
+  color: #c1a48b;
+}
+.section__contact .section__wrapper .contact__grid .contact__form .contact__details .contact__detail:hover .contact__text {
+  color: #2a2622;
 }
 .section__contact .section__wrapper .contact__grid .contact__form .contact__social {
   display: flex;
@@ -1366,6 +1433,11 @@ a, span, p {
   text-decoration: underline;
   text-underline-offset: 4px;
   color: #2a2622;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.section__contact .section__wrapper .contact__grid .contact__order .contact__order-description .contact__order-description--link:hover {
+  color: #c1a48b;
 }
 .section__contact .section__wrapper .contact__grid .contact__order .contact__order-details {
   display: flex;
@@ -1411,6 +1483,10 @@ a, span, p {
   text-transform: uppercase;
   letter-spacing: 2px;
   color: rgba(247, 245, 243, 0.3019607843);
+  transition: 0.2s;
+}
+.footer .footer__wrapper .footer__link-container .footer__link:hover {
+  color: #f7f5f3;
 }
 .footer .footer__end {
   padding: 40px 24px;
@@ -1447,6 +1523,10 @@ a, span, p {
 .footer .footer__end .footer__end-details .footer__detail {
   font-size: 12px;
   color: rgba(247, 245, 243, 0.4);
+  transition: 0.2s;
+}
+.footer .footer__end .footer__end-details a.footer__detail:hover {
+  color: #f7f5f3;
 }
 
 /*# sourceMappingURL=style.css.map */

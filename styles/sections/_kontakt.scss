@@ -90,14 +90,23 @@
           display: flex;
           gap: 10px;
           align-items: center;
+
           padding: 16px 32px;
+
           font-size: v.$fontSize-xs;
           font-family: "Space Grotesk", sans-serif;
           text-transform: uppercase;
           letter-spacing: 1.5px;
+
           color: v.$color-secondary;
           background-color: v.$color-primary;
 
+          cursor: pointer;
+          transition: .2s;
+        }
+
+        .form__button:hover {
+          transform: scale(1.03);
         }
 
         .contact__details {
@@ -112,8 +121,22 @@
             display: flex;
             align-items: center;
             column-gap: 10px;
-            font-size: v.$fontSize-xs;
-            color: v.$color-text-gray;
+
+
+
+            .contact__detail-common {
+              font-size: v.$fontSize-xs;
+              color: v.$color-text-gray;
+              transition: .2s;
+            }
+          }
+
+          .contact__detail:hover .contact__icon {
+            color: v.$color-icon;
+          }
+
+          .contact__detail:hover .contact__text {
+            color: v.$color-primary;
           }
         }
 
@@ -176,6 +199,12 @@
             text-decoration: underline;
             text-underline-offset: 4px;
             color: v.$color-primary;
+            cursor: pointer;
+            transition: .1s;
+          }
+
+          .contact__order-description--link:hover {
+            color: v.$color-icon;
           }
         }
 

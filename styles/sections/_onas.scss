@@ -132,6 +132,8 @@
           height: 56px;
           border: 1px solid v.$color-border;
           border-radius: 50%;
+          transition: .3s;
+
 
           .feature__icon {
             position: absolute;
@@ -140,7 +142,13 @@
             transform: translate(-50%, -50%);
             font-size: v.$fontSize-xl;
             color: v.$color-text-gray;
+            transition: .3s;
+
           }
+        }
+
+        .feature__icon-container:hover {
+          animation: wagging .5s linear both;
         }
 
         .feature__title {
@@ -156,7 +164,32 @@
           color: v.$color-text-gray;
         }
       }
+
+      .about__feature:hover .feature__icon-container {
+        border-color: v.$color-icon;
+        color: v.$color-icon;
+
+      }
+
+      .about__feature:hover .feature__icon {
+        color: v.$color-icon;
+      }
+
     }
   }
 
+}
+
+@keyframes wagging {
+  50% {
+    transform: scale(1.1) rotate(5deg);
+  }
+
+  75% {
+    transform: scale(1.05) rotate(3deg);
+  }
+
+  100% {
+    transform: scale(1.1) rotate(5deg);
+  }
 }

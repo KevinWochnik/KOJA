@@ -23,6 +23,11 @@
         text-transform: uppercase;
         letter-spacing: 2px;
         color: v.$color-text-footer;
+        transition: .2s;
+      }
+
+      .footer__link:hover {
+        color: v.$color-secondary;
       }
 
     }
@@ -63,6 +68,11 @@
       .footer__detail {
         font-size: v.$fontSize-xxs;
         color: v.$color-muted-gray;
+        transition: .2s;
+      }
+
+      a.footer__detail:hover {
+        color: v.$color-secondary;
       }
     }
   }

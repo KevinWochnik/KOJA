@@ -62,6 +62,7 @@
         overflow: hidden;
         aspect-ratio: 4 / 5;
 
+
         @media (min-width:768px) {
           flex-basis: calc((100% - 32px) / 2);
 
@@ -76,6 +77,7 @@
           width: 100%;
           height: 100%;
           object-fit: cover;
+          transition: .3s;
         }
 
         .realizations__span {
@@ -91,6 +93,10 @@
           letter-spacing: 1.5px;
 
         }
+      }
+
+      .realizations__card:hover .realizations__image {
+        filter: brightness(70%);
       }
     }
   }
