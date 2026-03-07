@@ -1,2 +1,31 @@
 @use "base/variables" as v;
 @use "base/reset";
+
+body {
+    background-color: v.$color-secondary;
+
+    .top__navigation {
+        border-bottom: 1px solid v.$color-border;
+
+        .top__navigation-content {
+            max-width: 768px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 24px;
+
+            .navigation__return {
+                display: flex;
+                align-items: center;
+                gap: 7px;
+
+                font-size: v.$fontSize-xxs;
+                font-family: "Space Grotesk", sans-serif;
+                text-transform: uppercase;
+                letter-spacing: 1.2px;
+
+
+            }
+        }
+    }
+}

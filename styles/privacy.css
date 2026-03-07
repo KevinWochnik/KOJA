@@ -31,4 +31,27 @@ a, span, p {
   font-family: "Space Grotesk", sans-serif;
 }
 
+body {
+  background-color: #f7f5f3;
+}
+body .top__navigation {
+  border-bottom: 1px solid #dedad3;
+}
+body .top__navigation .top__navigation-content {
+  max-width: 768px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 24px;
+}
+body .top__navigation .top__navigation-content .navigation__return {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  font-family: "Space Grotesk", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
 /*# sourceMappingURL=privacy.css.map */
