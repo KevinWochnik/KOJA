@@ -1,6 +1,92 @@
 @use "../base/variables" as v;
-.pomoc {
-  background-color: #fff;
-  min-height: 28vh;
+
+.section__wrapper{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 24px;
+}
+.help__section{
+  background-color: #f7f5f3;
+  padding: 0px 24px;
 }
 
+.help{
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin-bottom: 50px;
+
+  .help__span{
+    font-size: v.$fontSize-xs;
+    color: v.$color-text-gray;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+
+  .help__title{
+    font-size: v.$fontSize-xxxl;
+    font-weight: 400;
+    color: v.$color-primary;
+  }
+
+
+}
+.help__tabs{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 70px;
+  
+  
+.help__tab{
+  font-size:11px;
+  color: v.$color-text-gray;
+  background-color: #f7f5f3;
+ border: 1px solid v.$color-border;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding:12px 10px ;
+  cursor: pointer;
+
+   &--active{
+    color: v.$color-primary;
+    border: 1px solid v.$color-primary;
+    background-color:  #e8e4df;
+    
+  }
+
+ 
+}
+}
+.help__item{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.help__question{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border-bottom: 1px solid v.$color-border;
+
+  .help__question-span{
+    font-size: v.$fontSize-s;
+    color: v.$color-primary;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+  .help__question-text{
+    font-size: v.$fontSize-xs;
+    color:v.$color-text-gray;
+    display: none;
+  }
+}
+.help__icon{
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 20px;
+  color: v.$color-text-gray;
+  cursor: pointer;
+}
