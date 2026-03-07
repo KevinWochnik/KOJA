@@ -1,5 +1,12 @@
 @use "../base/variables" as v;
 
+
+.proces__wrapper{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 24px;
+}
+
 .proces__heading {
   display: flex;
   flex-direction: column;
@@ -59,6 +66,7 @@
     white-space: normal;
     word-break: break-word;
     text-align: center;
+    cursor: pointer;
 
     &.active-button{
       background-color: v.$color-primary;

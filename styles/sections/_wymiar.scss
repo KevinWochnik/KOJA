@@ -1,4 +1,11 @@
 @use "../base/variables" as v;
+
+
+.custom__wrapper{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 24px;
+}
 .custom {
   background-color: #f5f3f0;
   padding-top: 100px;
@@ -138,6 +145,12 @@
   background-color: #f5f3f0;
   color: v.$color-primary;
   border: 1px solid v.$color-border;
+  cursor: pointer;
+  transition: 0.3s;
+  }
+  .button__orders:hover{
+    border: 1px solid black;
+
   }
   .fa-arrow-right{
     transform: rotate(310deg);
