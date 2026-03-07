@@ -12,7 +12,9 @@ body {
             display: flex;
             align-items: center;
             gap: 20px;
+
             padding: 24px;
+            margin: 0 auto;
 
             .navigation__return {
                 display: flex;
@@ -24,8 +26,93 @@ body {
                 text-transform: uppercase;
                 letter-spacing: 1.2px;
 
+                color: v.$color-text-gray;
+            }
 
+            .logo {
+                font-size: v.$fontSize-xl;
+                font-family: "DM Serif Display", sans-serif;
+
+                color: v.$color-primary;
             }
         }
     }
+
+    .privacy__article {
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 64px 24px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+
+        .article__header-title {
+            font-size: v.$fontSize-xxl;
+            color: v.$color-primary;
+            font-weight: 400;
+            margin-bottom: 16px;
+        }
+
+        .article__header-text {
+            font-style: italic;
+            font-size: v.$fontSize-xs;
+            color: v.$color-text-gray-alfa;
+        }
+    }
+
+    .article__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 40px;
+
+        .article__point {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            .article__point-tilte {
+                font-size: v.$fontSize-m;
+                font-weight: 300;
+            }
+
+            .article__point-text {
+                font-size: v.$fontSize-xs;
+                font-family: "Space Grotesk", sans-serif;
+                color: v.$color-text-gray;
+                line-height: 24px;
+
+                .article__contact {
+                    color: v.$color-primary;
+                    text-decoration: underline;
+                    text-underline-offset: 4px;
+                }
+            }
+
+            .article__list-grid {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 8px;
+
+            }
+
+            .article__list {
+                list-style-type: disc;
+                list-style-position: inside;
+            }
+
+        }
+
+        .privacy__text-muted {
+            border-top: 1px solid v.$color-border;
+            padding-top: 40px;
+
+            font-size: v.$fontSize-xxs;
+            color: v.$color-text-gray-alfa;
+        }
+    }
+
+
 }
