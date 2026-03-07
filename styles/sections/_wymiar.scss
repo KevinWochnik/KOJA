@@ -1,4 +1,11 @@
 @use "../base/variables" as v;
+
+
+.custom__wrapper{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 24px;
+}
 .custom {
   background-color: #f5f3f0;
   padding-top: 100px;
@@ -11,6 +18,7 @@
   display: flex;
   flex-direction: column;
   row-gap: 10px;
+  padding-bottom: 20px;
 
   .custom__span {
     font-size: v.$fontSize-xs;
@@ -34,6 +42,8 @@
   display: flex;
   flex-direction: column;
   row-gap: 10px;
+  border-bottom: 1px solid #e5e2dd;
+  margin-bottom: 30px;
 
   .custom__span {
     font-size: v.$fontSize-xs;
@@ -46,9 +56,201 @@
     font-weight: 400;
     color: v.$color-primary;
   }
+  @media(min-width:768px){
+  .custom__title{
+    font-size: 72px;
+    
+  }
 }
-.custom__text {
+
+
+}
+  @media(min-width:768px){
+    .orders__container{
+      display: flex;
+      gap: 40px;
+      
+    }
+    .orders__left{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 40px;
+      flex: 1;
+      
+    }
+    .custom__options{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      flex: 1;
+
+    }
+ 
+  }
+  .custom__text {
   font-size: v.$fontSize-m;
   color: v.$color-text-gray;
-  margin-top: 50px;
+  margin-bottom: 40px;
+  line-height: 1.6;
 }
+
+.orders{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding: 15px 10px;
+  
+
+  .orders__number{
+    font-size: v.$fontSize-xl;
+    font-family: "DM Serif Display", sans-serif;
+    color: #c2bfbc80;
+  }
+
+  .orders__title{
+    font-size: v.$fontSize-xs;
+    font-family:"Space Grotesk", sans-serif; 
+    font-weight: 400;
+    color: v.$color-primary;
+    line-height: 1.6;
+  }
+  .orders__text-secondary{
+        font-size: v.$fontSize-xs;
+        color: v.$color-text-gray;
+        line-height: 1.6;
+
+  }
+  .shop-link{
+    text-decoration: underline;
+    color: v.$color-primary;
+  }
+
+
+}
+ 
+.orders__button{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-top: 30px;
+
+  .button__orders{
+  font-family:"Space Grotesk", sans-serif; 
+  font-size: v.$fontSize-xxs;
+  text-align: left;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  background-color: #f5f3f0;
+  color: v.$color-primary;
+  border: 1px solid v.$color-border;
+  cursor: pointer;
+  transition: 0.3s;
+  }
+  .button__orders:hover{
+    border: 1px solid black;
+
+  }
+  .fa-arrow-right{
+    transform: rotate(310deg);
+    font-size: v.$fontSize-xxs;
+    
+  }
+  .arrow--right{
+    transform: rotate(0deg);
+  }
+  .orders-button{
+    background-color: v.$color-primary;
+    color: v.$color-secondary;
+  }
+  
+}
+.custom__card{
+  display: flex;
+  column-gap: 20px;
+  padding: 38px;
+  margin-top: 25px;
+  border: 1px solid v.$color-border;
+}
+@media(min-width:768px){
+.custom__card{
+  flex-grow: 1;
+  column-gap: 20px;
+  flex-basis: 48%;
+  padding: 38px;
+  // margin-top: 25px;
+
+}
+}
+
+.custom__icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 50%;
+  border: 1px solid v.$color-border;
+  color:#98959281;
+  font-size: v.$fontSize-s;
+  
+}
+.custom__content{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+
+  .custom__card-title{
+    font-size: v.$fontSize-m;
+    color: v.$color-primary;
+    font-weight: 400;
+
+  }
+  .custom__card-text{
+    font-size: v.$fontSize-xs;
+    color: v.$color-text-gray;
+    line-height: 1.6;
+    
+    
+    
+  }
+}
+.custom__notice{
+  padding: 26px 32px;
+  margin-top: 20px;
+  border: 1px solid v.$color-border;
+
+
+  .custom__notice-text{
+    font-size: v.$fontSize-xs;
+    color: v.$color-text-gray-alfa;
+    font-style: italic;
+  }
+}
+@media(min-width:768px){
+    .orders__button{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      max-width: 260px;
+      
+      
+      gap: 15px;
+    }
+  }
+  @media(min-width:768px){
+    .custom__notice{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: end;
+      width: 100%;
+      
+      
+    }
+  }
+  
