@@ -7,12 +7,13 @@
     gap: 80px;
 
     .contact__header {
-      text-align: center;
+      align-items: center;
 
       .contact__header-text {
         max-width: 450px;
         font-size: v.$fontSize-m;
         font-weight: 300;
+        text-align: center;
         line-height: 1.6;
         color: v.$color-text-gray;
       }
@@ -28,13 +29,22 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      row-gap: 64px;
+      gap: 64px;
+
+      @media (min-width: 1200px) {
+        flex-direction: row;
+      }
 
       .contact__form {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         row-gap: 24px;
+
+        @media (min-width: 1200px) {
+          flex-basis: 40%;
+          flex-grow: 1;
+        }
 
         .contact__field {
           display: flex;
@@ -64,6 +74,7 @@
             font-size: v.$fontSize-s;
             color: v.$color-primary;
             font-weight: 300;
+            transition: .2s;
           }
 
           .contact__input::placeholder {
@@ -71,6 +82,15 @@
             font-weight: 300;
             font-size: v.$fontSize-s;
           }
+
+          .contact__input:focus {
+            outline: none;
+          }
+
+          .contact__input:focus {
+            border-color: v.$color-icon;
+          }
+
 
 
         }
@@ -80,14 +100,23 @@
           display: flex;
           gap: 10px;
           align-items: center;
+
           padding: 16px 32px;
+
           font-size: v.$fontSize-xs;
           font-family: "Space Grotesk", sans-serif;
           text-transform: uppercase;
           letter-spacing: 1.5px;
+
           color: v.$color-secondary;
           background-color: v.$color-primary;
 
+          cursor: pointer;
+          transition: .2s;
+        }
+
+        .form__button:hover {
+          transform: scale(1.03);
         }
 
         .contact__details {
@@ -102,8 +131,22 @@
             display: flex;
             align-items: center;
             column-gap: 10px;
-            font-size: v.$fontSize-xs;
-            color: v.$color-text-gray;
+
+
+
+            .contact__detail-common {
+              font-size: v.$fontSize-xs;
+              color: v.$color-text-gray;
+              transition: .2s;
+            }
+          }
+
+          .contact__detail:hover .contact__icon {
+            color: v.$color-icon;
+          }
+
+          .contact__detail:hover .contact__text {
+            color: v.$color-primary;
           }
         }
 
@@ -145,6 +188,11 @@
         flex-direction: column;
         gap: 30px;
 
+        @media (min-width: 1200px) {
+          flex-basis: 40%;
+          flex-grow: 1;
+        }
+
         .contact__order-title {
           font-size: v.$fontSize-xl;
           font-weight: inherit;
@@ -161,6 +209,12 @@
             text-decoration: underline;
             text-underline-offset: 4px;
             color: v.$color-primary;
+            cursor: pointer;
+            transition: .1s;
+          }
+
+          .contact__order-description--link:hover {
+            color: v.$color-icon;
           }
         }
 

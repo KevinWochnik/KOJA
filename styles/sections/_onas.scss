@@ -13,12 +13,23 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      gap: 48px;
+      row-gap: 48px;
+
+      @media (min-width:768px) {
+        flex-direction: row;
+        column-gap: 96px;
+
+      }
 
       .about__content {
         display: flex;
         flex-direction: column;
         gap: 24px;
+
+        @media (min-width:768px) {
+          flex-basis: 45%;
+          flex-grow: 1;
+        }
 
         .about__text {
           font-size: v.$fontSize-m;
@@ -55,6 +66,12 @@
         justify-content: space-between;
         gap: 32px;
 
+        @media (min-width:768px) {
+          flex-basis: 45%;
+          flex-grow: 1;
+          align-self: flex-start;
+        }
+
         .about__stat {
           display: flex;
           flex-direction: column;
@@ -64,11 +81,17 @@
           padding-top: 24px;
           border-top: 1px solid v.$color-border;
 
+
+
           .stat__title {
             font-size: v.$fontSize-xxl;
             font-weight: 500;
             line-height: 36px;
             color: v.$color-primary;
+
+            @media (min-width:768px) {
+              font-size: v.$fontSize-xxxl;
+            }
           }
 
           .stat__slogan {
@@ -76,6 +99,10 @@
             text-transform: uppercase;
             color: v.$color-text-gray;
             letter-spacing: 2.4px;
+
+            @media (min-width:768px) {
+              font-size: v.$fontSize-xs;
+            }
           }
         }
       }
@@ -86,6 +113,10 @@
       flex-direction: column;
       justify-content: space-between;
       gap: 40px;
+
+      @media (min-width:768px) {
+        flex-direction: row;
+      }
 
       .about__feature {
         display: flex;
@@ -101,6 +132,8 @@
           height: 56px;
           border: 1px solid v.$color-border;
           border-radius: 50%;
+          transition: .3s;
+
 
           .feature__icon {
             position: absolute;
@@ -109,14 +142,18 @@
             transform: translate(-50%, -50%);
             font-size: v.$fontSize-xl;
             color: v.$color-text-gray;
-          }
+            transition: .3s;
 
+          }
+        }
+
+        .feature__icon-container:hover {
+          animation: wagging .5s linear both;
         }
 
         .feature__title {
           font-size: v.$fontSize-m;
           font-weight: 400;
-          line-height: 28px;
           color: v.$color-primary;
         }
 
@@ -127,7 +164,32 @@
           color: v.$color-text-gray;
         }
       }
+
+      .about__feature:hover .feature__icon-container {
+        border-color: v.$color-icon;
+        color: v.$color-icon;
+
+      }
+
+      .about__feature:hover .feature__icon {
+        color: v.$color-icon;
+      }
+
     }
   }
 
+}
+
+@keyframes wagging {
+  50% {
+    transform: scale(1.1) rotate(5deg);
+  }
+
+  75% {
+    transform: scale(1.05) rotate(3deg);
+  }
+
+  100% {
+    transform: scale(1.1) rotate(5deg);
+  }
 }
