@@ -74,6 +74,7 @@
             font-size: v.$fontSize-s;
             color: v.$color-primary;
             font-weight: 300;
+            transition: .2s;
           }
 
           .contact__input::placeholder {
@@ -81,6 +82,15 @@
             font-weight: 300;
             font-size: v.$fontSize-s;
           }
+
+          .contact__input:focus {
+            outline: none;
+          }
+
+          .contact__input:focus {
+            border-color: v.$color-icon;
+          }
+
 
 
         }

@@ -1333,11 +1333,18 @@ a, span, p {
   font-size: 16px;
   color: #2a2622;
   font-weight: 300;
+  transition: 0.2s;
 }
 .section__contact .section__wrapper .contact__grid .contact__form .contact__field .contact__input::placeholder {
   color: rgba(120, 115, 109, 0.6);
   font-weight: 300;
   font-size: 16px;
+}
+.section__contact .section__wrapper .contact__grid .contact__form .contact__field .contact__input:focus {
+  outline: none;
+}
+.section__contact .section__wrapper .contact__grid .contact__form .contact__field .contact__input:focus {
+  border-color: #c1a48b;
 }
 .section__contact .section__wrapper .contact__grid .contact__form .form__button {
   align-self: flex-start;
