@@ -1,6 +1,196 @@
 @use "../base/variables" as v;
-.kontakt {
-  background-color: #faf5ee;
-  min-height: 28vh;
-}
 
+.section__contact {
+  background-color: v.$bgc-card;
+
+  .section__wrapper {
+    gap: 80px;
+
+    .contact__header {
+      text-align: center;
+
+      .contact__header-text {
+        max-width: 450px;
+        font-size: v.$fontSize-m;
+        font-weight: 300;
+        line-height: 1.6;
+        color: v.$color-text-gray;
+      }
+
+      .contact__header-text-muted {
+        font-size: v.$fontSize-xs;
+        color: v.$color-text-gray-alfa;
+        font-weight: 300;
+      }
+    }
+
+    .contact__grid {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      row-gap: 64px;
+
+      .contact__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        row-gap: 24px;
+
+        .contact__field {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          row-gap: 8px;
+
+          .contact__label {
+            font-size: v.$fontSize-xxs;
+            font-family: "Space Grotesk", sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2.4px;
+            color: v.$color-text-gray;
+
+            .contact__label-span {
+              text-transform: lowercase;
+              color: v.$color-text-gray-alfa;
+            }
+          }
+
+          .contact__input {
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid v.$color-border;
+            padding: 12px 0;
+            font-family: "Space Grotesk", sans-serif;
+            font-size: v.$fontSize-s;
+            color: v.$color-primary;
+            font-weight: 300;
+          }
+
+          .contact__input::placeholder {
+            color: v.$color-text-gray-alfa;
+            font-weight: 300;
+            font-size: v.$fontSize-s;
+          }
+
+
+        }
+
+        .form__button {
+          align-self: flex-start;
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          padding: 16px 32px;
+          font-size: v.$fontSize-xs;
+          font-family: "Space Grotesk", sans-serif;
+          text-transform: uppercase;
+          letter-spacing: 1.5px;
+          color: v.$color-secondary;
+          background-color: v.$color-primary;
+
+        }
+
+        .contact__details {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          padding: 40px 0;
+          border-top: 1px solid v.$color-border;
+          border-bottom: 1px solid v.$color-border;
+
+          .contact__detail {
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+            font-size: v.$fontSize-xs;
+            color: v.$color-text-gray;
+          }
+        }
+
+        .contact__social {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+
+          .social__title {
+            font-size: v.$fontSize-xxs;
+            color: v.$color-text-gray-alfa;
+            text-transform: uppercase;
+            letter-spacing: 2.4px;
+          }
+
+          .social__container {
+            display: flex;
+
+            gap: 15px;
+
+            .social__link {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              font-size: v.$fontSize-xxs;
+              color: v.$color-icon;
+              padding-inline-start: 6px 12px;
+
+              .social__icon {
+                font-size: v.$fontSize-l;
+              }
+            }
+          }
+        }
+      }
+
+      .contact__order {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .contact__order-title {
+          font-size: v.$fontSize-xl;
+          font-weight: inherit;
+          color: v.$color-primary;
+        }
+
+        .contact__order-description {
+          font-size: v.$fontSize-s;
+          font-weight: 300;
+          line-height: 1.6;
+          color: v.$color-text-gray;
+
+          .contact__order-description--link {
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            color: v.$color-primary;
+          }
+        }
+
+        .contact__order-details {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .contact__order-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 16px 0;
+            border-bottom: 1px solid v.$color-border;
+
+            .contact__order-label {
+              font-size: v.$fontSize-xxs;
+              text-transform: uppercase;
+              letter-spacing: 2.4px;
+              color: v.$color-text-gray;
+            }
+
+            .contact__order-value {
+              font-size: v.$fontSize-xs;
+              color: v.$color-primary;
+            }
+          }
+        }
+      }
+    }
+  }
+}

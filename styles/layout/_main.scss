@@ -1,5 +1,10 @@
 @use "../base/variables" as v;
 
+.section {
+    padding: 96px 24px;
+
+}
+
 .section__wrapper {
     display: flex;
     flex-direction: column;
