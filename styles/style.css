@@ -108,13 +108,14 @@ p {
 .hero-menu {
   display: none;
   z-index: 10;
-  background: transparent;
+  background: #f7f5f3;
 }
 .hero-menu .navigation-list {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 40px;
+  gap: 30px;
+  padding: 86px 24px;
 }
 .hero-menu .navigation-link {
   font-family: "Space Grotesk", sans-serif;
@@ -122,6 +123,7 @@ p {
   color: #78736d;
   text-transform: uppercase;
   position: relative;
+  letter-spacing: 2px;
 }
 .hero-menu .navigation-link::after {
   content: "";
@@ -157,9 +159,10 @@ p {
   .hero-menu {
     display: block;
     position: fixed;
-    top: 40px;
+    top: -30px;
     left: 200px;
     right: 40px;
+    background-color: transparent;
   }
   .hero-menu .navigation-list {
     display: flex;
@@ -177,14 +180,27 @@ p {
 }
 
 .hero-content {
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   row-gap: 20px;
   height: 100vh;
   padding: 0 24px;
   padding-top: 120px;
+}
+.hero-content .hero__arrow {
+  margin-bottom: 35px;
+}
+.hero-content .fa-arrow-right {
+  transform: rotate(320deg);
+  padding-left: 5px;
+  font-size: 10px;
+}
+.hero-content .fa-arrow-left {
+  transform: rotate(135deg);
+  font-size: 10px;
 }
 .hero-content .hero-logo {
   position: relative;
@@ -375,7 +391,6 @@ p {
 }
 
 .fa-arrow-down {
-  margin-top: 10px;
   color: rgba(247, 245, 243, 0.4);
   animation: arrow 4s linear infinite;
   font-size: 16px;
@@ -1065,7 +1080,7 @@ p {
 }
 .proces__heading .accent__title {
   font-size: 36px;
-  font-weight: 400;
+  font-weight: 300;
 }
 @media (min-width: 768px) {
   .proces__heading .accent__title {
@@ -1084,6 +1099,7 @@ p {
 
 .button__container {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -1091,12 +1107,16 @@ p {
   margin-bottom: 60px;
 }
 .button__container .proces__button {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-left: 24px;
   position: relative;
   font-size: 12px;
   font-family: "Space Grotesk", sans-serif;
-  padding: 16px;
+  padding: 12px;
   text-transform: uppercase;
-  width: 40%;
+  width: 80%;
   height: 80px;
   letter-spacing: 1px;
   color: #78736d;
@@ -1104,7 +1124,7 @@ p {
   border: 1px solid #e5e7eb;
   white-space: normal;
   word-break: break-word;
-  text-align: center;
+  text-align: left;
   cursor: pointer;
 }
 .button__container .proces__button.active-button {
@@ -1114,14 +1134,8 @@ p {
 .button__container .proces__button.active-button .proces__button-letter {
   color: #c1a48b;
 }
-.button__container .proces__button .button-sub {
-  display: block;
-}
 .button__container .proces__button .proces__button-letter {
-  position: absolute;
-  left: 10%;
-  top: 50%;
-  transform: translateY(-50%);
+  position: static;
   font-size: 14px;
   color: rgba(120, 115, 109, 0.4);
 }
@@ -1133,7 +1147,6 @@ p {
 }
 .button__container .proces__button--c {
   width: 80%;
-  height: auto;
 }
 @media (min-width: 768px) {
   .button__container .proces__button--c {
@@ -1159,6 +1172,7 @@ p {
 @media (min-width: 768px) {
   .proces__description {
     font-size: 18px;
+    font-weight: 300;
     text-align: center;
     padding-top: 40px;
     max-width: 520px;
@@ -1282,7 +1296,7 @@ p {
 }
 .material .material__title {
   font-size: 36px;
-  font-weight: 400;
+  font-weight: 300;
   color: #2a2622;
 }
 @media (min-width: 748px) {
@@ -1304,12 +1318,13 @@ p {
 }
 .product__benefits .product__title {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   color: #2a2622;
 }
 .product__benefits .product__text {
   font-size: 14px;
   color: #78736d;
+  font-weight: 300;
 }
 .product__benefits .product__icon {
   width: 48px;
@@ -1321,7 +1336,7 @@ p {
   justify-content: center;
   border: 1px solid #e5e7eb;
   border-radius: 50%;
-  color: #2a2622;
+  color: #c1a48b;
   font-size: 16px;
 }
 
