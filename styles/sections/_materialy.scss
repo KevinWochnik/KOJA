@@ -20,7 +20,7 @@
   flex-direction: column;
   justify-content: space-between;
   row-gap: 15px;
-  padding: 0px 24px;
+
   
   
 }
@@ -82,9 +82,12 @@
   justify-content: center;
    border: 1px solid #e5e7eb;
   border-radius: 50%;
-  color: v.$color-icon;
+  color: #9ca3af;
   
   font-size: 16px;
+ }
+ .icon--product:hover{
+  color: v.$color-icon;
  }
 }
 .product__content{

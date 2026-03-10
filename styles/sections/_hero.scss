@@ -18,6 +18,7 @@
     font-family: "DM Serif Display", sans-serif;
     font-size: v.$fontSize-xl;
     color: v.$color-secondary;
+    
   }
   .burger{
     font-size: v.$fontSize-l;
@@ -112,6 +113,7 @@
     right:40px;
     background-color: transparent;
     
+    
   
  
   .navigation-list{
@@ -189,6 +191,7 @@ color: v.$color-secondary;
   @media(min-width:1200px){
     .hero-logo{
       font-size: 158px;
+      font-weight: 300;
     }
   }
    .hero-logo::before{
