@@ -88,10 +88,22 @@
             font-weight: 500;
             line-height: 36px;
             color: v.$color-primary;
+            transition: .3s;
 
             @media (min-width:768px) {
               font-size: v.$fontSize-xxxl;
             }
+
+            svg[data-lucide] {
+              width: 1em;
+              height: 1em;
+            }
+          }
+
+
+
+          .stat__title:hover {
+            transform: scale(1.05);
           }
 
           .stat__slogan {
@@ -140,7 +152,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: v.$fontSize-xl;
+
             color: v.$color-text-gray;
             transition: .3s;
 

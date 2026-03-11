@@ -9,6 +9,10 @@
     .contact__header {
       align-items: center;
 
+      .section__eyebrow {
+        font-size: v.$fontSize-xs;
+      }
+
       .contact__header-text {
         max-width: 450px;
         font-size: v.$fontSize-m;
@@ -66,6 +70,7 @@
           }
 
           .contact__input {
+            resize: none;
             background-color: transparent;
             border: none;
             border-bottom: 1px solid v.$color-border;
@@ -93,6 +98,7 @@
 
 
 
+
         }
 
         .form__button {
@@ -113,6 +119,11 @@
 
           cursor: pointer;
           transition: .2s;
+
+          svg {
+            width: 16px;
+            height: 16px;
+          }
         }
 
         .form__button:hover {
@@ -134,14 +145,21 @@
 
 
 
-            .contact__detail-common {
-              font-size: v.$fontSize-xs;
+            svg {
+              width: 16px;
+              height: 16px;
               color: v.$color-text-gray;
+              transition: .2s;
+            }
+
+            .contact__text {
+              font-size: v.$fontSize-xs;
+              color: v.$color-text-gray ;
               transition: .2s;
             }
           }
 
-          .contact__detail:hover .contact__icon {
+          .contact__detail:hover svg {
             color: v.$color-icon;
           }
 
