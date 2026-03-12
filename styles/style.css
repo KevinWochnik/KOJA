@@ -112,13 +112,14 @@ body {
 .hero-menu {
   display: none;
   z-index: 10;
-  background: transparent;
+  background: #f7f5f3;
 }
 .hero-menu .navigation-list {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 40px;
+  gap: 30px;
+  padding: 86px 24px;
 }
 .hero-menu .navigation-link {
   font-family: "Space Grotesk", sans-serif;
@@ -126,6 +127,7 @@ body {
   color: #78736d;
   text-transform: uppercase;
   position: relative;
+  letter-spacing: 2px;
 }
 .hero-menu .navigation-link::after {
   content: "";
@@ -161,9 +163,10 @@ body {
   .hero-menu {
     display: block;
     position: fixed;
-    top: 40px;
+    top: -30px;
     left: 200px;
     right: 40px;
+    background-color: transparent;
   }
   .hero-menu .navigation-list {
     display: flex;
@@ -181,14 +184,27 @@ body {
 }
 
 .hero-content {
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   row-gap: 20px;
   height: 100vh;
   padding: 0 24px;
   padding-top: 120px;
+}
+.hero-content .hero__arrow {
+  margin-bottom: 35px;
+}
+.hero-content .fa-arrow-right {
+  transform: rotate(320deg);
+  padding-left: 5px;
+  font-size: 10px;
+}
+.hero-content .fa-arrow-left {
+  transform: rotate(135deg);
+  font-size: 10px;
 }
 .hero-content .hero-logo {
   position: relative;
@@ -204,6 +220,7 @@ body {
 @media (min-width: 1200px) {
   .hero-content .hero-logo {
     font-size: 158px;
+    font-weight: 300;
   }
 }
 .hero-content .hero-logo::before {
@@ -379,7 +396,6 @@ body {
 }
 
 .fa-arrow-down {
-  margin-top: 10px;
   color: rgba(247, 245, 243, 0.4);
   animation: arrow 4s linear infinite;
   font-size: 16px;
@@ -1097,7 +1113,7 @@ body {
 }
 .proces__heading .accent__title {
   font-size: 36px;
-  font-weight: 400;
+  font-weight: 300;
 }
 @media (min-width: 768px) {
   .proces__heading .accent__title {
@@ -1116,6 +1132,7 @@ body {
 
 .button__container {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -1123,12 +1140,16 @@ body {
   margin-bottom: 60px;
 }
 .button__container .proces__button {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-left: 24px;
   position: relative;
   font-size: 12px;
   font-family: "Space Grotesk", sans-serif;
-  padding: 16px;
+  padding: 12px;
   text-transform: uppercase;
-  width: 40%;
+  width: 80%;
   height: 80px;
   letter-spacing: 1px;
   color: #78736d;
@@ -1136,7 +1157,7 @@ body {
   border: 1px solid #e5e7eb;
   white-space: normal;
   word-break: break-word;
-  text-align: center;
+  text-align: left;
   cursor: pointer;
 }
 .button__container .proces__button.active-button {
@@ -1146,14 +1167,8 @@ body {
 .button__container .proces__button.active-button .proces__button-letter {
   color: #c1a48b;
 }
-.button__container .proces__button .button-sub {
-  display: block;
-}
 .button__container .proces__button .proces__button-letter {
-  position: absolute;
-  left: 10%;
-  top: 50%;
-  transform: translateY(-50%);
+  position: static;
   font-size: 14px;
   color: rgba(120, 115, 109, 0.4);
 }
@@ -1165,7 +1180,6 @@ body {
 }
 .button__container .proces__button--c {
   width: 80%;
-  height: auto;
 }
 @media (min-width: 768px) {
   .button__container .proces__button--c {
@@ -1191,6 +1205,7 @@ body {
 @media (min-width: 768px) {
   .proces__description {
     font-size: 18px;
+    font-weight: 300;
     text-align: center;
     padding-top: 40px;
     max-width: 520px;
@@ -1204,7 +1219,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
   row-gap: 60px;
-  padding: 0px 24px;
   margin-top: 60px;
   display: none;
 }
@@ -1214,7 +1228,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
   row-gap: 60px;
-  padding: 0px 24px;
   margin-top: 60px;
 }
 .proces__flow-container--c .proces__flow--c {
@@ -1247,7 +1260,6 @@ body {
   justify-content: space-between;
   row-gap: 60px;
   background-color: #f7f5f3;
-  padding: 0px 24px;
 }
 
 .proces__flow {
@@ -1298,7 +1310,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
   row-gap: 15px;
-  padding: 0px 24px;
 }
 
 .material {
@@ -1314,7 +1325,7 @@ body {
 }
 .material .material__title {
   font-size: 36px;
-  font-weight: 400;
+  font-weight: 300;
   color: #2a2622;
 }
 @media (min-width: 748px) {
@@ -1336,12 +1347,13 @@ body {
 }
 .product__benefits .product__title {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   color: #2a2622;
 }
 .product__benefits .product__text {
   font-size: 14px;
   color: #78736d;
+  font-weight: 300;
 }
 .product__benefits .product__icon {
   width: 48px;
@@ -1353,8 +1365,11 @@ body {
   justify-content: center;
   border: 1px solid #e5e7eb;
   border-radius: 50%;
-  color: #2a2622;
+  color: #9ca3af;
   font-size: 16px;
+}
+.product__benefits .icon--product:hover {
+  color: #c1a48b;
 }
 
 .product__content {
@@ -1402,7 +1417,7 @@ body {
 .custom__wrapper {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0px 24px;
+  padding: 0px 16px;
 }
 
 .custom {
@@ -1411,7 +1426,7 @@ body {
 }
 
 .custom__container {
-  padding: 0px 24px;
+  padding: 0px;
 }
 
 .custom__intro {
@@ -1468,17 +1483,16 @@ body {
     gap: 40px;
   }
   .orders__left {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 40px;
     flex: 1;
+    min-width: 0;
   }
   .custom__options {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
     flex: 1;
+    min-width: 0;
+  }
+  .custom__card {
+    flex-basis: 48%;
   }
 }
 .custom__text {
@@ -1514,6 +1528,7 @@ body {
 .orders .shop-link {
   text-decoration: underline;
   color: #2a2622;
+  cursor: pointer;
 }
 
 .orders__button {
@@ -1557,14 +1572,20 @@ body {
   padding: 38px;
   margin-top: 25px;
   border: 1px solid #dedad3;
+  width: 100%;
+}
+
+.custom__options {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 @media (min-width: 768px) {
   .custom__card {
-    flex-grow: 1;
     -moz-column-gap: 20px;
          column-gap: 20px;
-    flex-basis: 48%;
+    flex-basis: calc(50% - 10px);
     padding: 38px;
   }
 }
@@ -1599,6 +1620,11 @@ body {
   line-height: 1.6;
 }
 
+@media (min-width: 1200px) {
+  .custom__card {
+    padding: 28px;
+  }
+}
 .custom__notice {
   padding: 26px 32px;
   margin-top: 20px;
@@ -1628,6 +1654,26 @@ body {
     width: 100%;
   }
 }
+@media (min-width: 1200px) {
+  .custom__options {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    flex: 1;
+  }
+  .custom__card {
+    width: 100%;
+  }
+}
+.icon--custom:hover {
+  color: #c1a48b;
+}
+
+.shop-link:hover {
+  color: #c1a48b;
+}
+
 .section__wrapper {
   gap: 64px;
 }
@@ -1773,7 +1819,7 @@ body {
 }
 .help .help__title {
   font-size: 36px;
-  font-weight: 400;
+  font-weight: 300;
   color: #2a2622;
 }
 
@@ -1833,6 +1879,11 @@ body {
   cursor: pointer;
 }
 
+@media (min-width: 1200px) {
+  .help__title {
+    font-size: 70px;
+  }
+}
 .section__contact {
   background-color: #f0eeea;
 }

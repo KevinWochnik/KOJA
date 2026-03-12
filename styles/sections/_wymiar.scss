@@ -4,14 +4,14 @@
 .custom__wrapper{
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0px 24px;
+  padding: 0px 16px;
 }
 .custom {
   background-color: #f5f3f0;
   padding-top: 100px;
 }
 .custom__container {
-  padding: 0px 24px;
+  padding: 0px;
 }
 
 .custom__intro {
@@ -62,6 +62,7 @@
     
   }
 }
+ 
 
 
 }
@@ -70,22 +71,27 @@
       display: flex;
       gap: 40px;
       
+      
+      
     }
     .orders__left{
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      gap: 40px;
+     
       flex: 1;
+      min-width: 0;
       
     }
     .custom__options{
       display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
       flex: 1;
-
+     
+      min-width: 0;
     }
+    .custom__card{
+      flex-basis: 48%;
+    }
+    
+    
+   
  
   }
   .custom__text {
@@ -124,6 +130,7 @@
   .shop-link{
     text-decoration: underline;
     color: v.$color-primary;
+    cursor: pointer;
   }
 
 
@@ -172,12 +179,21 @@
   padding: 38px;
   margin-top: 25px;
   border: 1px solid v.$color-border;
+  width: 100%
+
 }
+.custom__options{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+     
+
+    }
 @media(min-width:768px){
 .custom__card{
-  flex-grow: 1;
+  // flex-grow: 1;
   column-gap: 20px;
-  flex-basis: 48%;
+    flex-basis:calc(50% - 10px);
   padding: 38px;
   // margin-top: 25px;
 
@@ -219,6 +235,13 @@
     
   }
 }
+@media(min-width:1200px){
+  .custom__card{
+    padding: 28px;
+   
+   
+  }
+}
 .custom__notice{
   padding: 26px 32px;
   margin-top: 20px;
@@ -253,4 +276,21 @@
       
     }
   }
-  
+  @media(min-width:1200px){
+      .custom__options{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        flex:1;
+      }
+      .custom__card{
+        width: 100%;
+      }
+    }
+    .icon--custom:hover{
+      color: v.$color-icon;
+    }
+  .shop-link:hover{
+    color: v.$color-icon;
+  }
