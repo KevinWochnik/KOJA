@@ -61,6 +61,17 @@ body {
   gap: 16px;
 }
 
+.reveal {
+  transform: translateY(80px);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 .section__eyebrow {
   font-size: 14px;
   text-transform: uppercase;
@@ -1034,6 +1045,15 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
+}
+.section__realizations .realizations__wrapper .realizations__grid .reveal:nth-child(4) {
+  transition-delay: 0.2s;
+}
+.section__realizations .realizations__wrapper .realizations__grid .reveal:nth-child(5) {
+  transition-delay: 0.3s;
+}
+.section__realizations .realizations__wrapper .realizations__grid .reveal:nth-child(6) {
+  transition-delay: 0.4s;
 }
 .section__realizations .realizations__wrapper .realizations__grid .realizations__card {
   position: relative;

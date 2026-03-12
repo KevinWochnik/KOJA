@@ -57,6 +57,17 @@
       flex-wrap: wrap;
       gap: 32px;
 
+      .reveal:nth-child(4) {
+        transition-delay: .2s;
+      }
+
+      .reveal:nth-child(5) {
+        transition-delay: .3s;
+      }
+
+      .reveal:nth-child(6) {
+        transition-delay: .4s;
+      }
 
       .realizations__card {
         position: relative;
