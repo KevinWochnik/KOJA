@@ -12,6 +12,7 @@
   <title>KOJA</title>
   <link rel="stylesheet" href="./styles/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -53,17 +54,14 @@
             maszyny odlewane z autorskiej wersji zastosowania: proste w formie, opracowane w detalu.</p>
           <div class="hero__button-container">
             <button class="hero-button button button__primary">zobacz produkty <i
-                class="fas fa-arrow-left"></i></button>
+                class="fas fa-arrow-right"></i></button>
             <button class="hero-button button button__secondary">zamów indywidualnie</button>
           </div>
           <span class="link-shop">kup na allegro <i class="fa-solid fa-arrow-right"></i></span>
           <div class="discover">
             <a href="#" class="discover-link">odkryj</a>
-
           </div>
-          <div class="hero__arrow">
-            <i class="fa-solid fa-arrow-down"></i>
-          </div>
+          <i class="fa-solid fa-arrow-down"></i>
         </div>
       </div>
 
@@ -78,8 +76,7 @@
           <span class="features-text">bezpieczne płatności</span>
         </div>
         <div class="features">
-          <i class="fa-solid fa-shield-halved"></i>
-
+          <i class="fa-solid fa-shield"></i>
           <span class="features-text">gwarancja jakości</span>
         </div>
         <div class="features">
@@ -96,48 +93,48 @@
     <!-- SEKCJA ONAS (KUNA) -->
     <section class="section__about section" id="about">
       <div class="about__wrapper section__wrapper ">
-        <div class="about__header section__header">
+        <div class="about__header section__header reveal">
           <p class="section__eyebrow">nasza historia</p>
           <h2 class="section__title">O nas</h2>
         </div>
         <div class="about__grid">
           <div class="about__content">
-            <p class="about__text">
+            <p class="about__text reveal">
               KOJA zaczęła się od prostej potrzeby: mieć w domu rzeczy, które są
               „swojskie" i przyjemne w codziennym użyciu, a jednocześnie
               wyglądają nowocześnie i premium.
             </p>
-            <p class="about__text">
+            <p class="about__text reveal">
               Z czasem wciągnęły nas testy mieszanek, faktury, krawędzie i ten
               moment, kiedy surowy materiał po wykończeniu robi się zaskakująco
               elegancki. Robimy krótkie serie i stawiamy na jakość. Beton ma
               prawo do drobnych różnic — to część jego charakteru.
             </p>
-            <blockquote class="about__quote">
+            <blockquote class="about__quote reveal">
               „Dla nas to nie wada, tylko podpis materiału."
             </blockquote>
           </div>
           <div class="about__stats">
-            <div class="about__stat">
+            <div class="about__stat reveal">
               <h3 class="stat__title">100%</h3>
               <p class="stat__slogan">ręczna robota</p>
             </div>
-            <div class="about__stat">
+            <div class="about__stat reveal">
               <h3 class="stat__title">Krótkie</h3>
               <p class="stat__slogan">serie produktów</p>
             </div>
-            <div class="about__stat">
+            <div class="about__stat reveal">
               <h3 class="stat__title"><i data-lucide="infinity"></i></h3>
               <p class="stat__slogan">możliwości</p>
             </div>
-            <div class="about__stat">
+            <div class="about__stat reveal">
               <h3 class="stat__title">Premium</h3>
               <p class="stat__slogan">wykończenie</p>
             </div>
           </div>
         </div>
         <div class="about__features">
-          <div class="about__feature">
+          <div class="about__feature reveal">
             <div class="feature__icon-container"><i data-lucide="hand" class="feature__icon"></i></div>
             <h3 class="feature__title">Ręczna robota</h3>
             <p class="feature__text">Każdy odlew robimy ręcznie, w krótkich seriach. Żaden produkt nie jest identyczny.
@@ -145,7 +142,7 @@
             </p>
           </div>
 
-          <div class="about__feature">
+          <div class="about__feature reveal">
             <div class="feature__icon-container"><i data-lucide="layers" class="feature__icon"></i></div>
             <h3 class="feature__title">Trwałe wykończenie
             </h3>
@@ -154,7 +151,7 @@
             </p>
           </div>
 
-          <div class="about__feature">
+          <div class="about__feature reveal">
             <div class="feature__icon-container"><i data-lucide="circle" class="feature__icon"></i></div>
             <h3 class="feature__title">Proste formy
             </h3>
@@ -167,7 +164,7 @@
     <!-- SEKCJA SKLEP (KUNA) -->
     <section class="section__shop section" id="shop">
       <div class="section__wrapper shop__wrapper">
-        <div class="shop__header section__header">
+        <div class="shop__header section__header reveal">
           <p class="section__eyebrow">Sklep</p>
           <div class="shop__header-grid">
             <h2 class="section__title">Nasze produkty</h2>
@@ -175,19 +172,19 @@
           </div>
         </div>
         <div class="shop__category-container">
-          <div class="shop__category">
+          <div class="shop__category reveal">
             <h3 class="shop__category-title">Doniczki</h3>
             <p class="shop__category-text">Betonowe doniczki o lakierowanej powierzchni — odporne na codzienne użycie i
               łatwe w czyszczeniu.</p>
           </div>
-          <div class="shop__category">
+          <div class="shop__category reveal">
             <h3 class="shop__category-title">Świeco-doniczki (2 w 1)</h3>
             <p class="shop__category-text">Świeca w betonowej formie, która po wypaleniu zmienia się w doniczkę. Po
               wypaleniu świecy, świeco-doniczka może zostać z Tobą jako doniczka.</p>
           </div>
         </div>
 
-        <div class="shop__toolbar">
+        <div class="shop__toolbar reveal">
           <div class="shop__filter-toggle">
             <i data-lucide="sliders-horizontal" class="icon-filter"></i>
             <span class="shop__filter-label">Filtruj</span>
@@ -215,7 +212,7 @@
         </div>
 
         <div class="shop__grid">
-          <article class="shop__card">
+          <article class="shop__card reveal">
             <div class="shop__image-wrapper">
               <img class="shop__image" src="./images/product-pot-s.jpg" alt="">
               <span class="shop__badge">Ręcznie robione</span>
@@ -235,7 +232,7 @@
             </div>
 
           </article>
-          <article class="shop__card">
+          <article class="shop__card reveal">
             <div class="shop__image-wrapper">
               <img class="shop__image" src="./images/product-pot-m.jpg" alt="">
               <span class="shop__badge">Ręcznie robione</span>
@@ -253,7 +250,7 @@
             </div>
 
           </article>
-          <article class="shop__card">
+          <article class="shop__card reveal">
             <div class="shop__image-wrapper">
               <img class="shop__image" src="./images/product-pot-l.jpg" alt="">
               <span class="shop__badge">Ręcznie robione</span>
@@ -272,7 +269,7 @@
 
 
           </article>
-          <article class="shop__card">
+          <article class="shop__card reveal">
             <div class="shop__image-wrapper">
               <img class="shop__image" src="./images/koja-candle-hex.png" alt="">
               <span class="shop__badge">Ręcznie robione</span>
@@ -295,7 +292,7 @@
             </div>
 
           </article>
-          <article class="shop__card">
+          <article class="shop__card reveal">
             <div class="shop__image-wrapper">
               <img class="shop__image" src="./images/koja-candle-cube.png" alt="">
               <span class="shop__badge">Ręcznie robione</span>
@@ -316,11 +313,11 @@
         </div>
 
         <div class="shop__footer">
-          <div class="shop__promotion">
-            <p class="info-text">Zamów 3 lub więcej sztuk i otrzymaj w prezencie wyjątkową małą doniczkę, której nie
+          <div class="shop__promotion reveal">
+            <p class="info-text ">Zamów 3 lub więcej sztuk i otrzymaj w prezencie wyjątkową małą doniczkę, której nie
               znajdziesz w naszym stałym asortymencie.</p>
           </div>
-          <div class="shop__info">
+          <div class="shop__info reveal">
             <p class="shop__info-text shop__info-from">Zakupy realizowane przez Allegro.</p>
             <p class="shop__info-text shop__info-more">Więcej wariantów i wymiary uzupełnimy wkrótce. (TODO: zdjęcia +
               wymiary)</p>
@@ -333,43 +330,43 @@
     <section class="section__realizations section" id="realizations">
       <div class="section__wrapper realizations__wrapper">
         <div class="realizations__header-wrap ">
-          <div class="section__header realizations__header">
+          <div class="section__header realizations__header reveal">
             <p class="section__eyebrow">Realizacje</p>
             <h2 class="section__title">Nasze prace w przestrzeni</h2>
           </div>
-          <div class="section__header-content">
+          <div class="section__header-content reveal">
             <p class="realizations__text">Zobacz KOJA w codziennym świetle — wśród zieleni, na drewnie, w prostych
               wnętrzach.</p>
             <p class="realizations__text-muted">Galeria rośnie — dodajemy kolejne aranżacje wraz z nowymi zdjęciami.</p>
           </div>
         </div>
         <div class="realizations__grid">
-          <div class="realizations__card">
+          <div class="realizations__card reveal">
             <img src="./images/gallery-1.jpg" alt="" class="realizations__image">
             <span class="realizations__span">wizualizacja</span>
             <span class="realizations__name">Doniczka betonowa</span>
           </div>
-          <div class="realizations__card">
+          <div class="realizations__card reveal">
             <img src="./images/gallery-2.jpg" alt="" class="realizations__image">
             <span class="realizations__span">wizualizacja</span>
             <span class="realizations__name">świeco-doniczka</span>
           </div>
-          <div class="realizations__card">
+          <div class="realizations__card reveal">
             <img src="./images/gallery-3.jpg" alt="" class="realizations__image">
             <span class="realizations__span">wizualizacja</span>
             <span class="realizations__name">Doniczka betonowa</span>
           </div>
-          <div class="realizations__card card--sm">
+          <div class="realizations__card card--sm reveal">
             <img src="./images/gallery-4.jpg" alt="" class="realizations__image">
             <span class="realizations__span">wizualizacja</span>
             <span class="realizations__name">Doniczka betonowa</span>
           </div>
-          <div class="realizations__card card--md">
+          <div class="realizations__card card--md reveal">
             <img src="./images/gallery-5.jpg" alt="" class="realizations__image">
             <span class="realizations__span">wizualizacja</span>
             <span class="realizations__name">Doniczka betonowa</span>
           </div>
-          <div class="realizations__card card--lg">
+          <div class="realizations__card card--lg reveal">
             <img src="./images/gallery-6.jpg" alt="" class="realizations__image">
             <span class="realizations__span">wizualizacja</span>
             <span class="realizations__name">Lampa</span>
@@ -382,7 +379,7 @@
       <div class="proces__wrapper">
         <div class="proces__heading">
           <span class="proces__span-text">proces</span>
-          <h1 class="accent__title">Jak Powstają</h1>
+          <h1 class="accent__title">Jak Powstać</h1>
 
         </div>
 
@@ -390,7 +387,7 @@
           dojrzewania materiału</p>
         <div class="button__container">
           <button class="proces__button proces__button--a active-button"><span
-              class="proces__button-letter">A</span>doniczki (BETON) </span></button>
+              class="proces__button-letter">A</span>doniczki <span class="button-sub">(beton)</span></button>
           <button class="proces__button proces__button--b"><span class="proces__button-letter">B</span>gdy donica staje
             się świecą</button>
           <button class="proces__button proces__button--c"><span class="proces__button-letter">C</span>pakowanie i
@@ -492,7 +489,7 @@
             <div class="benefits-list">
               <div class="product__benefits">
                 <div class="product__icon">
-                  <i class="fa-regular fa-sun icon--product"></i>
+                  <i class="fa-regular fa-sun"></i>
                 </div>
                 <div class="product__content">
                   <h3 class="product__title">Do wnętrz i na zewnątrz</h3>
@@ -503,7 +500,7 @@
               </div>
               <div class="product__benefits">
                 <div class="product__icon">
-                  <i class="fa-regular fa-star icon--product"></i>
+                  <i class="fa-regular fa-star"></i>
                 </div>
                 <div class="product__content">
                   <h3 class="product__title">Lakierowana powierzchnia = mniej plam</h3>
@@ -512,7 +509,7 @@
               </div>
               <div class="product__benefits">
                 <div class="product__icon">
-                  <i class="fa-solid fa-droplet icon--product"></i>
+                  <i class="fa-solid fa-droplet"></i>
                 </div>
                 <div class="product__content">
                   <h3 class="product__title">Mycie wodą</h3>
@@ -521,7 +518,7 @@
               </div>
               <div class="product__benefits">
                 <div class="product__icon">
-                  <i class="fa-regular fa-sun icon--product"></i>
+                  <i class="fa-regular fa-sun"></i>
                 </div>
                 <div class="product__content">
 
@@ -533,7 +530,7 @@
                 <div class="product__icon">
                   <i class="fa fa-exclamation-triangle"></i>
                 </div>
-                <p class="alert__text"><strong>Ważne:</strong> Nie pozostawiaj produktów zalanych mycia na mrozie.</p>
+                <p class="alert__text"><strong>Ważne:</strong>Nie pozostawiaj produktów zalanych mycia na mrozie.</p>
               </div>
             </div>
           </div>
@@ -582,7 +579,7 @@
             <div class="custom__options">
               <div class="custom__card">
                 <div class="custom__icon">
-                  <i class="fa-solid fa-palette icon--custom"></i>
+                  <i class="fa-solid fa-palette"></i>
                 </div>
                 <div class="custom__content">
                   <h3 class="custom__card-title">Nietypowy kolor</h3>
@@ -593,7 +590,7 @@
               </div>
               <div class="custom__card">
                 <div class="custom__icon">
-                  <i class="fa-solid fa-tag icon--custom"></i>
+                  <i class="fa-solid fa-tag"></i>
                 </div>
                 <div class="custom__content">
                   <h3 class="custom__card-title">Inicjały zamiast logo</h3>
@@ -612,11 +609,11 @@
     <!-- SEKCJA OPINIE (KUNA) -->
     <section class="section__opinions section" id="opinions">
       <div class="section__wrapper">
-        <div class="section__header opinions__header">
+        <div class="section__header opinions__header reveal">
           <p class="section__eyebrow">Opinie</p>
           <h2 class="section__title">Co mówią klienci</h2>
         </div>
-        <div class="google-reviews">
+        <div class="google-reviews reveal">
           <div class="google-reviews__rating">
             <i data-lucide="star"
             class="google-reviews__star"></i>  
@@ -635,23 +632,23 @@
           </span>
         </div>
         <section class="section__features">
-          <p class="features__eyebrow">Na czym nam zależy</p>
+          <p class="features__eyebrow reveal">Na czym nam zależy</p>
           <div class="features__grid">
-            <div class="features__card">
+            <div class="features__card reveal">
               <div class="features__icon-container"><i class="fa-regular fa-clock features__icon"></i></div>
               <div class="features__content">
                 <h3 class="features__title">Szybka wysyłka</h3>
                 <p class="features__text">Zwykle wysyłamy w 1 dzień, maksymalnie do 2 dni roboczych.</p>
               </div>
             </div>
-            <div class="features__card">
+            <div class="features__card reveal">
               <div class="features__icon-container"><i class="fa-solid fa-gift features__icon"></i></div>
               <div class="features__content">
                 <h3 class="features__title">Bezpieczne pakowanie</h3>
                 <p class="features__text">Każdy produkt jest starannie zabezpieczony na czas transportu.</p>
               </div>
             </div>
-            <div class="features__card">
+            <div class="features__card reveal">
               <div class="features__icon-container"><i class="fa-solid fa-camera features__icon"></i></i></div>
               <div class="features__content">
                 <h3 class="features__title">Zdjęcia „w domu” mile widziane</h3>
@@ -669,7 +666,7 @@
         <div class="help__wrapper">
           <div class="help">
             <span class="help__span">pomoc</span>
-            <h1 class="help__title">Najczęstsze pytania</h1>
+            <h1 class="help__title">typowe pytania</h1>
           </div>
           <div class="help__tabs">
             <button class="help__tab help__tab--active">pielęgnacja</button>
@@ -733,7 +730,7 @@
     <!-- SEKCJA KONTAKT (KUNA) -->
     <section class="section__contact section" id="contact">
       <div class="section__wrapper">
-        <div class="section__header contact__header">
+        <div class="section__header contact__header reveal">
           <p class="section__eyebrow">kontakt</p>
           <h2 class="section__title">Twórzmy razem</h2>
           <p class="contact__header-text">Masz pytanie o produkt, dostępność albo chcesz wersję na wymiar? Napisz —
@@ -742,43 +739,43 @@
         </div>
         <div class="contact__grid">
           <div class="contact__form">
-            <div class="contact__field">
+            <div class="contact__field reveal">
               <label for="name" class="contact__label">imię</label>
               <input type="text" id="name" class="contact__input" placeholder="Twoje imię" required minlength="3">
             </div>
-            <div class="contact__field">
+            <div class="contact__field reveal">
               <label for="email" class="contact__label">e-mail</label>
               <input type="email" id="email" class="contact__input" placeholder="twoj@email.com" required minlength="3">
             </div>
-            <div class="contact__field">
+            <div class="contact__field reveal">
               <label for="topic" class="contact__label">temat <span
                   class="contact__label-span">(opcjonalnie)</span></label>
               <input type="text" id="topic" class="contact__input" placeholder="np. Zapytanie o personalizację"
                 minlength="3">
             </div>
-            <div class="contact__field">
+            <div class="contact__field reveal">
               <label for="messege" class="contact__label">wiadomość</label>
               <textarea id="messege" class="contact__input" placeholder="Opisz swoje pytanie lub prośbę..." required
                 rows="4" maxlength="1000"></textarea>
             </div>
 
-            <button class="form__button">wyślij wiadomość <i data-lucide="arrow-right"></i></button>
+            <button class="form__button reveal">wyślij wiadomość <i data-lucide="arrow-right"></i></button>
 
             <div class="contact__details">
-              <a href="#" class="contact__detail">
+              <a href="#" class="contact__detail reveal">
                 <i data-lucide="mail"></i>
                 <p class="contact__text">hello@koja.studio</p>
               </a>
-              <a href="#" class="contact__detail">
+              <a href="#" class="contact__detail reveal">
                 <i data-lucide="phone"></i>  
                 <p class="contact__text">+48 123 456 789</p>
               </a>
-              <a href="#" class="contact__detail">
+              <a href="#" class="contact__detail reveal">
                 <i data-lucide="map-pin"></i>  
                 <p class="contact__text">Do uzupełnienia po założeniu działalności</p>
               </a>
             </div>
-            <div class="contact__social">
+            <div class="contact__social reveal">
               <p class="social__title">social media</p>
               <div class="social__container">
                 <a href="#" class="social__link"><i class="fa-brands fa-square-instagram social__icon"></i>instagram
@@ -789,7 +786,7 @@
               </div>
             </div>
           </div>
-          <div class="contact__order">
+          <div class="contact__order reveal">
             <h3 class="contact__order-title">Zamówienia indywidualne</h3>
 
             <p class="contact__order-description">Masz nietypową prośbę? Napisz do nas przez formularz — opisz czego
@@ -837,9 +834,7 @@
         <div class="footer__end-details">
           <a href="" class="footer__detail">hello@koja.studio</a>
           <p class="footer__detail">&copy;
-            <script>
-              document.write(new Date().getFullYear())
-            </script> Koja Solid Form
+            <script>document.write(new Date().getFullYear())</script> Koja Solid Form
           </p>
           <a href="./polityka-prywatnosci/index.html" class="footer__detail">Polityka przywatności</a>
           <span class="footer__detail footer__detail--muted">Regulamin</span>
@@ -850,7 +845,6 @@
   </main>
 </body>
 <script src="https://unpkg.com/lucide@latest"></script>
-<script src="./script/hero.js"></script>
   <script>
     lucide.createIcons();
   </script>

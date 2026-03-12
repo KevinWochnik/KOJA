@@ -24,6 +24,17 @@ body {
     gap: 16px;
 }
 
+.reveal {
+    transform: translateY(80px);
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
 .section__eyebrow {
     font-size: v.$fontSize-xs;
     text-transform: uppercase;
