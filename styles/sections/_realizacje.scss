@@ -57,6 +57,7 @@
       flex-wrap: wrap;
       gap: 32px;
 
+
       .realizations__card {
         position: relative;
         overflow: hidden;
@@ -93,10 +94,36 @@
           letter-spacing: 1.5px;
 
         }
+
+        .realizations__name {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%) scale(0);
+          font-size: v.$fontSize-xxl;
+          font-family: "DM Serif Display", sans-serif;
+          text-align: center;
+          color: v.$color-secondary;
+          transition: .3s;
+        }
       }
 
+      .card--sm {
+        max-height: 236.5px;
+      }
+
+      .card--md {
+        max-height: 354.75px;
+      }
+
+
+
       .realizations__card:hover .realizations__image {
-        filter: brightness(70%);
+        filter: brightness(50%);
+      }
+
+      .realizations__card:hover .realizations__name {
+        transform: translate(-50%, -50%) scale(1);
       }
     }
   }

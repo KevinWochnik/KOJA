@@ -3,6 +3,7 @@
 
 
 
+
 .section__wrapper {
   gap: 64px;
 
@@ -24,7 +25,7 @@
       gap: 5px;
 
       .google-reviews__star {
-        font-size: v.$fontSize-m;
+        fill: v.$color-icon;
         color: v.$color-icon;
       }
     }
@@ -39,6 +40,7 @@
     .google-reviews__source {
       padding: 4px 12px;
       text-transform: uppercase;
+      letter-spacing: 1.5px;
       color: v.$color-text-gray-alfa;
       border: 1px solid v.$color-border;
     }
@@ -51,17 +53,23 @@
     width: 100%;
     height: 1px;
     background-color: v.$color-border;
-    margin-bottom: 34px;
+
   }
 
   .section__features {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 30px;
+    gap: 40px;
 
     .features__eyebrow {
+
+      font-size: v.$fontSize-xxs;
+      text-transform: uppercase;
+      letter-spacing: 3.6px;
+      line-height: 16px;
       text-align: center;
+      color: v.$color-text-gray;
     }
 
     .features__grid {
@@ -81,6 +89,7 @@
         gap: 20px;
         padding: 32px;
         background-color: v.$bgc-card;
+        border: 1px solid v.$color-border;
 
         @media (min-width:768px) {
           flex-basis: 30%;
@@ -128,9 +137,13 @@
         }
       }
 
-      .features__card:hover .features__icon-container .features__icon {
+      .features__card:hover .features__icon {
         color: v.$color-icon;
-        border-color: v.$color-icon;
+
+      }
+
+      .features__card:hover .features__icon-container {
+        border-color: v.$color-border;
       }
 
     }
