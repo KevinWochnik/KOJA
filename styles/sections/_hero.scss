@@ -3,11 +3,18 @@
 .logo-link{
  position: fixed;
  top: 20px;
- left: 40px;
- right: 40px;
- display: flex;
- justify-content: space-between;
- align-items: center;
+ left: 0;
+ right: 0;
+ width: auto;
+ padding: 0 24px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  overflow-x: clip;
+  z-index: 30;
+  transition: top 0.3s ease;
  
   // padding: 0 24px;
   // width: 100%;
@@ -19,6 +26,7 @@
   .burger{
     font-size: v.$fontSize-l;
     color: v.$color-secondary;
+    transition: color 0.3s ease;
     
   }
 }
@@ -27,9 +35,16 @@
   font-family: "DM Serif Display", sans-serif;
   font-size: v.$fontSize-xl;
   color: v.$color-secondary;
+  transition: color 0.5s ease;
 }
 @media(min-width:1200px){
   .logo-link{
+  left: 24px;
+  right: auto;
+  width: auto;
+  padding: 0;
+  justify-content: flex-start;
+
   .burger{
     display: none;
   }
@@ -40,8 +55,9 @@
 .hero-menu{
   
    display: none;
+   position: relative;
  
-  z-index: 10;
+  z-index: 20;
   background: v.$color-secondary;
 
 
@@ -65,6 +81,7 @@
     color: v.$color-text-gray;
     text-transform: uppercase;
     position: relative;
+    display: inline-block;
     letter-spacing: 2px;
 
   }
@@ -75,7 +92,7 @@
   bottom: -6px;
   width: 100%;
   height: 1px;
-  background: v.$color-secondary;
+  background: currentColor;
 
   transform: scaleX(0);
   transform-origin: left;
@@ -110,11 +127,15 @@
   .hero-menu{
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     height: 80px;
      position:fixed;
     top:0px;
-    left:40px;   
-    right:40px;
+    left:0;   
+    right:0;
+    width: 100%;
+    padding: 0 24px 0 clamp(120px, 12vw, 200px);
+    box-sizing: border-box;
    
     background-color: transparent;
     
@@ -133,7 +154,9 @@
 }
 @media(min-width:1200px){
   .navigation-list{
-    margin-left: 600px;
+    margin-left: auto;
+    margin-right: 0;
+    width: max-content;
     
   }
 }
@@ -485,13 +508,28 @@ gap: 20px;
 }
 
 .hero-menu{
-  transition: background-color 0.3s ease, padding 0.3s ease;
+  transition: background-color 0.3s ease 0.14s, box-shadow 0.3s ease 0.14s;
+}
+
+.hero-menu::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background-color: v.$color-secondary;
+  opacity: 0;
+  transition: opacity 0.14s ease;
+  pointer-events: none;
 }
 
 .hero-menu.menu-scrolled{
   background-color: #f7f5f3;
   box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-  padding-top: 10px;
+}
+.hero-menu.menu-scrolled::after{
+  opacity: 1;
 }
 .hero-menu.menu-scrolled .navigation-link{
   color: #333;
@@ -502,13 +540,57 @@ gap: 20px;
 .hero-menu.menu-scrolled .navigation-link::after{
   background: v.$color-primary;
 }
-.logo-link{
-  transition: top 0.3s ease;
-}
 .logo-link.logo-scrolled .logo{
+  color: v.$color-primary;
+}
+.logo-link.logo-scrolled .burger{
+  color: v.$color-primary;
+}
+.logo-link.menu-open .burger{
   color: v.$color-primary;
 }
 
 .logo-link.logo-scrolled{
   top: 20px;
+}
+
+@media (max-width: 1199px) {
+  .hero-menu.menu-open {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    min-height: 100dvh;
+    overflow-y: auto;
+    overflow-x: clip;
+    z-index: 25;
+    background-color: v.$color-secondary;
+  }
+
+  .hero-menu.menu-open .navigation-list {
+    padding: 96px 24px 32px;
+    max-width: 100%;
+  }
+
+  .hero-menu.menu-open .navigation-item {
+    width: 100%;
+  }
+
+  .hero-menu.menu-open .navigation-link {
+    display: block;
+    width: 100%;
+    overflow-wrap: anywhere;
+    color: v.$color-text-gray;
+  }
+
+  .hero-menu.menu-open .navigation-link:hover {
+    color: v.$color-primary;
+  }
+
+  .hero-menu.menu-open .navigation-link::after {
+    background: v.$color-primary;
+  }
 }

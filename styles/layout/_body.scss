@@ -2,4 +2,14 @@
 
 body {
     background-color: v.$color-secondary;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-x: clip;
+    touch-action: pan-y;
+    overscroll-behavior-x: none;
+}
+
+body.no-scroll {
+    overflow: hidden;
 }
