@@ -22,6 +22,7 @@
 
       <div class="hero-cover">
         <div class="hero-menu active">
+
           <nav class="hero-navigation">
             <ul class="navigation-list">
               <li class="navigation-item"><a href="#about" class="navigation-link">o nas</a></li>
@@ -168,7 +169,8 @@
           <p class="section__eyebrow">Sklep</p>
           <div class="shop__header-grid">
             <h2 class="section__title">Nasze produkty</h2>
-            <a href="#" class="shop__link">Kup na Allegro <i data-lucide="arrow-up-right" class="arrow__up-right"></i></a>
+            <a href="#" class="shop__link">Kup na Allegro <i data-lucide="arrow-up-right"
+                class="arrow__up-right"></i></a>
           </div>
         </div>
         <div class="shop__category-container">
@@ -615,14 +617,11 @@
         </div>
         <div class="google-reviews reveal">
           <div class="google-reviews__rating">
-            <i data-lucide="star"
-            class="google-reviews__star"></i>  
-            <i data-lucide="star"
-            class="google-reviews__star"></i>  
-            <i data-lucide="star"
-            class="google-reviews__star"></i>  
-            <i data-lucide="star" class="google-reviews__star"></i>  
-            <i data-lucide="star" class="google-reviews__star"></i>  
+            <i data-lucide="star" class="google-reviews__star"></i>
+            <i data-lucide="star" class="google-reviews__star"></i>
+            <i data-lucide="star" class="google-reviews__star"></i>
+            <i data-lucide="star" class="google-reviews__star"></i>
+            <i data-lucide="star" class="google-reviews__star"></i>
           </div>
           <p class="google-reviews__message">
             Opinie z Google pojawią się tutaj wkrótce.
@@ -766,14 +765,22 @@
                 <i data-lucide="mail"></i>
                 <p class="contact__text">hello@koja.studio</p>
               </a>
-              <a href="#" class="contact__detail reveal">
-                <i data-lucide="phone"></i>  
+              <<<<<<< Updated upstream <a href="#" class="contact__detail reveal">
+                <i data-lucide="phone"></i>
                 <p class="contact__text">+48 123 456 789</p>
-              </a>
-              <a href="#" class="contact__detail reveal">
-                <i data-lucide="map-pin"></i>  
-                <p class="contact__text">Do uzupełnienia po założeniu działalności</p>
-              </a>
+                </a>
+                <a href="#" class="contact__detail reveal">
+                  <i data-lucide="map-pin"></i>
+                  =======
+                  <a href="#" class="contact__detail">
+                    <i data-lucide="phone"></i>
+                    <p class="contact__text">+48 123 456 789</p>
+                  </a>
+                  <a href="#" class="contact__detail">
+                    <i data-lucide="map-pin"></i>
+                    >>>>>>> Stashed changes
+                    <p class="contact__text">Do uzupełnienia po założeniu działalności</p>
+                  </a>
             </div>
             <div class="contact__social reveal">
               <p class="social__title">social media</p>
@@ -834,7 +841,9 @@
         <div class="footer__end-details">
           <a href="" class="footer__detail">hello@koja.studio</a>
           <p class="footer__detail">&copy;
-            <script>document.write(new Date().getFullYear())</script> Koja Solid Form
+            <script>
+              document.write(new Date().getFullYear())
+            </script> Koja Solid Form
           </p>
           <a href="./polityka-prywatnosci/index.html" class="footer__detail">Polityka przywatności</a>
           <span class="footer__detail footer__detail--muted">Regulamin</span>
@@ -845,9 +854,19 @@
   </main>
 </body>
 <script src="https://unpkg.com/lucide@latest"></script>
+<<<<<<< Updated upstream <script>
+  lucide.createIcons();
+  </script>
+  =======
+
+  <script src="./script/proces.js"></script>
+  <script src="./script/hero.js"></script>
   <script>
     lucide.createIcons();
   </script>
+
+  >>>>>>> Stashed changes
+
 </html>
 
 <!--             POD DOŁEM TO SKOPIUJCIE I WKLEJCIE W TERMINAL ZEBY WAM ZAMIENIAŁO SCSS NA CSS              -->

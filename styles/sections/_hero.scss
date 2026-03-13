@@ -2,29 +2,31 @@
 
 .logo-link{
  position: fixed;
- top: 40px;
+ top: 20px;
  left: 40px;
  right: 40px;
  display: flex;
  justify-content: space-between;
  align-items: center;
+ 
   // padding: 0 24px;
   // width: 100%;
 
 
   
 
-  .logo{
-    font-family: "DM Serif Display", sans-serif;
-    font-size: v.$fontSize-xl;
-    color: v.$color-secondary;
-    
-  }
+ 
   .burger{
     font-size: v.$fontSize-l;
     color: v.$color-secondary;
     
   }
+}
+
+.logo{
+  font-family: "DM Serif Display", sans-serif;
+  font-size: v.$fontSize-xl;
+  color: v.$color-secondary;
 }
 @media(min-width:1200px){
   .logo-link{
@@ -106,11 +108,14 @@
 
 @media(min-width:1200px){
   .hero-menu{
-    display: block;
+    display: flex;
+    align-items: center;
+    height: 80px;
      position:fixed;
-    top:-30px;
-    left:200px;   
+    top:0px;
+    left:40px;   
     right:40px;
+   
     background-color: transparent;
     
     
@@ -119,12 +124,18 @@
   .navigation-list{
     display: flex;
     flex-direction: row;
-    justify-content:end;
+    justify-content:flex-end;
     
     gap: 40px;
     
   }
 }
+}
+@media(min-width:1200px){
+  .navigation-list{
+    margin-left: 600px;
+    
+  }
 }
 
 
@@ -473,3 +484,31 @@ gap: 20px;
   }
 }
 
+.hero-menu{
+  transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+.hero-menu.menu-scrolled{
+  background-color: #f7f5f3;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  padding-top: 10px;
+}
+.hero-menu.menu-scrolled .navigation-link{
+  color: #333;
+}
+.hero-menu.menu-scrolled .navigation-link:hover{
+  color: black;
+}
+.hero-menu.menu-scrolled .navigation-link::after{
+  background: v.$color-primary;
+}
+.logo-link{
+  transition: top 0.3s ease;
+}
+.logo-link.logo-scrolled .logo{
+  color: v.$color-primary;
+}
+
+.logo-link.logo-scrolled{
+  top: 20px;
+}
