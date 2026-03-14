@@ -83,12 +83,15 @@
    border: 1px solid #e5e7eb;
   border-radius: 50%;
   color: #9ca3af;
+  transition: color 0.25s ease, border-color 0.25s ease;
   
   font-size: 16px;
  }
- .icon--product:hover{
+}
+
+.product__benefits:hover .product__icon{
   color: v.$color-icon;
- }
+  border-color: v.$color-icon;
 }
 .product__content{
    display: flex;

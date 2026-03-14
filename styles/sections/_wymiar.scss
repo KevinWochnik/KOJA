@@ -212,8 +212,13 @@
   border-radius: 50%;
   border: 1px solid v.$color-border;
   color:#98959281;
+  transition: color 0.25s ease, border-color 0.25s ease;
   font-size: v.$fontSize-s;
   
+}
+.custom__card:hover .custom__icon{
+  color: v.$color-icon;
+  border-color: v.$color-icon;
 }
 .custom__content{
   display: flex;
@@ -287,9 +292,6 @@
       .custom__card{
         width: 100%;
       }
-    }
-    .icon--custom:hover{
-      color: v.$color-icon;
     }
   .shop-link:hover{
     color: v.$color-icon;

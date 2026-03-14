@@ -10,9 +10,10 @@
   <meta name="keywords"
     content="doniczki betonowe, świeczniki z betonu, świeca sojowa w betonie, świeco-doniczka 2w1, dekoracje betonowe do domu, minimalistyczne dekoracje, doniczki do salonu, nowoczesne wnętrza, ręcznie robione doniczki, betonowe dodatki premium, polski handmade" />
   <title>KOJA</title>
-  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./css/style.css?v=20260313-1" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
   <script src="script.js" defer></script>
+  <script src="./script/help.js" defer></script>
 </head>
 
 <body>
@@ -22,7 +23,8 @@
 
       <div class="hero-cover">
         <div class="hero-menu active">
-          <nav class="hero-navigation">
+
+          <nav class="hero-navigation" id="mobile-navigation">
             <ul class="navigation-list">
               <li class="navigation-item"><a href="#about" class="navigation-link">o nas</a></li>
               <li class="navigation-item"><a href="#shop" class="navigation-link">sklep</a></li>
@@ -42,7 +44,7 @@
         <div class="logo-link">
           <a href="#" class="logo">Koja</a>
 
-          <i class="fas fa-bars burger"></i>
+          <i class="fa-solid fa-bars burger"></i>
 
         </div>
 
@@ -168,7 +170,8 @@
           <p class="section__eyebrow">Sklep</p>
           <div class="shop__header-grid">
             <h2 class="section__title">Nasze produkty</h2>
-            <a href="#" class="shop__link">Kup na Allegro <i data-lucide="arrow-up-right" class="arrow__up-right"></i></a>
+            <a href="#" class="shop__link">Kup na Allegro <i data-lucide="arrow-up-right"
+                class="arrow__up-right"></i></a>
           </div>
         </div>
         <div class="shop__category-container">
@@ -615,14 +618,11 @@
         </div>
         <div class="google-reviews reveal">
           <div class="google-reviews__rating">
-            <i data-lucide="star"
-            class="google-reviews__star"></i>  
-            <i data-lucide="star"
-            class="google-reviews__star"></i>  
-            <i data-lucide="star"
-            class="google-reviews__star"></i>  
-            <i data-lucide="star" class="google-reviews__star"></i>  
-            <i data-lucide="star" class="google-reviews__star"></i>  
+            <i data-lucide="star" class="google-reviews__star"></i>
+            <i data-lucide="star" class="google-reviews__star"></i>
+            <i data-lucide="star" class="google-reviews__star"></i>
+            <i data-lucide="star" class="google-reviews__star"></i>
+            <i data-lucide="star" class="google-reviews__star"></i>
           </div>
           <p class="google-reviews__message">
             Opinie z Google pojawią się tutaj wkrótce.
@@ -666,7 +666,7 @@
         <div class="help__wrapper">
           <div class="help">
             <span class="help__span">pomoc</span>
-            <h1 class="help__title">typowe pytania</h1>
+            <h1 class="help__title">Najczęstsze pytania</h1>
           </div>
           <div class="help__tabs">
             <button class="help__tab help__tab--active">pielęgnacja</button>
@@ -676,9 +676,60 @@
             <button class="help__tab">szczegóły techniczne</button>
             <button class="help__tab">ogólne</button>
           </div>
+          <div class="help__item help__item--active">
+            <div class="help__question">
+              <span class="help__question-span">Jak to myć?</span>
+              <p class="help__question-text">Wodą (np. pod kranem) i miękką gąbką. Przy mocniejszych zabrudzeniach
+                wystarczy delikatny środek do mycia.
+              </p>
+              <div class="help__icon-container">
+                <span class="help__icon">+</span>
+              </div>
+            </div>
+            <div class="help__question">
+              <span class="help__question-span">Czy można używać na zewnątrz?</span>
+              <p class="help__question-text">Tak — produkty nadają się do wnętrz i na zewnątrz. Pamiętaj tylko, by nie
+                zostawiać ich zalanych wodą na mrozie.
+              </p>
+              <div class="help__icon-container">
+                <span class="help__icon">+</span>
+              </div>
+            </div>
+            <div class="help__question">
+              <span class="help__question-span">Czy beton się farbuje/ odbarwia?</span>
+              <p class="help__question-text">Nie powinien przy normalnym użytkowaniu. Lakierowana powierzchnia pomaga w
+                ochronie przed plamami.</p>
+              <div class="help__icon-container">
+                <span class="help__icon">+</span>
+              </div>
+            </div>
+            <div class="help__question">
+              <span class="help__question-span">Co zrobić w przypadku zadrapania lub odprysku?</span>
+              <p class="help__question-text">Nie zalecamy samodzielnych napraw — mogą powodować nieszczelności. Napisz
+                do nas, a podpowiemy najlepsze rozwiązanie..</p>
+              <div class="help__icon-container">
+                <span class="help__icon">+</span>
+              </div>
+            </div>
+            <div class="help__question">
+              <span class="help__question-span">Jak impregnować beton?</span>
+              <p class="help__question-text">Nie musisz — produkt przychodzi już zaimpregnowany.</p>
+              <div class="help__icon-container">
+                <span class="help__icon">+</span>
+              </div>
+            </div>
+            <div class="help__question">
+              <span class="help__question-span">Czy produkty są wodoodporne?</span>
+              <p class="help__question-text">Tak, są zabezpieczone do użytkowania z wodą.
+              </p>
+              <div class="help__icon-container">
+                <span class="help__icon">+</span>
+              </div>
+            </div>
+          </div>
           <div class="help__item">
             <div class="help__question">
-              <span class="help__question-span">Ile warte na paczkę?</span>
+              <span class="help__question-span">Ile czekam na paczkę?</span>
               <p class="help__question-text">Proponujemy do paczkomatów InPost.Standardowo realizja 2dni
                 roboczych(często
                 1 dzień).</p>
@@ -724,6 +775,245 @@
               </div>
             </div>
           </div>
+          <div class="help__item">
+            <div class="help__question">
+              <span class="help__question-span">Jaka jest wasza polityka zwrotów?</span>
+              <p class="help__question-text">Szczegóły są opisane w regulaminie i wynikają z obowiązujących przepisów.
+                Konsument ma prawo odstąpić od umowy zawartej na odległość w ustawowym terminie (standardowo 14 dni).
+
+              </p>
+              <div class="help__icon-container">
+                <span class="help__icon">+</span>
+              </div>
+            </div>
+            <div class="help__question">
+              <span class="help__question-span">Ile mam czasu na zwrot?</span>
+              <p class="help__question-text">Termin liczony jest od otrzymania produktu; po złożeniu oświadczenia
+                produkt należy odesłać w ustawowym terminie.
+
+
+
+
+              </p>
+              <div class="help__icon-container">
+                <span class="help__icon">+</span>
+              </div>
+            </div>
+            <div class="help__question">
+              <span class="help__question-span">Czy mogę wymienić produkt na inny?</span>
+              <p class="help__question-text">Tak — w miarę dostępności. Alternatywnie możliwy zwrot i ponowny zakup.
+
+
+
+              </p>
+              <div class="help__icon-container">
+                <span class="help__icon">+</span>
+              </div>
+            </div>
+            <div class="help__question">
+              <span class="help__question-span">Co w przypadku wady fabrycznej?</span>
+              <p class="help__question-text">W razie wady prosimy o kontakt; obowiązuje rękojmia dla konsumentów.
+
+
+
+              </p>
+              <div class="help__icon-container">
+                <span class="help__icon">+</span>
+              </div>
+            </div>
+            <div class="help__question">
+              <span class="help__question-span">Kto pokrywa koszty odesłania?</span>
+              <p class="help__question-text">Zasadniczo kupujący, chyba że regulamin stanowi inaczej lub zwrot dotyczy
+                reklamacji.
+
+              </p>
+              <div class="help__icon-container">
+                <span class="help__icon">+</span>
+              </div>
+            </div>
+
+          </div>
+          <div class="help__item">
+            <div class="help__question">
+              <span class="help__question-span">Jak zamówić produkt na wymiar?</span>
+              <p class="help__question-text">Przez formularz zgłoszeniowy — opisz, czego potrzebujesz, a my wrócimy z
+                informacją, co możemy przygotować.
+
+
+
+              </p>
+              <div class="help__icon-container">
+                <span class="help__icon">+</span>
+              </div>
+            </div>
+            <div class="help__question">
+              <span class="help__question-span">Ile kosztuje personalizacja?</span>
+              <p class="help__question-text">Wycena jest indywidualna i zależy od zakresu zmian.
+
+
+
+              </p>
+              <div class="help__icon-container">
+                <span class="help__icon">+</span>
+              </div>
+            </div>
+            <div class="help__question">
+              <span class="help__question-span">Jak długo czekam na produkt indywidualny?</span>
+              <p class="help__question-text">Termin ustalamy po zaakceptowaniu zakresu zmian i możliwości realizacji.
+              </p>
+              <div class="help__icon-container">
+                <span class="help__icon">+</span>
+              </div>
+            </div>
+            <div class="help__question">
+              <span class="help__question-span">Czy mogę zobaczyć produkt przed realizacją?</span>
+              <p class="help__question-text">Tak — przed startem realizacji potwierdzimy szczegóły.
+
+
+              </p>
+              <div class="help__icon-container">
+                <span class="help__icon">+</span>
+              </div>
+            </div>
+            <div class="help__question">
+              <span class="help__question-span">Jaka jest minimalna wartość zamówienia?</span>
+              <p class="help__question-text">Do ustalenia — zależnie od projektu.</p>
+              <div class="help__icon-container">
+                <span class="help__icon">+</span>
+              </div>
+            </div>
+
+          </div>
+          <div class="help__item">
+            <div class="help__question">
+              <span class="help__question-span">Jak ciężkie są wasze produkty?</span>
+              <p class="help__question-text">Informacje będą uzupełnione w kartach produktów dla każdego modelu.
+
+
+
+
+
+              </p>
+              <div class="help__icon-container">
+                <span class="help__icon">+</span>
+              </div>
+            </div>
+            <div class="help__question">
+              <span class="help__question-span">Jakie wymiary mają standardowe produkty?</span>
+              <p class="help__question-text">Wymiary będą podane przy produktach (w przygotowaniu).
+
+
+
+
+
+
+
+
+              </p>
+              <div class="help__icon-container">
+                <span class="help__icon">+</span>
+              </div>
+            </div>
+            <div class="help__question">
+              <span class="help__question-span">Z jakiego betonu są wykonane produkty?</span>
+              <p class="help__question-text">Z autorskiej mieszanki betonu (szczegóły do uzupełnienia w opisach).
+
+
+
+
+
+
+              </p>
+              <div class="help__icon-container">
+                <span class="help__icon">+</span>
+              </div>
+            </div>
+            <div class="help__question">
+              <span class="help__question-span">Czy produkty mają otwory/odpływy?</span>
+              <p class="help__question-text">Tak — proponujemy opcję zakupu: z otworem lub bez otworu.
+
+
+
+
+
+
+              </p>
+              <div class="help__icon-container">
+                <span class="help__icon">+</span>
+              </div>
+            </div>
+            <div class="help__question">
+              <span class="help__question-span">Jak świece pasują do świeczników</span>
+              <p class="help__question-text">Docelowo rekomendujemy nasze wkłady / świece dopasowane do modeli (w
+                przygotowaniu).
+
+
+
+
+              </p>
+              <div class="help__icon-container">
+                <span class="help__icon">+</span>
+              </div>
+            </div>
+
+          </div>
+          <div class="help__item">
+            <div class="help__question">
+              <span class="help__question-span">Czy każdy produkt jest unikatowy?</span>
+              <p class="help__question-text">Tak — każdy egzemplarz jest wykonywany ręcznie i może się delikatnie
+                różnić.
+
+
+
+
+
+
+
+              </p>
+              <div class="help__icon-container">
+                <span class="help__icon">+</span>
+              </div>
+            </div>
+            <div class="help__question">
+              <span class="help__question-span">Dlaczego beton jako materiał?</span>
+              <p class="help__question-text">Jest elegancki w swojej prostocie, trwały i pasuje do nowoczesnych wnętrz.
+
+
+
+
+
+
+              </p>
+              <div class="help__icon-container">
+                <span class="help__icon">+</span>
+              </div>
+            </div>
+            <div class="help__question">
+              <span class="help__question-span">Czy prowadzicie warsztaty?</span>
+              <p class="help__question-text">Na ten moment — nie planujemy.
+
+
+
+              </p>
+              <div class="help__icon-container">
+                <span class="help__icon">+</span>
+              </div>
+            </div>
+            <div class="help__question">
+              <span class="help__question-span">Czy sprzedajecie hurtowo?</span>
+              <p class="help__question-text">Tak — ceny hurtowe powyżej 10 sztuk danego modelu.
+
+
+
+
+              </p>
+              <div class="help__icon-container">
+                <span class="help__icon">+</span>
+              </div>
+            </div>
+
+
+          </div>
         </div>
       </div>
     </section>
@@ -761,17 +1051,25 @@
 
             <button class="form__button reveal">wyślij wiadomość <i data-lucide="arrow-right"></i></button>
 
-            <div class="contact__details">
+                        <div class="contact__details">
               <a href="#" class="contact__detail reveal">
                 <i data-lucide="mail"></i>
                 <p class="contact__text">hello@koja.studio</p>
               </a>
+<<<<<<< Updated upstream
               <a href="#" class="contact__detail reveal">
-                <i data-lucide="phone"></i>  
+                <i data-lucide="phone"></i>
                 <p class="contact__text">+48 123 456 789</p>
               </a>
               <a href="#" class="contact__detail reveal">
-                <i data-lucide="map-pin"></i>  
+=======
+              <a href="#" class="contact__detail">
+                <i data-lucide="phone"></i>
+                <p class="contact__text">+48 123 456 789</p>
+              </a>
+              <a href="#" class="contact__detail">
+>>>>>>> Stashed changes
+                <i data-lucide="map-pin"></i>
                 <p class="contact__text">Do uzupełnienia po założeniu działalności</p>
               </a>
             </div>
@@ -834,7 +1132,9 @@
         <div class="footer__end-details">
           <a href="" class="footer__detail">hello@koja.studio</a>
           <p class="footer__detail">&copy;
-            <script>document.write(new Date().getFullYear())</script> Koja Solid Form
+            <script>
+              document.write(new Date().getFullYear())
+            </script> Koja Solid Form
           </p>
           <a href="./polityka-prywatnosci/index.html" class="footer__detail">Polityka przywatności</a>
           <span class="footer__detail footer__detail--muted">Regulamin</span>
@@ -845,10 +1145,18 @@
   </main>
 </body>
 <script src="https://unpkg.com/lucide@latest"></script>
-  <script>
-    lucide.createIcons();
-  </script>
+<script src="./script/proces.js"></script>
+<script src="./script/hero.js"></script>
+<<<<<<< Updated upstream
+=======
+<script src="./script/proces.js"></script>
+>>>>>>> Stashed changes
+<script>
+  lucide.createIcons();
+</script>
+
 </html>
 
 <!--             POD DOŁEM TO SKOPIUJCIE I WKLEJCIE W TERMINAL ZEBY WAM ZAMIENIAŁO SCSS NA CSS              -->
 <!--             sass --watch styles/style.scss:styles/style.css styles/privacy.scss:styles/privacy.css     -->
+

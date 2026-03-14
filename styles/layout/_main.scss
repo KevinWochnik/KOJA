@@ -4,6 +4,13 @@ body {
     background-color: rgb(247, 245, 243);
 }
 
+.wrapper {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-x: clip;
+}
+
 .section {
     padding: 96px 24px;
 
