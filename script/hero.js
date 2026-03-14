@@ -1,18 +1,23 @@
 const menu = document.querySelector(".hero-menu");
 const logo = document.querySelector(".logo-link");
 const burger = document.querySelector(".burger");
+const desktopBreakpoint = 1024;
 
 if (menu && logo) {
+  const isDesktopViewport = () => window.innerWidth >= desktopBreakpoint;
+
   const setMenuState = (isOpen) => {
-    menu.classList.toggle("menu-open", isOpen);
-    logo.classList.toggle("menu-open", isOpen);
-    document.body.classList.toggle("no-scroll", isOpen);
+    const shouldOpen = !isDesktopViewport() && isOpen;
+
+    menu.classList.toggle("menu-open", shouldOpen);
+    logo.classList.toggle("menu-open", shouldOpen);
+    document.body.classList.remove("no-scroll");
 
     if (burger) {
-      burger.classList.toggle("fa-bars", !isOpen);
-      burger.classList.toggle("fa-xmark", isOpen);
-      burger.setAttribute("aria-expanded", String(isOpen));
-      burger.setAttribute("aria-label", isOpen ? "Zamknij menu" : "Otworz menu");
+      burger.classList.toggle("fa-bars", !shouldOpen);
+      burger.classList.toggle("fa-xmark", shouldOpen);
+      burger.setAttribute("aria-expanded", String(shouldOpen));
+      burger.setAttribute("aria-label", shouldOpen ? "Zamknij menu" : "Otworz menu");
     }
   };
 
@@ -44,6 +49,30 @@ if (menu && logo) {
     });
   }
 
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && menu.classList.contains("menu-open")) {
+      setMenuState(false);
+    }
+  });
+
+  document.addEventListener("click", (event) => {
+    if (isDesktopViewport() || !menu.classList.contains("menu-open")) {
+      return;
+    }
+
+    const target = event.target;
+
+    if (!(target instanceof Node)) {
+      return;
+    }
+
+    if (menu.contains(target) || (burger && burger.contains(target))) {
+      return;
+    }
+
+    setMenuState(false);
+  });
+
   menu.querySelectorAll(".navigation-link").forEach((link) => {
     link.addEventListener("click", () => {
       setMenuState(false);
@@ -51,7 +80,7 @@ if (menu && logo) {
   });
 
   window.addEventListener("resize", () => {
-    if (window.innerWidth >= 1200) {
+    if (window.innerWidth >= desktopBreakpoint) {
       setMenuState(false);
     }
   });
@@ -60,4 +89,3 @@ if (menu && logo) {
   updateNavigationState();
   window.addEventListener("scroll", updateNavigationState);
 }
-
