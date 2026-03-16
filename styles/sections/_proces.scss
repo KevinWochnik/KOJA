@@ -1,7 +1,7 @@
 @use "../base/variables" as v;
 
 
-.proces__wrapper{
+.proces__wrapper {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0px 24px;
@@ -14,7 +14,7 @@
   align-items: center;
   row-gap: 15px;
 
-  
+
 
   .proces__span-text {
     font-size: v.$fontSize-xs;
@@ -27,14 +27,16 @@
     font-size: v.$fontSize-xxxl;
     font-weight: 300;
   }
-  @media(min-width:768px){
-    .accent__title{
+
+  @media(min-width:768px) {
+    .accent__title {
       font-size: 72px;
     }
   }
 }
-@media(min-width:768px){
-  .proces__heading{
+
+@media(min-width:768px) {
+  .proces__heading {
     padding-top: 80px;
   }
 }
@@ -74,28 +76,29 @@
     transition: background-color 0.35s ease, color 0.35s ease;
     cursor: pointer;
 
-    &.active-button{
+    &.active-button {
       background-color: v.$color-primary;
       color: v.$color-secondary;
-      
-.proces__button-letter{
-  color: #c1a48b;
-}
+
+      .proces__button-letter {
+        color: #c1a48b;
+      }
 
     }
 
-   
+
 
     .proces__button-letter {
       position: static;
-     
-      
+
+
       font-size: v.$fontSize-xs;
       color: #78736d66;
     }
   }
-  @media(min-width:768px){
-    .proces__button{
+
+  @media(min-width:768px) {
+    .proces__button {
       width: 30%;
       height: 70px;
     }
@@ -103,23 +106,25 @@
 
   .proces__button--c {
     width: 80%;
-    
+
   }
-   @media(min-width:768px){
-   .proces__button--c{
-    width: 30%;
-    height: 70px;
-    
-   } 
+
+  @media(min-width:768px) {
+    .proces__button--c {
+      width: 30%;
+      height: 70px;
+
+    }
   }
 }
- @media(min-width:768px){
-   .button__container{
+
+@media(min-width:768px) {
+  .button__container {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-   } 
   }
+}
 
 .proces__description {
   font-size: v.$fontSize-s;
@@ -127,19 +132,20 @@
   margin-top: 80px;
   text-align: center;
 }
-@media(min-width:768px){
-  .proces__description{
-  font-size: v.$fontSize-m;
-  font-weight: 300;
-  
-  text-align: center;
-  
-padding-top: 40px;
- max-width: 520px;   
- margin: 0 auto;
- line-height: 1.6;
- text-align: center;
-    
+
+@media(min-width:768px) {
+  .proces__description {
+    font-size: v.$fontSize-m;
+    font-weight: 300;
+
+    text-align: center;
+
+    padding-top: 40px;
+    max-width: 520px;
+    margin: 0 auto;
+    line-height: 1.6;
+    text-align: center;
+
   }
 }
 
@@ -150,7 +156,7 @@ padding-top: 40px;
   row-gap: 60px;
   // padding: 0px 24px;
   margin-top: 60px;
-  
+
 }
 
 .proces__flow-container--c {
@@ -167,7 +173,7 @@ padding-top: 40px;
     align-items: center;
     border-bottom: 1px solid v.$color-border;
     padding-bottom: 20px;
-   
+
 
     .proces__number--c {
       width: 140px;
@@ -188,7 +194,7 @@ padding-top: 40px;
 }
 
 .proces__flow-container--a {
-  
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -213,8 +219,9 @@ padding-top: 40px;
   width: 60px;
   flex-shrink: 0;
 }
-@media(min-width:748px){
-  .proces__number{
+
+@media(min-width:748px) {
+  .proces__number {
     font-size: 48px;
   }
 }
@@ -223,15 +230,16 @@ padding-top: 40px;
   font-size: v.$fontSize-s;
   color: v.$color-text-gray;
 }
-@media(min-width:748px){
-  .proces__text{
+
+@media(min-width:748px) {
+  .proces__text {
     font-size: v.$fontSize-s;
   }
 }
-<<<<<<< Updated upstream
+
 .proces__flow-container--a,
 .proces__flow-container--b,
-.proces__flow-container--c{
+.proces__flow-container--c {
   opacity: 0;
   visibility: hidden;
   position: absolute;
@@ -241,12 +249,8 @@ padding-top: 40px;
 
 .proces__flow-container--a.visible,
 .proces__flow-container--b.visible,
-.proces__flow-container--c.visible{
+.proces__flow-container--c.visible {
   opacity: 1;
   visibility: visible;
   position: relative;
-=======
-.proces .visible{
-  display: flex;
->>>>>>> Stashed changes
 }

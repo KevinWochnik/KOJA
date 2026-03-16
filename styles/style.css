@@ -76,7 +76,7 @@ body {
 .reveal {
   transform: translateY(80px);
   opacity: 0;
-  transition: all 0.5s ease;
+  transition: all 1s ease;
 }
 
 .reveal.active {
@@ -2489,4 +2489,6 @@ body {
 }
 .footer .footer__end .footer__end-details a.footer__detail:hover {
   color: #f7f5f3;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
