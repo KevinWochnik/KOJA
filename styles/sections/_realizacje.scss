@@ -74,6 +74,20 @@
         overflow: hidden;
         aspect-ratio: 4 / 5;
 
+        &::after {
+          content: "";
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(to top,
+              rgba(42, 38, 34, 0.72) 0%,
+              rgba(42, 38, 34, 0.45) 32%,
+              rgba(42, 38, 34, 0) 64%);
+          opacity: 0;
+          transition: opacity .3s ease;
+          pointer-events: none;
+          z-index: 1;
+        }
+
 
         @media (min-width:768px) {
           flex-basis: calc((100% - 32px) / 2);
@@ -89,7 +103,7 @@
           width: 100%;
           height: 100%;
           object-fit: cover;
-          transition: .3s;
+          transition: .3s ease;
         }
 
         .realizations__span {
@@ -97,6 +111,7 @@
           top: 12px;
           right: 12px;
           padding: 6px 10px;
+          z-index: 2;
 
           background-color: v.$bgc-card-span;
           color: v.$color-text-gray;
@@ -108,14 +123,18 @@
 
         .realizations__name {
           position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%) scale(0);
+          left: 16px;
+          right: 16px;
+          bottom: 16px;
+          transform: translateY(10px);
+          opacity: 0;
           font-size: v.$fontSize-xxl;
           font-family: "DM Serif Display", sans-serif;
-          text-align: center;
+          text-align: left;
+          line-height: 1.2;
           color: v.$color-secondary;
-          transition: .3s;
+          transition: opacity .3s ease, transform .3s ease;
+          z-index: 2;
         }
       }
 
@@ -129,12 +148,24 @@
 
 
 
-      .realizations__card:hover .realizations__image {
-        filter: brightness(50%);
+      .realizations__card:hover::after {
+        opacity: 1;
       }
 
       .realizations__card:hover .realizations__name {
-        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      @media (hover: none) {
+        .realizations__card::after {
+          opacity: 1;
+        }
+
+        .realizations__card .realizations__name {
+          opacity: 1;
+          transform: translateY(0);
+        }
       }
     }
   }
