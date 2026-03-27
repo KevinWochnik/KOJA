@@ -31,6 +31,11 @@
     
   }
 
+  .help__title-italic {
+    font-style: italic;
+    font-family: "DM Serif Display", sans-serif;
+  }
+
 
 }
 
@@ -68,14 +73,20 @@
   gap: 20px;
   max-height: 0;
   opacity: 0;
+  transform: translateY(12px);
   overflow: hidden;
   pointer-events: none;
-  transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease-out;
+  transition: max-height v.motion(0.4s) cubic-bezier(0.16, 1, 0.3, 1), opacity v.motion(0.25s) ease-out, transform v.motion(0.25s) ease-out;
 }
 .help__item.help__item--active {
   max-height: 3200px;
   opacity: 1;
+  transform: translateY(0);
   pointer-events: auto;
+}
+
+.help__item.help__item--enter {
+  animation: helpPanelIn v.motion(0.32s) cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .help__question {
@@ -102,7 +113,7 @@
     opacity: 0;
     overflow: hidden;
     transform: translateY(-6px);
-    transition: max-height 0.22s ease, opacity 0.18s ease, transform 0.18s ease;
+    transition: max-height v.motion(0.22s) ease, opacity v.motion(0.18s) ease, transform v.motion(0.18s) ease;
   }
 }
 .help__question.is-open .help__question-text {
@@ -117,13 +128,26 @@
   font-size: 20px;
   color: v.$color-text-gray;
   cursor: pointer;
-  transition: color 0.2s ease;
+  transition: color v.motion(0.2s) ease;
 }
 .help__question.is-open .help__icon {
   color: v.$color-primary;
+}
+
+@keyframes helpPanelIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 @media(min-width:1200px){
   .help .help__title{
     font-size: 70px;
   }
 }
+

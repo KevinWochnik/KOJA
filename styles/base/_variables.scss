@@ -29,6 +29,12 @@ $fontSize-xxl: 30px;
 $fontSize-xxxl: 36px;
 $fontSize-mega: 72px;
 
+$motion-scale: 1.3;
+
+@function motion($duration) {
+  @return $duration * $motion-scale;
+}
+
 
 
 

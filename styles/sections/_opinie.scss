@@ -102,7 +102,7 @@
           height: 40px;
           border: 1px solid v.$color-border;
           border-radius: 50%;
-          transition: .3s;
+          transition: v.motion(.3s);
 
           .features__icon {
             position: absolute;
@@ -111,7 +111,7 @@
             transform: translate(-50%, -50%);
             font-size: v.$fontSize-s;
             color: v.$color-text-gray;
-            transition: .3s;
+            transition: v.motion(.3s);
           }
 
         }

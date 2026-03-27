@@ -31,6 +31,11 @@
     font-weight: 400;
     color: v.$color-primary;
   }
+
+  .custom__title-italic {
+    font-style: italic;
+    font-family: "DM Serif Display", sans-serif;
+  }
 }
 .custom__text {
   font-size: v.$fontSize-m;
@@ -143,6 +148,9 @@
   margin-top: 30px;
 
   .button__orders{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   font-family:"Space Grotesk", sans-serif; 
   font-size: v.$fontSize-xxs;
   text-align: left;
@@ -153,7 +161,7 @@
   color: v.$color-primary;
   border: 1px solid v.$color-border;
   cursor: pointer;
-  transition: 0.3s;
+  transition: v.motion(0.3s);
   }
   .button__orders:hover{
     border: 1px solid black;
@@ -212,7 +220,7 @@
   border-radius: 50%;
   border: 1px solid v.$color-border;
   color:#98959281;
-  transition: color 0.25s ease, border-color 0.25s ease;
+  transition: color v.motion(0.25s) ease, border-color v.motion(0.25s) ease;
   font-size: v.$fontSize-s;
   
 }
@@ -296,3 +304,4 @@
   .shop-link:hover{
     color: v.$color-icon;
   }
+

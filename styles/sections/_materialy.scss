@@ -40,6 +40,11 @@
     font-weight: 300;
     color: v.$color-primary;
   }
+
+  .material__title-italic{
+    font-style: italic;
+    font-family: "DM Serif Display", sans-serif;
+  }
   @media(min-width:748px){
     .material__title{
       font-size: 72px;
@@ -83,7 +88,7 @@
    border: 1px solid #e5e7eb;
   border-radius: 50%;
   color: #9ca3af;
-  transition: color 0.25s ease, border-color 0.25s ease;
+  transition: color v.motion(0.25s) ease, border-color v.motion(0.25s) ease;
   
   font-size: 16px;
  }
@@ -146,3 +151,4 @@
   }
 
 }
+

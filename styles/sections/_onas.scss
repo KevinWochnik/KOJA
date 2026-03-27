@@ -89,7 +89,7 @@
             font-weight: 500;
             line-height: 36px;
             color: v.$color-primary;
-            transition: .3s;
+            transition: v.motion(.3s);
 
             @media (min-width:768px) {
               font-size: v.$fontSize-xxxl;
@@ -145,7 +145,7 @@
           height: 56px;
           border: 1px solid v.$color-border;
           border-radius: 50%;
-          transition: .3s;
+          transition: v.motion(.3s);
 
 
           .feature__icon {
@@ -155,13 +155,13 @@
             transform: translate(-50%, -50%);
 
             color: v.$color-text-gray;
-            transition: .3s;
+            transition: v.motion(.3s);
 
           }
         }
 
         .feature__icon-container:hover {
-          animation: wagging .5s linear both;
+          animation: wagging v.motion(.5s) linear both;
         }
 
         .feature__title {

@@ -32,14 +32,67 @@ body {
 }
 
 .reveal {
-    transform: translateY(80px);
+    --reveal-delay: #{v.motion(0s)};
+    --reveal-duration: #{v.motion(.72s)};
+    --reveal-distance: 42px;
+    --reveal-ease: cubic-bezier(.16, 1, .3, 1);
     opacity: 0;
-    transition: all .5s ease;
+    transform: translate3d(0, var(--reveal-distance), 0);
+    transition-property: opacity, transform, width;
+    transition-duration: var(--reveal-duration);
+    transition-timing-function: var(--reveal-ease);
+    transition-delay: var(--reveal-delay);
+    will-change: transform, opacity;
+}
+
+.reveal--up {
+    transform: translate3d(0, var(--reveal-distance), 0);
+}
+
+.reveal--left {
+    transform: translate3d(calc(var(--reveal-distance) * -1), 0, 0);
+}
+
+.reveal--right {
+    transform: translate3d(var(--reveal-distance), 0, 0);
+}
+
+.reveal--scale {
+    transform: translate3d(0, calc(var(--reveal-distance) * .5), 0) scale(.96);
+}
+
+.reveal--fade {
+    transform: none;
+}
+
+.reveal--line {
+    width: 0;
+    opacity: 1;
+    transform: none;
+    transition-property: width, opacity;
 }
 
 .reveal.active {
-    transform: translateY(0);
+    transform: translate3d(0, 0, 0);
     opacity: 1;
+}
+
+.reveal--line.active {
+    width: var(--reveal-line-width, 100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal,
+    .reveal.active {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    .reveal--line,
+    .reveal--line.active {
+        width: var(--reveal-line-width, 100%);
+    }
 }
 
 .section__eyebrow {
@@ -58,9 +111,14 @@ body {
 
 .section__title {
     font-size: v.$fontSize-xxxl;
-    font-style: italic;
+    font-style: normal;
     font-weight: inherit;
     color: v.$color-primary;
+}
+
+.section__title-italic {
+    font-style: italic;
+    font-family: "DM Serif Display", sans-serif;
 }
 
 @media (min-width: 768px) {
@@ -68,3 +126,4 @@ body {
         font-size: v.$fontSize-mega;
     }
 }
+

@@ -79,7 +79,7 @@
             font-size: v.$fontSize-s;
             color: v.$color-primary;
             font-weight: 300;
-            transition: .2s;
+            transition: v.motion(.2s);
           }
 
           .contact__input::placeholder {
@@ -118,7 +118,7 @@
           background-color: v.$color-primary;
 
           cursor: pointer;
-          transition: .2s;
+          transition: v.motion(.2s);
 
           svg {
             width: 16px;
@@ -149,13 +149,13 @@
               width: 16px;
               height: 16px;
               color: v.$color-text-gray;
-              transition: .2s;
+              transition: v.motion(.2s);
             }
 
             .contact__text {
               font-size: v.$fontSize-xs;
               color: v.$color-text-gray ;
-              transition: .2s;
+              transition: v.motion(.2s);
             }
           }
 
@@ -236,7 +236,7 @@
             text-underline-offset: 4px;
             color: v.$color-primary;
             cursor: pointer;
-            transition: .1s;
+            transition: v.motion(.1s);
           }
 
           .contact__order-description--link:hover {
@@ -274,3 +274,4 @@
     }
   }
 }
+

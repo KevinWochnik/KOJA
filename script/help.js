@@ -1,4 +1,5 @@
 const helpSection = document.querySelector(".help__section");
+const HELP_MOTION_SCALE = 1.3;
 
 if (helpSection) {
   const helpTabs = Array.from(helpSection.querySelectorAll(".help__tab"));
@@ -40,13 +41,31 @@ if (helpSection) {
       helpQuestions.forEach((question) => closeQuestion(question));
     };
 
+    const playTabPanelTransition = (panel) => {
+      panel.classList.remove("help__item--active");
+      panel.classList.remove("help__item--enter");
+      void panel.offsetWidth;
+      panel.classList.add("help__item--active");
+      panel.classList.add("help__item--enter");
+
+      window.setTimeout(() => {
+        panel.classList.remove("help__item--enter");
+      }, Math.round(320 * HELP_MOTION_SCALE));
+    };
+
     const showHelpSection = (activeIndex) => {
       helpTabs.forEach((tab, index) => {
         tab.classList.toggle("help__tab--active", index === activeIndex);
       });
 
       helpItems.forEach((item, index) => {
-        item.classList.toggle("help__item--active", index === activeIndex);
+        if (index === activeIndex) {
+          playTabPanelTransition(item);
+          return;
+        }
+
+        item.classList.remove("help__item--active");
+        item.classList.remove("help__item--enter");
       });
 
       resetAllQuestions();
