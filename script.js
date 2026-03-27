@@ -55,8 +55,8 @@ const initRevealObserver = () => {
       });
     },
     {
-      threshold: 0.3,
-      rootMargin: "0px 0px -10% 0px",
+      threshold: 0.18,
+      rootMargin: "0px 0px -4% 0px",
     }
   );
 
