@@ -1,1075 +1,1168 @@
 <!doctype html>
 <html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Mateusz Jachim, Klaudiusz Polaczek, Kevin Wochnik" />
+    <meta
+      name="description"
+      content="KOJA – ręcznie tworzone doniczki, świeczniki i dekoracje z betonu w minimalistycznym, premium stylu. Naturalne materiały, krótkie serie i dopracowane detale do nowoczesnych wnętrz."
+    />
+    <meta
+      name="keywords"
+      content="doniczki betonowe, świeczniki z betonu, świeca sojowa w betonie, świeco-doniczka 2w1, dekoracje betonowe do domu, minimalistyczne dekoracje, doniczki do salonu, nowoczesne wnętrza, ręcznie robione doniczki, betonowe dodatki premium, polski handmade"
+    />
+    <title>KOJA</title>
+    <link rel="stylesheet" href="./css/style.css?v=20260313-1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <script src="script.js" defer></script>
+    <script src="./script/help.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="author" content="Mateusz Jachim, Klaudiusz Polaczek, Kevin Wochnik">
-  <meta name="description"
-    content="KOJA – ręcznie tworzone doniczki, świeczniki i dekoracje z betonu w minimalistycznym, premium stylu. Naturalne materiały, krótkie serie i dopracowane detale do nowoczesnych wnętrz." />
-  <meta name="keywords"
-    content="doniczki betonowe, świeczniki z betonu, świeca sojowa w betonie, świeco-doniczka 2w1, dekoracje betonowe do domu, minimalistyczne dekoracje, doniczki do salonu, nowoczesne wnętrza, ręcznie robione doniczki, betonowe dodatki premium, polski handmade" />
-  <title>KOJA</title>
-  <link rel="stylesheet" href="./css/style.css?v=20260313-1" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-  <script src="script.js" defer></script>
-  <script src="./script/help.js" defer></script>
-</head>
-
-<body>
-  <main class="wrapper">
-    <!-- SEKCJA HERO (MATI) -->
-    <section class="hero">
-
-      <div class="hero-cover">
-        <div class="hero-menu active">
-          <nav class="hero-navigation" id="mobile-navigation">
-            <div class="hero-navigation__inner" data-reveal-group data-reveal-stagger="0.07">
-              <div class="logo-link">
-                <a href="#" class="logo reveal reveal--fade active" data-reveal-delay="0.35">Koja</a>
-                <i class="fa-solid fa-bars burger"></i>
-              </div>
-              <ul class="navigation-list">
-                <li class="navigation-item"><a href="#about" class="navigation-link reveal reveal--right" data-reveal-order="0">O nas</a></li>
-                <li class="navigation-item"><a href="#shop" class="navigation-link reveal reveal--right" data-reveal-order="1">Sklep</a></li>
-                <li class="navigation-item"><a href="#process" class="navigation-link reveal reveal--right" data-reveal-order="2">Proces</a></li>
-                <li class="navigation-item"><a href="#gallery" class="navigation-link reveal reveal--right" data-reveal-order="3">Galeria</a></li>
-                <li class="navigation-item"><a href="#custom" class="navigation-link reveal reveal--right" data-reveal-order="4">Na wymiar</a></li>
-                <li class="navigation-item"><a href="#materials" class="navigation-link reveal reveal--right" data-reveal-order="5">Materiały</a></li>
-                <li class="navigation-item"><a href="#testimonials" class="navigation-link reveal reveal--right" data-reveal-order="6">Opinie</a></li>
-                <li class="navigation-item"><a href="#faq" class="navigation-link reveal reveal--right" data-reveal-order="7">FAQ</a></li>
-                <li class="navigation-item"><a href="#contact" class="navigation-link reveal reveal--right" data-reveal-order="8">Kontakt</a></li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-
-        <div class="hero-content" data-reveal-group data-reveal-stagger="0.16">
-          <span class="hero-line hero-line--top reveal reveal--line" data-reveal-order="0" style="--reveal-line-width: 60px;"></span>
-          <h1 class="hero-logo reveal reveal--scale" data-reveal-order="1">Koja</h1>
-          <h3 class="hero-title reveal reveal--up" data-reveal-order="2">Beton, który ożywia przestrzeń</h3>
-          <p class="hero-text reveal reveal--fade" data-reveal-order="3">Surowy beton, ciepłe światło i zieleń — rzeczy, które lubią zostać na dłużej. W KOJA robimy odlewy z autorskiej mieszanki betonu: proste w formie, dopracowane w detalu.</p>
-          <div class="hero__button-container reveal reveal--up" data-reveal-order="4">
-            <a href="#shop" class="hero-button button button__primary">Zobacz produkty <i class="fas fa-arrow-right"></i></a>
-            <a href="#contact" class="hero-button button button__secondary">Zamów indywidualnie</a>
-          </div>
-          <a href="https://allegro.pl/TODO" target="_blank" rel="noopener noreferrer" class="link-shop reveal reveal--fade" data-reveal-order="5">Kup na Allegro <i class="fa-solid fa-arrow-right"></i></a>
-          <span class="hero-line hero-line--bottom reveal reveal--line" data-reveal-order="6" style="--reveal-line-width: 60px;"></span>
-          <div class="discover reveal reveal--up" data-reveal-order="7">
-            <a href="#shop" class="discover-link">Odkryj</a>
-          </div>
-          <i class="fa-solid fa-arrow-down reveal reveal--fade" data-reveal-order="8"></i>
-        </div>
-      </div>
-
-
-      <div class="features-grid" data-reveal-group data-reveal-stagger="0.1">
-        <div class="features reveal reveal--up" data-reveal-order="0">
-          <i class="fa-solid fa-truck"></i>
-          <span class="features-text">Wysyłka do 2 dni rob.</span>
-        </div>
-        <div class="features reveal reveal--up" data-reveal-order="1">
-          <i class="fa-solid fa-credit-card"></i>
-          <span class="features-text">Bezpieczne płatności</span>
-        </div>
-        <div class="features reveal reveal--up" data-reveal-order="2">
-          <i class="fa-solid fa-shield"></i>
-          <span class="features-text">Gwarancja jakości</span>
-        </div>
-        <div class="features reveal reveal--up" data-reveal-order="3">
-          <i class="fa-solid fa-recycle"></i>
-          <span class="features-text">Ręcznie robione</span>
-        </div>
-
-      </div>
-
-
-
-
-    </section>
-    <!-- SEKCJA ONAS (KUNA) -->
-    <section class="section__about section" id="about">
-      <p class="about__watermark reveal reveal--fade" data-reveal-delay="0.08" aria-hidden="true">KOJA</p>
-      <div class="about__wrapper section__wrapper ">
-        <div class="about__header section__header reveal reveal--up">
-          <p class="section__eyebrow">Nasza historia</p>
-          <h2 class="section__title">O <span class="section__title-italic">nas</span></h2>
-        </div>
-        <div class="about__grid">
-          <div class="about__content">
-            <p class="about__text reveal reveal--left" data-reveal-delay="0.08">
-              KOJA zaczęła się od prostej potrzeby: mieć w domu rzeczy, które są
-              „swojskie" i przyjemne w codziennym użyciu, a jednocześnie
-              wyglądają nowocześnie i premium.
-            </p>
-            <p class="about__text reveal reveal--left" data-reveal-delay="0.16">
-              Z czasem wciągnęły nas testy mieszanek, faktury, krawędzie i ten
-              moment, kiedy surowy materiał po wykończeniu robi się zaskakująco
-              elegancki. Robimy krótkie serie i stawiamy na jakość. Beton ma
-              prawo do drobnych różnic — to część jego charakteru.
-            </p>
-            <blockquote class="about__quote reveal reveal--right" data-reveal-delay="0.24">
-              „Dla nas to nie wada, tylko podpis materiału."
-            </blockquote>
-          </div>
-          <div class="about__stats" data-reveal-group data-reveal-stagger="0.12">
-            <div class="about__stat reveal reveal--up" data-reveal-order="0">
-              <h3 class="stat__title">100%</h3>
-              <p class="stat__slogan">Ręczna robota</p>
-            </div>
-            <div class="about__stat reveal reveal--up" data-reveal-order="1">
-              <h3 class="stat__title">Krótkie</h3>
-              <p class="stat__slogan">Serie produktów</p>
-            </div>
-            <div class="about__stat reveal reveal--up" data-reveal-order="2">
-              <h3 class="stat__title"><i data-lucide="infinity"></i></h3>
-              <p class="stat__slogan">Możliwości</p>
-            </div>
-            <div class="about__stat reveal reveal--up" data-reveal-order="3">
-              <h3 class="stat__title">Premium</h3>
-              <p class="stat__slogan">Wykończenie</p>
-            </div>
-          </div>
-        </div>
-        <div class="about__features" data-reveal-group data-reveal-stagger="0.14">
-          <div class="about__feature reveal reveal--up" data-reveal-order="0">
-            <div class="feature__icon-container"><i data-lucide="hand" class="feature__icon"></i></div>
-            <h3 class="feature__title">Ręczna robota</h3>
-            <p class="feature__text">Każdy odlew robimy ręcznie, w krótkich seriach. Żaden produkt nie jest identyczny.
-
-            </p>
-          </div>
-
-          <div class="about__feature reveal reveal--up" data-reveal-order="1">
-            <div class="feature__icon-container"><i data-lucide="layers" class="feature__icon"></i></div>
-            <h3 class="feature__title">Trwałe wykończenie
-            </h3>
-            <p class="feature__text">Szlif, impregnacja i lakier — beton traktujemy jak materiał premium.
-
-            </p>
-          </div>
-
-          <div class="about__feature reveal reveal--up" data-reveal-order="2">
-            <div class="feature__icon-container"><i data-lucide="circle" class="feature__icon"></i></div>
-            <h3 class="feature__title">Proste formy
-            </h3>
-            <p class="feature__text">Geometria, proporcje, cisza. Chcemy, żeby nasze rzeczy po prostu dobrze wyglądały.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- SEKCJA SKLEP (KUNA) -->
-    <section class="section__shop section" id="shop">
-      <div class="section__wrapper shop__wrapper">
-        <div class="shop__header section__header reveal reveal--up">
-          <p class="section__eyebrow">Sklep</p>
-          <div class="shop__header-grid">
-            <h2 class="section__title">Nasze produkty</h2>
-            <a href="#" class="shop__link">Kup na Allegro <i data-lucide="arrow-up-right"
-                class="arrow__up-right"></i></a>
-          </div>
-        </div>
-        <div class="shop__category-container">
-          <div class="shop__category reveal reveal--left" data-reveal-delay="0.05">
-            <h3 class="shop__category-title">Doniczki</h3>
-            <p class="shop__category-text">Betonowe doniczki o lakierowanej powierzchni — odporne na codzienne użycie i
-              łatwe w czyszczeniu.</p>
-          </div>
-          <div class="shop__category reveal reveal--right" data-reveal-delay="0.12">
-            <h3 class="shop__category-title">Świeco-doniczki (2 w 1)</h3>
-            <p class="shop__category-text">Świeca w betonowej formie, która po wypaleniu zmienia się w doniczkę. Po
-              wypaleniu świecy, świeco-doniczka może zostać z Tobą jako doniczka.</p>
-          </div>
-        </div>
-
-        <div class="shop__toolbar reveal reveal--fade">
-          <div class="shop__filter-toggle">
-            <i data-lucide="sliders-horizontal" class="icon-filter"></i>
-            <span class="shop__filter-label">Filtruj</span>
-          </div>
-
-          <div class="shop__filters">
-            <button class="shop__filter-button button-select shop__filter-button--active">Wszystkie</button>
-            <button class="shop__filter-button button-select">Doniczki</button>
-            <button class="shop__filter-button button-select">Świeco-doniczki</button>
-          </div>
-
-          <div class="shop__actions">
-            <select class="shop__select button-select">
-              <option value="all">Otwór: wszystkie</option>
-              <option value="hole">Z otworem</option>
-              <option value="no-hole">Bez otworu</option>
-            </select>
-            <select class="shop__select button-select">
-              <option value="default">Sortuj</option>
-              <option value="price-asc">Cena: rosnąco</option>
-              <option value="price-desc">Cena: malejąco</option>
-            </select>
-
-          </div>
-        </div>
-
-        <div class="shop__grid" data-reveal-group data-reveal-stagger="0.08">
-          <article class="shop__card reveal reveal--up" data-reveal-order="0">
-            <div class="shop__image-wrapper">
-              <img class="shop__image" src="./images/product-pot-s.jpg" alt="Doniczka betonowa S">
-              <span class="shop__badge">Ręcznie robione</span>
-            </div>
-
-            <div class="shop__card-content">
-              <p class="shop__card-category">Doniczki</p>
-              <h3 class="shop__card-title">Doniczka betonowa S</h3>
-              <p class="shop__description">Geometryczna forma, surowy beton, subtelna faktura. Idealna na parapet lub
-                biurko.</p>
-              <p class="shop__size">Wymiary: (do uzupełnienia)</p>
-
-              <div class="shop__card-footer">
-                <span class="shop__price">79 zł</span>
-                <a class="shop__button">Link w przygotowaniu</a>
-              </div>
-            </div>
-
-          </article>
-          <article class="shop__card reveal reveal--up" data-reveal-order="1">
-            <div class="shop__image-wrapper">
-              <img class="shop__image" src="./images/product-pot-m.jpg" alt="Doniczka betonowa M">
-              <span class="shop__badge">Ręcznie robione</span>
-            </div>
-            <div class="shop__card-content">
-              <p class="shop__card-category">Doniczki</p>
-              <h3 class="shop__card-title">Doniczka betonowa M</h3>
-              <p class="shop__description">Klasyczna proporcja, wyjątkowa trwałość. Pasuje do roślin o średnich
-                korzeniach.</p>
-              <p class="shop__size">Wymiary: (do uzupełnienia)</p>
-              <div class="shop__card-footer">
-                <span class="shop__price">109 zł</span>
-                <a class="shop__button">Link w przygotowaniu</a>
-              </div>
-            </div>
-
-          </article>
-          <article class="shop__card reveal reveal--up" data-reveal-order="2">
-            <div class="shop__image-wrapper">
-              <img class="shop__image" src="./images/product-pot-l.jpg" alt="Doniczka betonowa L">
-              <span class="shop__badge">Ręcznie robione</span>
-            </div>
-
-            <div class="shop__card-content">
-              <p class="shop__card-category">Doniczki</p>
-              <h3 class="shop__card-title">Doniczka betonowa L</h3>
-              <p class="shop__description">Duże formy do okazałych roślin. Solidny beton, impregnacja na lata.</p>
-              <p class="shop__size">Wymiary: (do uzupełnienia)</p>
-              <div class="shop__card-footer">
-                <span class="shop__price">149 zł</span>
-                <a class="shop__button">Link w przygotowaniu</a>
-              </div>
-            </div>
-
-
-          </article>
-          <article class="shop__card reveal reveal--up" data-reveal-order="3">
-            <div class="shop__image-wrapper">
-              <img class="shop__image" src="./images/koja-candle-hex.png" alt="Świeco-doniczka HEX">
-              <span class="shop__badge">Ręcznie robione</span>
-              <span class="shop__badge shop__badge--secondary">2 w 1</span>
-            </div>
-            <div class="shop__card-content">
-              <p class="shop__card-category">Świeco-doniczki
-
-              </p>
-              <h3 class="shop__card-title">Świeco-doniczka HEX
-              </h3>
-              <p class="shop__description">Sześciokątna forma z wbudowaną świecą sojową. Po wypaleniu — gotowa na
-                rośliny.
-
-              </p>
-              <p class="shop__size">Wymiary: (do uzupełnienia)</p>
-              <div class="shop__card-footer">
-                <span class="shop__price">129 zł</span>
-                <a class="shop__button">Link w przygotowaniu</a>
-              </div>
-            </div>
-
-          </article>
-          <article class="shop__card reveal reveal--up" data-reveal-order="4">
-            <div class="shop__image-wrapper">
-              <img class="shop__image" src="./images/koja-candle-cube.png" alt="Świeco-doniczka CUBE">
-              <span class="shop__badge">Ręcznie robione</span>
-              <span class="shop__badge shop__badge--secondary">2 w 1</span>
-            </div>
-            <div class="shop__card-content">
-              <p class="shop__card-category">Świeco-doniczki</p>
-              <h3 class="shop__card-title">Świeco-doniczka CUBE</h3>
-              <p class="shop__description">Kubistyczna bryła z aromatyczną świecą. Minimalizm w czystej postaci.</p>
-              <p class="shop__size">Wymiary: (do uzupełnienia)</p>
-              <div class="shop__card-footer">
-                <span class="shop__price">139 zł</span>
-                <a class="shop__button">Link w przygotowaniu</a>
-              </div>
-            </div>
-
-
-          </article>
-        </div>
-
-        <div class="shop__footer">
-          <div class="shop__promotion reveal reveal--up">
-            <p class="info-text ">Zamów 3 lub więcej sztuk i otrzymaj w prezencie wyjątkową małą doniczkę, której nie
-              znajdziesz w naszym stałym asortymencie.</p>
-          </div>
-          <div class="shop__info reveal reveal--fade">
-            <p class="shop__info-text shop__info-from">Zakupy realizowane przez Allegro.</p>
-            <p class="shop__info-text shop__info-more">Więcej wariantów i wymiary uzupełnimy wkrótce. (TODO: zdjęcia +
-              wymiary)</p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-    <!-- SEKCJA REALIZACJE (KUNA) -->
-    <section class="section__realizations section" id="gallery">
-      <div class="section__wrapper realizations__wrapper">
-        <div class="realizations__header-wrap ">
-          <div class="section__header realizations__header reveal reveal--up">
-            <p class="section__eyebrow">Realizacje</p>
-            <h2 class="section__title">Nasze prace<br><span class="section__title-italic">w przestrzeni</span></h2>
-          </div>
-          <div class="section__header-content reveal reveal--fade">
-            <p class="realizations__text">Zobacz KOJA w codziennym świetle — wśród zieleni, na drewnie, w prostych
-              wnętrzach.</p>
-            <p class="realizations__text-muted">Galeria rośnie — dodajemy kolejne aranżacje wraz z nowymi zdjęciami.</p>
-          </div>
-        </div>
-        <div class="realizations__grid" data-reveal-group data-reveal-stagger="0.08">
-          <div class="realizations__card reveal reveal--scale" data-reveal-order="0">
-            <img src="./images/gallery-1.jpg" alt="Betonowa donica z rośliną na biurku" class="realizations__image">
-            <span class="realizations__name">Donica — wnętrze domowe</span>
-          </div>
-          <div class="realizations__card reveal reveal--scale" data-reveal-order="1">
-            <img src="./images/gallery-2.jpg" alt="Betonowy świecznik Koja Solid Form — kostka" class="realizations__image">
-            <span class="realizations__name">Świeco-doniczka CUBE</span>
-          </div>
-          <div class="realizations__card reveal reveal--scale" data-reveal-order="2">
-            <img src="./images/gallery-3.jpg" alt="Geometryczna donica betonowa" class="realizations__image">
-            <span class="realizations__span">Wizualizacja</span>
-            <span class="realizations__name">Donica — salon</span>
-          </div>
-          <div class="realizations__card card--sm reveal reveal--scale" data-reveal-order="3">
-            <img src="./images/gallery-4.jpg" alt="Betonowa tacka z sukulentami" class="realizations__image">
-            <span class="realizations__name">Donica — kawiarnia</span>
-          </div>
-          <div class="realizations__card card--md reveal reveal--scale" data-reveal-order="4">
-            <img src="./images/gallery-5.jpg" alt="Betonowe doniczki z ziołami" class="realizations__image">
-            <span class="realizations__span">Wizualizacja</span>
-            <span class="realizations__name">Doniczki — kuchnia</span>
-          </div>
-          <div class="realizations__card card--lg reveal reveal--scale" data-reveal-order="5">
-            <img src="./images/gallery-6.jpg" alt="Betonowe formy w przestrzeni" class="realizations__image">
-            <span class="realizations__name">Kompozycja</span>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- SEKCJA PROCES (MATI) -->
-    <section class="proces section" id="process">
-      <div class="proces__wrapper">
-        <div class="proces__heading reveal reveal--up">
-          <span class="proces__span-text">Proces</span>
-          <h1 class="accent__title">Jak <span class="accent__title-italic">powstają</span></h1>
-
-        </div>
-
-        <p class="proces__description reveal reveal--fade">Od formy do gotowego produktu — krok po kroku. Bez skrótów, z czasem na dojrzewanie materiału.</p>
-        <div class="button__container reveal reveal--up">
-          <button class="proces__button proces__button--a active-button"><span
-              class="proces__button-letter">A</span>Doniczki <span class="button-sub">(beton)</span></button>
-          <button class="proces__button proces__button--b"><span class="proces__button-letter">B</span>Gdy donica staje
-            się świecą</button>
-          <button class="proces__button proces__button--c"><span class="proces__button-letter">C</span>Pakowanie i
-            wysyłka</button>
-        </div>
-        <div class="proces__flow-container--a visible" data-reveal-group data-reveal-stagger="0.07">
-          <div class="proces__flow reveal reveal--left" data-reveal-order="0">
-            <span class="proces__number">01</span>
-            <p class="proces__text">Po doborze formy przygotowujemy ją, smarując odpowiednim olejem.</p>
-          </div>
-          <div class="proces__flow reveal reveal--left" data-reveal-order="1">
-            <span class="proces__number">02</span>
-            <p class="proces__text">Ustawiamy formę na stole wibracyjnym.</p>
-          </div>
-          <div class="proces__flow reveal reveal--left" data-reveal-order="2">
-            <span class="proces__number">03</span>
-            <p class="proces__text">Zalewamy formę naszą autorską mieszanką betonu.</p>
-          </div>
-          <div class="proces__flow reveal reveal--left" data-reveal-order="3">
-            <span class="proces__number">04</span>
-            <p class="proces__text">Po odpowiednim zawibrowaniu beton schnie 72 h.</p>
-          </div>
-          <div class="proces__flow reveal reveal--left" data-reveal-order="4">
-            <span class="proces__number">05</span>
-            <p class="proces__text">Po 72 h wyciągamy donice z form.</p>
-          </div>
-          <div class="proces__flow reveal reveal--left" data-reveal-order="5">
-            <span class="proces__number">06</span>
-            <p class="proces__text">Następnie donica leżakuje odpowiednią ilość czasu (min. 48 h).</p>
-          </div>
-          <div class="proces__flow reveal reveal--left" data-reveal-order="6">
-            <span class="proces__number">07</span>
-            <p class="proces__text">Po 48 h donice są impregnowane.</p>
-          </div>
-          <div class="proces__flow reveal reveal--left" data-reveal-order="7">
-            <span class="proces__number">08</span>
-            <p class="proces__text">Po wyschnięciu impregnatu są dodatkowo lakierowane, aby zabezpieczyć powierzchnię.
-            </p>
-          </div>
-          <div class="proces__flow reveal reveal--left" data-reveal-order="8">
-            <span class="proces__number">09</span>
-            <p class="proces__text">W ostatnim kroku umieszczamy logo na donicy.</p>
-          </div>
-        </div>
-        <div class="proces__flow-container--b" data-reveal-group data-reveal-stagger="0.07">
-          <div class="proces__flow reveal reveal--left" data-reveal-order="0">
-            <span class="proces__number">01</span>
-            <p class="proces__text">Dobieramy odpowiedni wosk.</p>
-          </div>
-          <div class="proces__flow reveal reveal--left" data-reveal-order="1">
-            <span class="proces__number">02</span>
-            <p class="proces__text">Dobieramy odpowiedni knot.</p>
-          </div>
-          <div class="proces__flow reveal reveal--left" data-reveal-order="2">
-            <span class="proces__number">03</span>
-            <p class="proces__text">Tworzymy unikatową mieszankę: wosk + aromat + barwnik.</p>
-          </div>
-          <div class="proces__flow reveal reveal--left" data-reveal-order="3">
-            <span class="proces__number">04</span>
-            <p class="proces__text">Świeca z woskiem leżakuje 24 h do pełnego wyschnięcia.</p>
-          </div>
-          <div class="proces__flow reveal reveal--left" data-reveal-order="4">
-            <span class="proces__number">05</span>
-            <p class="proces__text">Następnie przechodzi kontrolę jakości (sprawdzenie m.in. pęknięć / wad).</p>
-          </div>
-        </div>
-        <div class="proces__flow-container--c" data-reveal-group data-reveal-stagger="0.1">
-          <div class="proces__flow--c reveal reveal--left" data-reveal-order="0">
-            <span class="proces__number--c">Pakowanie</span>
-            <p class="proces__text--c">Po zakończeniu procesu starannie pakujemy produkt, aby nie uszkodził się w transporcie.</p>
-          </div>
-          <div class="proces__flow--c reveal reveal--left" data-reveal-order="1">
-            <span class="proces__number--c">Wysyłka</span>
-            <p class="proces__text--c">Kurier InPost do paczkomatu.</p>
-          </div>
-          <div class="proces__flow--c reveal reveal--left" data-reveal-order="2">
-            <span class="proces__number--c">Czas realizacji</span>
-            <p class="proces__text--c">Do 2 dni roboczych (często 1 dzień).</p>
-          </div>
-        </div>
-
-      </div>
-    </section>
-    <!-- SEKCJA MATERIALY (MATI) -->
-    <section class="materials section" id="materials">
-      <div class="materials__wrapper">
-        <div class="materials__container">
-          <div class="material reveal reveal--up">
-            <span class="material__eyebrow">Materiały</span>
-            <h1 class="material__title">Piękno w <span class="material__title-italic">surowym</span> materiale</h1>
-            <p class="material__description">Beton jest piękny w swojej prostocie — a odpowiednie wykończenie sprawia, że świetnie sprawdza się na co dzień.</p>
-          </div>
-          <div class="product__benefits-container">
-            <div class="proces__img reveal reveal--left">
-              <img src="/images/workshop.jpg" alt="Betonowe produkty Koja Solid Form — szczegół powierzchni" class="material__img">
-            </div>
-            <div class="benefits-list" data-reveal-group data-reveal-stagger="0.1">
-              <div class="product__benefits reveal reveal--up" data-reveal-order="0">
-                <div class="product__icon">
-                  <i class="fa-regular fa-sun"></i>
+  <body>
+    <main class="wrapper">
+      <!-- SEKCJA HERO (MATI) -->
+      <section class="hero">
+        <div class="hero-cover">
+          <div class="hero-menu active">
+            <nav class="hero-navigation" id="mobile-navigation">
+              <div class="hero-navigation__inner" data-reveal-group data-reveal-stagger="0.07">
+                <div class="logo-link">
+                  <a href="#" class="logo reveal reveal--fade active" data-reveal-delay="0.35">Koja</a>
+                  <i class="fa-solid fa-bars burger"></i>
                 </div>
-                <div class="product__content">
-                  <h3 class="product__title">Do wnętrz i na zewnątrz</h3>
-                  <p class="product__text">Nasze produkty nadają się do użytkowania w domu, na balkonie i w
-                    ogrodzie.
+                <ul class="navigation-list">
+                  <li class="navigation-item">
+                    <a href="#about" class="navigation-link reveal reveal--right" data-reveal-order="0">O nas</a>
+                  </li>
+                  <li class="navigation-item">
+                    <a href="#shop" class="navigation-link reveal reveal--right" data-reveal-order="1">Sklep</a>
+                  </li>
+                  <li class="navigation-item">
+                    <a href="#process" class="navigation-link reveal reveal--right" data-reveal-order="2">Proces</a>
+                  </li>
+                  <li class="navigation-item">
+                    <a href="#gallery" class="navigation-link reveal reveal--right" data-reveal-order="3">Galeria</a>
+                  </li>
+                  <li class="navigation-item">
+                    <a href="#custom" class="navigation-link reveal reveal--right" data-reveal-order="4">Na wymiar</a>
+                  </li>
+                  <li class="navigation-item">
+                    <a href="#materials" class="navigation-link reveal reveal--right" data-reveal-order="5"
+                      >Materiały</a
+                    >
+                  </li>
+                  <li class="navigation-item">
+                    <a href="#testimonials" class="navigation-link reveal reveal--right" data-reveal-order="6"
+                      >Opinie</a
+                    >
+                  </li>
+                  <li class="navigation-item">
+                    <a href="#faq" class="navigation-link reveal reveal--right" data-reveal-order="7">FAQ</a>
+                  </li>
+                  <li class="navigation-item">
+                    <a href="#contact" class="navigation-link reveal reveal--right" data-reveal-order="8">Kontakt</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+
+          <div class="hero-content" data-reveal-group data-reveal-stagger="0.16">
+            <span
+              class="hero-line hero-line--top reveal reveal--line"
+              data-reveal-order="0"
+              style="--reveal-line-width: 60px"
+            ></span>
+            <h1 class="hero-logo reveal reveal--scale" data-reveal-order="1">Koja</h1>
+            <h3 class="hero-title reveal reveal--up" data-reveal-order="2">Beton, który ożywia przestrzeń</h3>
+            <p class="hero-text reveal reveal--fade" data-reveal-order="3">
+              Surowy beton, ciepłe światło i zieleń — rzeczy, które lubią zostać na dłużej. W KOJA robimy odlewy z
+              autorskiej mieszanki betonu: proste w formie, dopracowane w detalu.
+            </p>
+            <div class="hero__button-container reveal reveal--up" data-reveal-order="4">
+              <a href="#shop" class="hero-button button button__primary"
+                >Zobacz produkty <i class="fas fa-arrow-right"></i
+              ></a>
+              <a href="#contact" class="hero-button button button__secondary">Zamów indywidualnie</a>
+            </div>
+            <a
+              href="https://allegro.pl/TODO"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link-shop reveal reveal--fade"
+              data-reveal-order="5"
+              >Kup na Allegro <i class="fa-solid fa-arrow-right"></i
+            ></a>
+            <span
+              class="hero-line hero-line--bottom reveal reveal--line"
+              data-reveal-order="6"
+              style="--reveal-line-width: 60px"
+            ></span>
+            <div class="discover reveal reveal--up" data-reveal-order="7">
+              <a href="#shop" class="discover-link">Odkryj</a>
+            </div>
+            <i class="fa-solid fa-arrow-down reveal reveal--fade" data-reveal-order="8"></i>
+          </div>
+        </div>
+
+        <div class="features-grid" data-reveal-group data-reveal-stagger="0.1">
+          <div class="features reveal reveal--up" data-reveal-order="0">
+            <i class="fa-solid fa-truck"></i>
+            <span class="features-text">Wysyłka do 2 dni rob.</span>
+          </div>
+          <div class="features reveal reveal--up" data-reveal-order="1">
+            <i class="fa-solid fa-credit-card"></i>
+            <span class="features-text">Bezpieczne płatności</span>
+          </div>
+          <div class="features reveal reveal--up" data-reveal-order="2">
+            <i class="fa-solid fa-shield"></i>
+            <span class="features-text">Gwarancja jakości</span>
+          </div>
+          <div class="features reveal reveal--up" data-reveal-order="3">
+            <i class="fa-solid fa-recycle"></i>
+            <span class="features-text">Ręcznie robione</span>
+          </div>
+        </div>
+      </section>
+      <!-- SEKCJA ONAS (KUNA) -->
+      <section class="section__about section" id="about">
+        <p class="about__watermark reveal reveal--fade" data-reveal-delay="0.08" aria-hidden="true">KOJA</p>
+        <div class="about__wrapper section__wrapper">
+          <div class="about__header section__header reveal reveal--up">
+            <p class="section__eyebrow">Nasza historia</p>
+            <h2 class="section__title">O <span class="section__title-italic">nas</span></h2>
+          </div>
+          <div class="about__grid">
+            <div class="about__content">
+              <p class="about__text reveal reveal--left" data-reveal-delay="0.08">
+                KOJA zaczęła się od prostej potrzeby: mieć w domu rzeczy, które są „swojskie" i przyjemne w codziennym
+                użyciu, a jednocześnie wyglądają nowocześnie i premium.
+              </p>
+              <p class="about__text reveal reveal--left" data-reveal-delay="0.16">
+                Z czasem wciągnęły nas testy mieszanek, faktury, krawędzie i ten moment, kiedy surowy materiał po
+                wykończeniu robi się zaskakująco elegancki. Robimy krótkie serie i stawiamy na jakość. Beton ma prawo do
+                drobnych różnic — to część jego charakteru.
+              </p>
+              <blockquote class="about__quote reveal reveal--right" data-reveal-delay="0.24">
+                „Dla nas to nie wada, tylko podpis materiału."
+              </blockquote>
+            </div>
+            <div class="about__stats" data-reveal-group data-reveal-stagger="0.12">
+              <div class="about__stat reveal reveal--up" data-reveal-order="0">
+                <h3 class="stat__title">100%</h3>
+                <p class="stat__slogan">Ręczna robota</p>
+              </div>
+              <div class="about__stat reveal reveal--up" data-reveal-order="1">
+                <h3 class="stat__title">Krótkie</h3>
+                <p class="stat__slogan">Serie produktów</p>
+              </div>
+              <div class="about__stat reveal reveal--up" data-reveal-order="2">
+                <h3 class="stat__title"><i data-lucide="infinity"></i></h3>
+                <p class="stat__slogan">Możliwości</p>
+              </div>
+              <div class="about__stat reveal reveal--up" data-reveal-order="3">
+                <h3 class="stat__title">Premium</h3>
+                <p class="stat__slogan">Wykończenie</p>
+              </div>
+            </div>
+          </div>
+          <div class="about__features" data-reveal-group data-reveal-stagger="0.14">
+            <div class="about__feature reveal reveal--up" data-reveal-order="0">
+              <div class="feature__icon-container"><i data-lucide="hand" class="feature__icon"></i></div>
+              <h3 class="feature__title">Ręczna robota</h3>
+              <p class="feature__text">
+                Każdy odlew robimy ręcznie, w krótkich seriach. Żaden produkt nie jest identyczny.
+              </p>
+            </div>
+
+            <div class="about__feature reveal reveal--up" data-reveal-order="1">
+              <div class="feature__icon-container"><i data-lucide="layers" class="feature__icon"></i></div>
+              <h3 class="feature__title">Trwałe wykończenie</h3>
+              <p class="feature__text">Szlif, impregnacja i lakier — beton traktujemy jak materiał premium.</p>
+            </div>
+
+            <div class="about__feature reveal reveal--up" data-reveal-order="2">
+              <div class="feature__icon-container"><i data-lucide="circle" class="feature__icon"></i></div>
+              <h3 class="feature__title">Proste formy</h3>
+              <p class="feature__text">
+                Geometria, proporcje, cisza. Chcemy, żeby nasze rzeczy po prostu dobrze wyglądały.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SEKCJA SKLEP (KUNA) -->
+      <section class="section__shop section" id="shop">
+        <div class="section__wrapper shop__wrapper">
+          <div class="shop__header section__header reveal reveal--up">
+            <p class="section__eyebrow">Sklep</p>
+            <div class="shop__header-grid">
+              <h2 class="section__title">Nasze produkty</h2>
+              <a href="#" class="shop__link"
+                >Kup na Allegro <i data-lucide="arrow-up-right" class="arrow__up-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="shop__category-container">
+            <div class="shop__category reveal reveal--left" data-reveal-delay="0.05">
+              <h3 class="shop__category-title">Doniczki</h3>
+              <p class="shop__category-text">
+                Betonowe doniczki o lakierowanej powierzchni — odporne na codzienne użycie i łatwe w czyszczeniu.
+              </p>
+            </div>
+            <div class="shop__category reveal reveal--right" data-reveal-delay="0.12">
+              <h3 class="shop__category-title">Świeco-doniczki (2 w 1)</h3>
+              <p class="shop__category-text">
+                Świeca w betonowej formie, która po wypaleniu zmienia się w doniczkę. Po wypaleniu świecy,
+                świeco-doniczka może zostać z Tobą jako doniczka.
+              </p>
+            </div>
+          </div>
+
+          <div class="shop__toolbar reveal reveal--fade">
+            <div class="shop__filter-toggle">
+              <i data-lucide="sliders-horizontal" class="icon-filter"></i>
+              <span class="shop__filter-label">Filtruj</span>
+            </div>
+
+            <div class="shop__filters">
+              <button class="shop__filter-button button-select shop__filter-button--active">Wszystkie</button>
+              <button class="shop__filter-button button-select">Doniczki</button>
+              <button class="shop__filter-button button-select">Świeco-doniczki</button>
+            </div>
+
+            <div class="shop__actions">
+              <select class="shop__select button-select">
+                <option value="all">Otwór: wszystkie</option>
+                <option value="hole">Z otworem</option>
+                <option value="no-hole">Bez otworu</option>
+              </select>
+              <select class="shop__select button-select">
+                <option value="default">Sortuj</option>
+                <option value="price-asc">Cena: rosnąco</option>
+                <option value="price-desc">Cena: malejąco</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="shop__grid" data-reveal-group data-reveal-stagger="0.08">
+            <article class="shop__card reveal reveal--up" data-reveal-order="0">
+              <div class="shop__image-wrapper">
+                <img class="shop__image" src="./images/product-pot-s.jpg" alt="Doniczka betonowa S" />
+                <span class="shop__badge">Ręcznie robione</span>
+              </div>
+
+              <div class="shop__card-content">
+                <p class="shop__card-category">Doniczki</p>
+                <h3 class="shop__card-title">Doniczka betonowa S</h3>
+                <p class="shop__description">
+                  Geometryczna forma, surowy beton, subtelna faktura. Idealna na parapet lub biurko.
+                </p>
+                <p class="shop__size">Wymiary: (do uzupełnienia)</p>
+
+                <div class="shop__card-footer">
+                  <span class="shop__price">79 zł</span>
+                  <a class="shop__button">Link w przygotowaniu</a>
+                </div>
+              </div>
+            </article>
+            <article class="shop__card reveal reveal--up" data-reveal-order="1">
+              <div class="shop__image-wrapper">
+                <img class="shop__image" src="./images/product-pot-m.jpg" alt="Doniczka betonowa M" />
+                <span class="shop__badge">Ręcznie robione</span>
+              </div>
+              <div class="shop__card-content">
+                <p class="shop__card-category">Doniczki</p>
+                <h3 class="shop__card-title">Doniczka betonowa M</h3>
+                <p class="shop__description">
+                  Klasyczna proporcja, wyjątkowa trwałość. Pasuje do roślin o średnich korzeniach.
+                </p>
+                <p class="shop__size">Wymiary: (do uzupełnienia)</p>
+                <div class="shop__card-footer">
+                  <span class="shop__price">109 zł</span>
+                  <a class="shop__button">Link w przygotowaniu</a>
+                </div>
+              </div>
+            </article>
+            <article class="shop__card reveal reveal--up" data-reveal-order="2">
+              <div class="shop__image-wrapper">
+                <img class="shop__image" src="./images/product-pot-l.jpg" alt="Doniczka betonowa L" />
+                <span class="shop__badge">Ręcznie robione</span>
+              </div>
+
+              <div class="shop__card-content">
+                <p class="shop__card-category">Doniczki</p>
+                <h3 class="shop__card-title">Doniczka betonowa L</h3>
+                <p class="shop__description">Duże formy do okazałych roślin. Solidny beton, impregnacja na lata.</p>
+                <p class="shop__size">Wymiary: (do uzupełnienia)</p>
+                <div class="shop__card-footer">
+                  <span class="shop__price">149 zł</span>
+                  <a class="shop__button">Link w przygotowaniu</a>
+                </div>
+              </div>
+            </article>
+            <article class="shop__card reveal reveal--up" data-reveal-order="3">
+              <div class="shop__image-wrapper">
+                <img class="shop__image" src="./images/koja-candle-hex.png" alt="Świeco-doniczka HEX" />
+                <span class="shop__badge">Ręcznie robione</span>
+                <span class="shop__badge shop__badge--secondary">2 w 1</span>
+              </div>
+              <div class="shop__card-content">
+                <p class="shop__card-category">Świeco-doniczki</p>
+                <h3 class="shop__card-title">Świeco-doniczka HEX</h3>
+                <p class="shop__description">
+                  Sześciokątna forma z wbudowaną świecą sojową. Po wypaleniu — gotowa na rośliny.
+                </p>
+                <p class="shop__size">Wymiary: (do uzupełnienia)</p>
+                <div class="shop__card-footer">
+                  <span class="shop__price">129 zł</span>
+                  <a class="shop__button">Link w przygotowaniu</a>
+                </div>
+              </div>
+            </article>
+            <article class="shop__card reveal reveal--up" data-reveal-order="4">
+              <div class="shop__image-wrapper">
+                <img class="shop__image" src="./images/koja-candle-cube.png" alt="Świeco-doniczka CUBE" />
+                <span class="shop__badge">Ręcznie robione</span>
+                <span class="shop__badge shop__badge--secondary">2 w 1</span>
+              </div>
+              <div class="shop__card-content">
+                <p class="shop__card-category">Świeco-doniczki</p>
+                <h3 class="shop__card-title">Świeco-doniczka CUBE</h3>
+                <p class="shop__description">Kubistyczna bryła z aromatyczną świecą. Minimalizm w czystej postaci.</p>
+                <p class="shop__size">Wymiary: (do uzupełnienia)</p>
+                <div class="shop__card-footer">
+                  <span class="shop__price">139 zł</span>
+                  <a class="shop__button">Link w przygotowaniu</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="shop__footer">
+            <div class="shop__promotion reveal reveal--up">
+              <p class="info-text">
+                Zamów 3 lub więcej sztuk i otrzymaj w prezencie wyjątkową małą doniczkę, której nie znajdziesz w naszym
+                stałym asortymencie.
+              </p>
+            </div>
+            <div class="shop__info reveal reveal--fade">
+              <p class="shop__info-text shop__info-from">Zakupy realizowane przez Allegro.</p>
+              <p class="shop__info-text shop__info-more">
+                Więcej wariantów i wymiary uzupełnimy wkrótce. (TODO: zdjęcia + wymiary)
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SEKCJA REALIZACJE (KUNA) -->
+      <section class="section__realizations section" id="gallery">
+        <div class="section__wrapper realizations__wrapper">
+          <div class="realizations__header-wrap">
+            <div class="section__header realizations__header reveal reveal--up">
+              <p class="section__eyebrow">Realizacje</p>
+              <h2 class="section__title">Nasze prace<br /><span class="section__title-italic">w przestrzeni</span></h2>
+            </div>
+            <div class="section__header-content reveal reveal--fade">
+              <p class="realizations__text">
+                Zobacz KOJA w codziennym świetle — wśród zieleni, na drewnie, w prostych wnętrzach.
+              </p>
+              <p class="realizations__text-muted">
+                Galeria rośnie — dodajemy kolejne aranżacje wraz z nowymi zdjęciami.
+              </p>
+            </div>
+          </div>
+          <div class="realizations__grid" data-reveal-group data-reveal-stagger="0.08">
+            <div class="realizations__card reveal reveal--scale" data-reveal-order="0">
+              <img src="./images/gallery-1.jpg" alt="Betonowa donica z rośliną na biurku" class="realizations__image" />
+              <span class="realizations__name">Donica — wnętrze domowe</span>
+            </div>
+            <div class="realizations__card reveal reveal--scale" data-reveal-order="1">
+              <img
+                src="./images/gallery-2.jpg"
+                alt="Betonowy świecznik Koja Solid Form — kostka"
+                class="realizations__image"
+              />
+              <span class="realizations__name">Świeco-doniczka CUBE</span>
+            </div>
+            <div class="realizations__card reveal reveal--scale" data-reveal-order="2">
+              <img src="./images/gallery-3.jpg" alt="Geometryczna donica betonowa" class="realizations__image" />
+              <span class="realizations__span">Wizualizacja</span>
+              <span class="realizations__name">Donica — salon</span>
+            </div>
+            <div class="realizations__card card--sm reveal reveal--scale" data-reveal-order="3">
+              <img src="./images/gallery-4.jpg" alt="Betonowa tacka z sukulentami" class="realizations__image" />
+              <span class="realizations__name">Donica — kawiarnia</span>
+            </div>
+            <div class="realizations__card card--md reveal reveal--scale" data-reveal-order="4">
+              <img src="./images/gallery-5.jpg" alt="Betonowe doniczki z ziołami" class="realizations__image" />
+              <span class="realizations__span">Wizualizacja</span>
+              <span class="realizations__name">Doniczki — kuchnia</span>
+            </div>
+            <div class="realizations__card card--lg reveal reveal--scale" data-reveal-order="5">
+              <img src="./images/gallery-6.jpg" alt="Betonowe formy w przestrzeni" class="realizations__image" />
+              <span class="realizations__name">Kompozycja</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SEKCJA PROCES (MATI) -->
+      <section class="proces section" id="process">
+        <div class="proces__wrapper">
+          <div class="proces__heading reveal reveal--up">
+            <span class="proces__span-text">Proces</span>
+            <h1 class="accent__title">Jak <span class="accent__title-italic">powstają</span></h1>
+          </div>
+
+          <p class="proces__description reveal reveal--fade">
+            Od formy do gotowego produktu — krok po kroku. Bez skrótów, z czasem na dojrzewanie materiału.
+          </p>
+          <div class="button__container reveal reveal--up">
+            <button class="proces__button proces__button--a active-button">
+              <span class="proces__button-letter">A</span>Doniczki <span class="button-sub">(beton)</span>
+            </button>
+            <button class="proces__button proces__button--b">
+              <span class="proces__button-letter">B</span>Gdy donica staje się świecą
+            </button>
+            <button class="proces__button proces__button--c">
+              <span class="proces__button-letter">C</span>Pakowanie i wysyłka
+            </button>
+          </div>
+          <div class="proces__flow-container--a visible" data-reveal-group data-reveal-stagger="0.07">
+            <div class="proces__flow reveal reveal--left" data-reveal-order="0">
+              <span class="proces__number">01</span>
+              <p class="proces__text">Po doborze formy przygotowujemy ją, smarując odpowiednim olejem.</p>
+            </div>
+            <div class="proces__flow reveal reveal--left" data-reveal-order="1">
+              <span class="proces__number">02</span>
+              <p class="proces__text">Ustawiamy formę na stole wibracyjnym.</p>
+            </div>
+            <div class="proces__flow reveal reveal--left" data-reveal-order="2">
+              <span class="proces__number">03</span>
+              <p class="proces__text">Zalewamy formę naszą autorską mieszanką betonu.</p>
+            </div>
+            <div class="proces__flow reveal reveal--left" data-reveal-order="3">
+              <span class="proces__number">04</span>
+              <p class="proces__text">Po odpowiednim zawibrowaniu beton schnie 72 h.</p>
+            </div>
+            <div class="proces__flow reveal reveal--left" data-reveal-order="4">
+              <span class="proces__number">05</span>
+              <p class="proces__text">Po 72 h wyciągamy donice z form.</p>
+            </div>
+            <div class="proces__flow reveal reveal--left" data-reveal-order="5">
+              <span class="proces__number">06</span>
+              <p class="proces__text">Następnie donica leżakuje odpowiednią ilość czasu (min. 48 h).</p>
+            </div>
+            <div class="proces__flow reveal reveal--left" data-reveal-order="6">
+              <span class="proces__number">07</span>
+              <p class="proces__text">Po 48 h donice są impregnowane.</p>
+            </div>
+            <div class="proces__flow reveal reveal--left" data-reveal-order="7">
+              <span class="proces__number">08</span>
+              <p class="proces__text">
+                Po wyschnięciu impregnatu są dodatkowo lakierowane, aby zabezpieczyć powierzchnię.
+              </p>
+            </div>
+            <div class="proces__flow reveal reveal--left" data-reveal-order="8">
+              <span class="proces__number">09</span>
+              <p class="proces__text">W ostatnim kroku umieszczamy logo na donicy.</p>
+            </div>
+          </div>
+          <div class="proces__flow-container--b" data-reveal-group data-reveal-stagger="0.07">
+            <div class="proces__flow reveal reveal--left" data-reveal-order="0">
+              <span class="proces__number">01</span>
+              <p class="proces__text">Dobieramy odpowiedni wosk.</p>
+            </div>
+            <div class="proces__flow reveal reveal--left" data-reveal-order="1">
+              <span class="proces__number">02</span>
+              <p class="proces__text">Dobieramy odpowiedni knot.</p>
+            </div>
+            <div class="proces__flow reveal reveal--left" data-reveal-order="2">
+              <span class="proces__number">03</span>
+              <p class="proces__text">Tworzymy unikatową mieszankę: wosk + aromat + barwnik.</p>
+            </div>
+            <div class="proces__flow reveal reveal--left" data-reveal-order="3">
+              <span class="proces__number">04</span>
+              <p class="proces__text">Świeca z woskiem leżakuje 24 h do pełnego wyschnięcia.</p>
+            </div>
+            <div class="proces__flow reveal reveal--left" data-reveal-order="4">
+              <span class="proces__number">05</span>
+              <p class="proces__text">Następnie przechodzi kontrolę jakości (sprawdzenie m.in. pęknięć / wad).</p>
+            </div>
+          </div>
+          <div class="proces__flow-container--c" data-reveal-group data-reveal-stagger="0.1">
+            <div class="proces__flow--c reveal reveal--left" data-reveal-order="0">
+              <span class="proces__number--c">Pakowanie</span>
+              <p class="proces__text--c">
+                Po zakończeniu procesu starannie pakujemy produkt, aby nie uszkodził się w transporcie.
+              </p>
+            </div>
+            <div class="proces__flow--c reveal reveal--left" data-reveal-order="1">
+              <span class="proces__number--c">Wysyłka</span>
+              <p class="proces__text--c">Kurier InPost do paczkomatu.</p>
+            </div>
+            <div class="proces__flow--c reveal reveal--left" data-reveal-order="2">
+              <span class="proces__number--c">Czas realizacji</span>
+              <p class="proces__text--c">Do 2 dni roboczych (często 1 dzień).</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SEKCJA MATERIALY (MATI) -->
+      <section class="materials section" id="materials">
+        <div class="materials__wrapper">
+          <div class="materials__container">
+            <div class="material reveal reveal--up">
+              <span class="material__eyebrow">Materiały</span>
+              <h1 class="material__title">Piękno w <span class="material__title-italic">surowym</span> materiale</h1>
+              <p class="material__description">
+                Beton jest piękny w swojej prostocie — a odpowiednie wykończenie sprawia, że świetnie sprawdza się na co
+                dzień.
+              </p>
+            </div>
+            <div class="product__benefits-container">
+              <div class="proces__img reveal reveal--left">
+                <img
+                  src="/images/workshop.png"
+                  alt="Betonowe produkty Koja Solid Form — szczegół powierzchni"
+                  class="material__img"
+                />
+              </div>
+              <div class="benefits-list" data-reveal-group data-reveal-stagger="0.1">
+                <div class="product__benefits reveal reveal--up" data-reveal-order="0">
+                  <div class="product__icon">
+                    <i class="fa-regular fa-sun"></i>
+                  </div>
+                  <div class="product__content">
+                    <h3 class="product__title">Do wnętrz i na zewnątrz</h3>
+                    <p class="product__text">
+                      Nasze produkty nadają się do użytkowania w domu, na balkonie i w ogrodzie.
+                    </p>
+                  </div>
+                </div>
+                <div class="product__benefits reveal reveal--up" data-reveal-order="1">
+                  <div class="product__icon">
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <div class="product__content">
+                    <h3 class="product__title">Lakierowana powierzchnia = mniej plam</h3>
+                    <p class="product__text">
+                      Zabezpieczenie pomaga w codziennym użytkowaniu i chroni przed zabrudzeniami.
+                    </p>
+                  </div>
+                </div>
+                <div class="product__benefits reveal reveal--up" data-reveal-order="2">
+                  <div class="product__icon">
+                    <i class="fa-solid fa-droplet"></i>
+                  </div>
+                  <div class="product__content">
+                    <h3 class="product__title">Mycie wodą</h3>
+                    <p class="product__text">Możesz czyścić produkt wodą (np. pod kranem) i miękką gąbką.</p>
+                  </div>
+                </div>
+                <div class="product__benefits reveal reveal--up" data-reveal-order="3">
+                  <div class="product__icon">
+                    <i class="fa-regular fa-sun"></i>
+                  </div>
+                  <div class="product__content">
+                    <h3 class="product__title">Odporność na UV</h3>
+                    <p class="product__text">Powierzchnia jest zabezpieczona pod kątem ekspozycji na światło.</p>
+                  </div>
+                </div>
+                <div class="important__information reveal reveal--fade" data-reveal-order="4">
+                  <div class="product__icon">
+                    <i class="fa fa-exclamation-triangle"></i>
+                  </div>
+                  <p class="alert__text"><strong>Ważne:</strong> Nie zostawiaj produktów zalanych wodą na mrozie.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SEKCJA NA WYMIAR (MATI) -->
+      <section class="custom section" id="custom">
+        <div class="custom__wrapper">
+          <div class="custom__container">
+            <div class="custom__intro reveal reveal--up">
+              <span class="custom__span">Personalizacja</span>
+              <h1 class="custom__title">Na <span class="custom__title-italic">wymiar</span></h1>
+            </div>
+            <div class="orders__container">
+              <div class="orders__left">
+                <p class="custom__text reveal reveal--left">
+                  Chcesz wersję bardziej „Twoją"? Na ten etap oferujemy personalizację w prostym, eleganckim zakresie.
+                  Pracujemy też nad rozwojem personalizacji w przyszłości — zakres będzie stopniowo poszerzany.
+                </p>
+                <div class="orders reveal reveal--left" data-reveal-delay="0.1">
+                  <span class="orders__number">01</span>
+                  <div class="orders__content">
+                    <h3 class="orders__title">Standardowe zamówienia</h3>
+                    <p class="orders__text-secondary">
+                      Zamawiaj bezpośrednio przez
+                      <a href="https://allegro.pl/TODO" target="_blank" rel="noopener noreferrer" class="shop-link"
+                        >Allegro</a
+                      >.
+                    </p>
+                  </div>
+                </div>
+                <div class="orders reveal reveal--left" data-reveal-delay="0.2">
+                  <span class="orders__number">02</span>
+                  <div class="orders__content">
+                    <h3 class="orders__title">Nietypowe prośby</h3>
+                    <p class="orders__text-secondary">
+                      Napisz do nas przez formularz kontaktowy — opowiedz, czego szukasz.
+                    </p>
+                  </div>
+                </div>
+                <div class="orders__button reveal reveal--up" data-reveal-delay="0.3">
+                  <a href="https://allegro.pl/TODO" target="_blank" rel="noopener noreferrer" class="button__orders"
+                    >Kup na Allegro <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                  <a href="#contact" class="button__orders orders-button"
+                    >Zapytaj o personalizację <i class="fa-solid fa-arrow-right arrow--right"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="custom__options" data-reveal-group data-reveal-stagger="0.12">
+                <div class="custom__card reveal reveal--up" data-reveal-order="0">
+                  <div class="custom__icon">
+                    <i class="fa-solid fa-palette"></i>
+                  </div>
+                  <div class="custom__content">
+                    <h3 class="custom__card-title">Nietypowy kolor</h3>
+                    <p class="custom__card-text">
+                      Możemy przygotować beton w wybranym przez Ciebie odcieniu. Skontaktuj się z nami z próbką lub
+                      opisem koloru.
+                    </p>
+                  </div>
+                </div>
+                <div class="custom__card reveal reveal--up" data-reveal-order="1">
+                  <div class="custom__icon">
+                    <i class="fa-solid fa-tag"></i>
+                  </div>
+                  <div class="custom__content">
+                    <h3 class="custom__card-title">Inicjały zamiast logo</h3>
+                    <p class="custom__card-text">
+                      Na specjalne zamówienie umieszczamy inicjały lub dedykację zamiast standardowego logo KOJA.
+                    </p>
+                  </div>
+                </div>
+                <div class="custom__notice reveal reveal--fade" data-reveal-order="2">
+                  <p class="custom__notice-text">
+                    Pracujemy nad rozszerzeniem opcji personalizacji — więcej możliwości wkrótce.
                   </p>
                 </div>
               </div>
-              <div class="product__benefits reveal reveal--up" data-reveal-order="1">
-                <div class="product__icon">
-                  <i class="fa-regular fa-star"></i>
-                </div>
-                <div class="product__content">
-                  <h3 class="product__title">Lakierowana powierzchnia = mniej plam</h3>
-                  <p class="product__text">Zabezpieczenie pomaga w codziennym użytkowaniu i chroni przed zabrudzeniami.</p>
-                </div>
-              </div>
-              <div class="product__benefits reveal reveal--up" data-reveal-order="2">
-                <div class="product__icon">
-                  <i class="fa-solid fa-droplet"></i>
-                </div>
-                <div class="product__content">
-                  <h3 class="product__title">Mycie wodą</h3>
-                  <p class="product__text">Możesz czyścić produkt wodą (np. pod kranem) i miękką gąbką.</p>
-                </div>
-              </div>
-              <div class="product__benefits reveal reveal--up" data-reveal-order="3">
-                <div class="product__icon">
-                  <i class="fa-regular fa-sun"></i>
-                </div>
-                <div class="product__content">
-
-                  <h3 class="product__title">Odporność na UV</h3>
-                  <p class="product__text">Powierzchnia jest zabezpieczona pod kątem ekspozycji na światło.</p>
-                </div>
-              </div>
-              <div class="important__information reveal reveal--fade" data-reveal-order="4">
-                <div class="product__icon">
-                  <i class="fa fa-exclamation-triangle"></i>
-                </div>
-                <p class="alert__text"><strong>Ważne:</strong> Nie zostawiaj produktów zalanych wodą na mrozie.</p>
-              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- SEKCJA NA WYMIAR (MATI) -->
-    <section class="custom section" id="custom">
-      <div class="custom__wrapper">
-        <div class="custom__container">
-          <div class="custom__intro reveal reveal--up">
-            <span class="custom__span">Personalizacja</span>
-            <h1 class="custom__title">Na <span class="custom__title-italic">wymiar</span></h1>
+      </section>
+      <!-- SEKCJA OPINIE (KUNA) -->
+      <section class="section__opinions section" id="testimonials">
+        <div class="section__wrapper">
+          <div class="section__header opinions__header reveal reveal--up">
+            <p class="section__eyebrow">Opinie</p>
+            <h2 class="section__title">Co mówią <span class="section__title-italic">klienci</span></h2>
           </div>
-          <div class="orders__container">
-            <div class="orders__left">
-              <p class="custom__text reveal reveal--left">Chcesz wersję bardziej „Twoją"? Na ten etap oferujemy personalizację
-                w prostym, eleganckim zakresie. Pracujemy też nad rozwojem personalizacji w przyszłości — zakres będzie
-                stopniowo poszerzany.</p>
-              <div class="orders reveal reveal--left" data-reveal-delay="0.1">
-                <span class="orders__number">01</span>
-                <div class="orders__content">
-                  <h3 class="orders__title">Standardowe zamówienia</h3>
-                  <p class="orders__text-secondary">Zamawiaj bezpośrednio przez <a href="https://allegro.pl/TODO" target="_blank" rel="noopener noreferrer" class="shop-link">Allegro</a>.</p>
+          <div class="google-reviews reveal reveal--fade">
+            <div class="google-reviews__rating">
+              <i data-lucide="star" class="google-reviews__star"></i>
+              <i data-lucide="star" class="google-reviews__star"></i>
+              <i data-lucide="star" class="google-reviews__star"></i>
+              <i data-lucide="star" class="google-reviews__star"></i>
+              <i data-lucide="star" class="google-reviews__star"></i>
+            </div>
+            <p class="google-reviews__message">Opinie z Google pojawią się tutaj wkrótce.</p>
+
+            <span class="google-reviews__source">Źródło: Google — TODO: podmiana </span>
+          </div>
+          <section class="section__features">
+            <p class="features__eyebrow reveal reveal--up">Na czym nam zależy</p>
+            <div class="features__grid" data-reveal-group data-reveal-stagger="0.12">
+              <div class="features__card reveal reveal--up" data-reveal-order="0">
+                <div class="features__icon-container"><i class="fa-regular fa-clock features__icon"></i></div>
+                <div class="features__content">
+                  <h3 class="features__title">Szybka wysyłka</h3>
+                  <p class="features__text">Zwykle wysyłamy w 1 dzień, maksymalnie do 2 dni roboczych.</p>
                 </div>
               </div>
-              <div class="orders reveal reveal--left" data-reveal-delay="0.2">
-                <span class="orders__number">02</span>
-                <div class="orders__content">
-                  <h3 class="orders__title">Nietypowe prośby</h3>
-                  <p class="orders__text-secondary">Napisz do nas przez formularz kontaktowy — opowiedz, czego
-                    szukasz.
+              <div class="features__card reveal reveal--up" data-reveal-order="1">
+                <div class="features__icon-container"><i class="fa-solid fa-box-open features__icon"></i></div>
+                <div class="features__content">
+                  <h3 class="features__title">Bezpieczne pakowanie</h3>
+                  <p class="features__text">Każdy produkt jest starannie zabezpieczony na czas transportu.</p>
+                </div>
+              </div>
+              <div class="features__card reveal reveal--up" data-reveal-order="2">
+                <div class="features__icon-container"><i class="fa-solid fa-camera features__icon"></i></div>
+                <div class="features__content">
+                  <h3 class="features__title">Zdjęcia „w domu” mile widziane</h3>
+                  <p class="features__text">
+                    Jeśli podeślesz zdjęcie produktu w swojej przestrzeni, chętnie pokażemy je w galerii. Symboliczny
+                    rabat za opinię — do ustalenia.
                   </p>
                 </div>
               </div>
-              <div class="orders__button reveal reveal--up" data-reveal-delay="0.3">
-                <a href="https://allegro.pl/TODO" target="_blank" rel="noopener noreferrer" class="button__orders">Kup na Allegro <i class="fa-solid fa-arrow-right"></i></a>
-                <a href="#contact" class="button__orders orders-button">Zapytaj o personalizację <i
-                    class="fa-solid fa-arrow-right arrow--right"></i></a>
-              </div>
             </div>
-            <div class="custom__options" data-reveal-group data-reveal-stagger="0.12">
-              <div class="custom__card reveal reveal--up" data-reveal-order="0">
-                <div class="custom__icon">
-                  <i class="fa-solid fa-palette"></i>
+          </section>
+        </div>
+      </section>
+      <!-- SEKCJA POMOC (MATI) -->
+      <section class="help__section section" id="faq">
+        <div class="section__wrapper">
+          <div class="help__wrapper">
+            <div class="help reveal reveal--up">
+              <span class="help__span">Pomoc</span>
+              <h1 class="help__title">Najczęstsze <span class="help__title-italic">pytania</span></h1>
+            </div>
+            <div class="help__tabs reveal reveal--fade">
+              <button class="help__tab help__tab--active">Pielęgnacja</button>
+              <button class="help__tab">Wysyłka</button>
+              <button class="help__tab">Zwroty</button>
+              <button class="help__tab">Zamówienia custom</button>
+              <button class="help__tab">Szczegóły techniczne</button>
+              <button class="help__tab">Ogólne</button>
+            </div>
+            <div class="help__item help__item--active reveal reveal--up">
+              <div class="help__question">
+                <span class="help__question-span">Jak to myć?</span>
+                <p class="help__question-text">
+                  Wodą (np. pod kranem) i miękką gąbką. Przy mocniejszych zabrudzeniach wystarczy delikatny środek do
+                  mycia.
+                </p>
+                <div class="help__icon-container">
+                  <span class="help__icon">+</span>
                 </div>
-                <div class="custom__content">
-                  <h3 class="custom__card-title">Nietypowy kolor</h3>
-                  <p class="custom__card-text">Możemy przygotować beton w wybranym przez Ciebie odcieniu. Skontaktuj się z
-                    nami
-                    z próbką lub opisem koloru.</p>
+              </div>
+              <div class="help__question">
+                <span class="help__question-span">Czy można używać na zewnątrz?</span>
+                <p class="help__question-text">
+                  Tak — produkty nadają się do wnętrz i na zewnątrz. Pamiętaj tylko, by nie zostawiać ich zalanych wodą
+                  na mrozie.
+                </p>
+                <div class="help__icon-container">
+                  <span class="help__icon">+</span>
                 </div>
               </div>
-              <div class="custom__card reveal reveal--up" data-reveal-order="1">
-                <div class="custom__icon">
-                  <i class="fa-solid fa-tag"></i>
+              <div class="help__question">
+                <span class="help__question-span">Czy beton się farbuje / odbarwia?</span>
+                <p class="help__question-text">
+                  Nie powinien przy normalnym użytkowaniu. Lakierowana powierzchnia pomaga w ochronie przed plamami.
+                </p>
+                <div class="help__icon-container">
+                  <span class="help__icon">+</span>
                 </div>
-                <div class="custom__content">
-                  <h3 class="custom__card-title">Inicjały zamiast logo</h3>
-                  <p class="custom__card-text">Na specjalne zamówienie umieszczamy inicjały lub dedykację zamiast
-                    standardowego logo KOJA.</p>
+              </div>
+              <div class="help__question">
+                <span class="help__question-span">Co zrobić w przypadku zadrapania lub odprysku?</span>
+                <p class="help__question-text">
+                  Nie zalecamy samodzielnych napraw — mogą powodować nieszczelności. Napisz do nas, a podpowiemy
+                  najlepsze rozwiązanie.
+                </p>
+                <div class="help__icon-container">
+                  <span class="help__icon">+</span>
                 </div>
               </div>
-              <div class="custom__notice reveal reveal--fade" data-reveal-order="2">
-                <p class="custom__notice-text">Pracujemy nad rozszerzeniem opcji personalizacji — więcej możliwości wkrótce.</p>
+              <div class="help__question">
+                <span class="help__question-span">Jak impregnować beton?</span>
+                <p class="help__question-text">Nie musisz — produkt przychodzi już zaimpregnowany.</p>
+                <div class="help__icon-container">
+                  <span class="help__icon">+</span>
+                </div>
+              </div>
+              <div class="help__question">
+                <span class="help__question-span">Czy produkty są wodoodporne?</span>
+                <p class="help__question-text">Tak, są zabezpieczone do użytkowania z wodą.</p>
+                <div class="help__icon-container">
+                  <span class="help__icon">+</span>
+                </div>
+              </div>
+            </div>
+            <div class="help__item reveal reveal--up">
+              <div class="help__question">
+                <span class="help__question-span">Ile czekam na paczkę?</span>
+                <p class="help__question-text">
+                  Proponujemy wysyłkę do paczkomatów InPost. Standardowo realizacja do 2 dni roboczych (często 1 dzień).
+                </p>
+                <div class="help__icon-container">
+                  <span class="help__icon">+</span>
+                </div>
+              </div>
+              <div class="help__question">
+                <span class="help__question-span">Jak to pakujecie?</span>
+                <p class="help__question-text">
+                  Karton + solidne zabezpieczenie (np. folia bąbelkowa). Chodzi o to, żeby beton dotarł w idealnym
+                  stanie.
+                </p>
+                <div class="help__icon-container">
+                  <span class="help__icon">+</span>
+                </div>
+              </div>
+              <div class="help__question">
+                <span class="help__question-span">Czy wysyłacie za granicę?</span>
+                <p class="help__question-text">Na ten moment — nie.</p>
+                <div class="help__icon-container">
+                  <span class="help__icon">+</span>
+                </div>
+              </div>
+              <div class="help__question">
+                <span class="help__question-span">Ile kosztuje przesyłka?</span>
+                <p class="help__question-text">Zgodnie z cennikiem Allegro (na ten moment).</p>
+                <div class="help__icon-container">
+                  <span class="help__icon">+</span>
+                </div>
+              </div>
+              <div class="help__question">
+                <span class="help__question-span">Czy mogę odebrać osobiście?</span>
+                <p class="help__question-text">Tak — po wcześniejszym ustaleniu.</p>
+                <div class="help__icon-container">
+                  <span class="help__icon">+</span>
+                </div>
+              </div>
+              <div class="help__question">
+                <span class="help__question-span">Co jeśli paczka przyjdzie uszkodzona?</span>
+                <p class="help__question-text">
+                  Poprosimy o zdjęcia i zaproponujemy rozwiązanie: ponowną wysyłkę lub inną formę pomocy.
+                </p>
+                <div class="help__icon-container">
+                  <span class="help__icon">+</span>
+                </div>
+              </div>
+            </div>
+            <div class="help__item reveal reveal--up">
+              <div class="help__question">
+                <span class="help__question-span">Jaka jest wasza polityka zwrotów?</span>
+                <p class="help__question-text">
+                  Szczegóły są opisane w regulaminie i wynikają z obowiązujących przepisów. Konsument ma prawo odstąpić
+                  od umowy zawartej na odległość w ustawowym terminie (standardowo 14 dni).
+                </p>
+                <div class="help__icon-container">
+                  <span class="help__icon">+</span>
+                </div>
+              </div>
+              <div class="help__question">
+                <span class="help__question-span">Ile mam czasu na zwrot?</span>
+                <p class="help__question-text">
+                  Termin liczony jest od otrzymania produktu; po złożeniu oświadczenia produkt należy odesłać w
+                  ustawowym terminie.
+                </p>
+                <div class="help__icon-container">
+                  <span class="help__icon">+</span>
+                </div>
+              </div>
+              <div class="help__question">
+                <span class="help__question-span">Czy mogę wymienić produkt na inny?</span>
+                <p class="help__question-text">
+                  Tak — w miarę dostępności. Alternatywnie możliwy zwrot i ponowny zakup.
+                </p>
+                <div class="help__icon-container">
+                  <span class="help__icon">+</span>
+                </div>
+              </div>
+              <div class="help__question">
+                <span class="help__question-span">Co w przypadku wady fabrycznej?</span>
+                <p class="help__question-text">W razie wady prosimy o kontakt; obowiązuje rękojmia dla konsumentów.</p>
+                <div class="help__icon-container">
+                  <span class="help__icon">+</span>
+                </div>
+              </div>
+              <div class="help__question">
+                <span class="help__question-span">Kto pokrywa koszty odesłania?</span>
+                <p class="help__question-text">
+                  Zasadniczo kupujący, chyba że regulamin stanowi inaczej lub zwrot dotyczy reklamacji.
+                </p>
+                <div class="help__icon-container">
+                  <span class="help__icon">+</span>
+                </div>
+              </div>
+            </div>
+            <div class="help__item reveal reveal--up">
+              <div class="help__question">
+                <span class="help__question-span">Jak zamówić produkt na wymiar?</span>
+                <p class="help__question-text">
+                  Przez formularz zgłoszeniowy — opisz, czego potrzebujesz, a my wrócimy z informacją, co możemy
+                  przygotować.
+                </p>
+                <div class="help__icon-container">
+                  <span class="help__icon">+</span>
+                </div>
+              </div>
+              <div class="help__question">
+                <span class="help__question-span">Ile kosztuje personalizacja?</span>
+                <p class="help__question-text">Wycena jest indywidualna i zależy od zakresu zmian.</p>
+                <div class="help__icon-container">
+                  <span class="help__icon">+</span>
+                </div>
+              </div>
+              <div class="help__question">
+                <span class="help__question-span">Jak długo czekam na produkt indywidualny?</span>
+                <p class="help__question-text">
+                  Termin ustalamy po zaakceptowaniu zakresu zmian i możliwości realizacji.
+                </p>
+                <div class="help__icon-container">
+                  <span class="help__icon">+</span>
+                </div>
+              </div>
+              <div class="help__question">
+                <span class="help__question-span">Czy mogę zobaczyć projekt przed realizacją?</span>
+                <p class="help__question-text">Tak — przed startem realizacji potwierdzimy szczegóły.</p>
+                <div class="help__icon-container">
+                  <span class="help__icon">+</span>
+                </div>
+              </div>
+              <div class="help__question">
+                <span class="help__question-span">Jaka jest minimalna wartość zamówienia?</span>
+                <p class="help__question-text">Do ustalenia — zależnie od projektu.</p>
+                <div class="help__icon-container">
+                  <span class="help__icon">+</span>
+                </div>
+              </div>
+            </div>
+            <div class="help__item reveal reveal--up">
+              <div class="help__question">
+                <span class="help__question-span">Jak ciężkie są wasze produkty?</span>
+                <p class="help__question-text">Informacje będą uzupełnione w kartach produktów dla każdego modelu.</p>
+                <div class="help__icon-container">
+                  <span class="help__icon">+</span>
+                </div>
+              </div>
+              <div class="help__question">
+                <span class="help__question-span">Jakie wymiary mają standardowe produkty?</span>
+                <p class="help__question-text">Wymiary będą podane przy produktach (w przygotowaniu).</p>
+                <div class="help__icon-container">
+                  <span class="help__icon">+</span>
+                </div>
+              </div>
+              <div class="help__question">
+                <span class="help__question-span">Z jakiego betonu są wykonane produkty?</span>
+                <p class="help__question-text">Z autorskiej mieszanki betonu (szczegóły do uzupełnienia w opisach).</p>
+                <div class="help__icon-container">
+                  <span class="help__icon">+</span>
+                </div>
+              </div>
+              <div class="help__question">
+                <span class="help__question-span">Czy produkty mają otwory / odpływy?</span>
+                <p class="help__question-text">Tak — proponujemy opcję zakupu: z otworem lub bez otworu.</p>
+                <div class="help__icon-container">
+                  <span class="help__icon">+</span>
+                </div>
+              </div>
+              <div class="help__question">
+                <span class="help__question-span">Czy do doniczek trzeba osobne wkłady?</span>
+                <p class="help__question-text">Nie.</p>
+                <div class="help__icon-container">
+                  <span class="help__icon">+</span>
+                </div>
+              </div>
+              <div class="help__question">
+                <span class="help__question-span">Jakie świece pasują do świeczników?</span>
+                <p class="help__question-text">
+                  Docelowo rekomendujemy nasze wkłady / świece dopasowane do modeli (w przygotowaniu).
+                </p>
+                <div class="help__icon-container">
+                  <span class="help__icon">+</span>
+                </div>
+              </div>
+            </div>
+            <div class="help__item reveal reveal--up">
+              <div class="help__question">
+                <span class="help__question-span">Czy każdy produkt jest unikatowy?</span>
+                <p class="help__question-text">
+                  Tak — każdy egzemplarz jest wykonywany ręcznie i może się delikatnie różnić.
+                </p>
+                <div class="help__icon-container">
+                  <span class="help__icon">+</span>
+                </div>
+              </div>
+              <div class="help__question">
+                <span class="help__question-span">Dlaczego beton jako materiał?</span>
+                <p class="help__question-text">
+                  Jest elegancki w swojej prostocie, trwały i pasuje do nowoczesnych wnętrz.
+                </p>
+                <div class="help__icon-container">
+                  <span class="help__icon">+</span>
+                </div>
+              </div>
+              <div class="help__question">
+                <span class="help__question-span">Czy prowadzicie warsztaty?</span>
+                <p class="help__question-text">Na ten moment — nie planujemy.</p>
+                <div class="help__icon-container">
+                  <span class="help__icon">+</span>
+                </div>
+              </div>
+              <div class="help__question">
+                <span class="help__question-span">Czy sprzedajecie hurtowo?</span>
+                <p class="help__question-text">Tak — ceny hurtowe powyżej 10 sztuk danego modelu.</p>
+                <div class="help__icon-container">
+                  <span class="help__icon">+</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- SEKCJA OPINIE (KUNA) -->
-    <section class="section__opinions section" id="testimonials">
-      <div class="section__wrapper">
-        <div class="section__header opinions__header reveal reveal--up">
-          <p class="section__eyebrow">Opinie</p>
-          <h2 class="section__title">Co mówią <span class="section__title-italic">klienci</span></h2>
-        </div>
-        <div class="google-reviews reveal reveal--fade">
-          <div class="google-reviews__rating">
-            <i data-lucide="star" class="google-reviews__star"></i>
-            <i data-lucide="star" class="google-reviews__star"></i>
-            <i data-lucide="star" class="google-reviews__star"></i>
-            <i data-lucide="star" class="google-reviews__star"></i>
-            <i data-lucide="star" class="google-reviews__star"></i>
+      </section>
+      <!-- SEKCJA KONTAKT (KUNA) -->
+      <section class="section__contact section" id="contact">
+        <div class="section__wrapper">
+          <div class="section__header contact__header reveal reveal--up">
+            <p class="section__eyebrow">Kontakt</p>
+            <h2 class="section__title">Twórzmy <span class="section__title-italic">razem</span></h2>
+            <p class="contact__header-text">
+              Masz pytanie o produkt, dostępność albo chcesz wersję na wymiar? Napisz — wrócimy z odpowiedzią.
+            </p>
+            <p class="contact__header-text-muted">Odpowiadamy w ciągu 24–48 godzin.</p>
           </div>
-          <p class="google-reviews__message">
-            Opinie z Google pojawią się tutaj wkrótce.
-          </p>
-
-          <span class="google-reviews__source">Źródło: Google — TODO: podmiana
-          </span>
-        </div>
-        <section class="section__features">
-          <p class="features__eyebrow reveal reveal--up">Na czym nam zależy</p>
-          <div class="features__grid" data-reveal-group data-reveal-stagger="0.12">
-            <div class="features__card reveal reveal--up" data-reveal-order="0">
-              <div class="features__icon-container"><i class="fa-regular fa-clock features__icon"></i></div>
-              <div class="features__content">
-                <h3 class="features__title">Szybka wysyłka</h3>
-                <p class="features__text">Zwykle wysyłamy w 1 dzień, maksymalnie do 2 dni roboczych.</p>
+          <div class="contact__grid">
+            <div class="contact__form" data-reveal-group data-reveal-stagger="0.08">
+              <div class="contact__field reveal reveal--left" data-reveal-order="0">
+                <label for="name" class="contact__label">Imię</label>
+                <input type="text" id="name" class="contact__input" placeholder="Twoje imię" required minlength="3" />
               </div>
-            </div>
-            <div class="features__card reveal reveal--up" data-reveal-order="1">
-              <div class="features__icon-container"><i class="fa-solid fa-box-open features__icon"></i></div>
-              <div class="features__content">
-                <h3 class="features__title">Bezpieczne pakowanie</h3>
-                <p class="features__text">Każdy produkt jest starannie zabezpieczony na czas transportu.</p>
+              <div class="contact__field reveal reveal--left" data-reveal-order="1">
+                <label for="email" class="contact__label">E-mail</label>
+                <input
+                  type="email"
+                  id="email"
+                  class="contact__input"
+                  placeholder="twoj@email.com"
+                  required
+                  minlength="3"
+                />
               </div>
-            </div>
-            <div class="features__card reveal reveal--up" data-reveal-order="2">
-              <div class="features__icon-container"><i class="fa-solid fa-camera features__icon"></i></div>
-              <div class="features__content">
-                <h3 class="features__title">Zdjęcia „w domu” mile widziane</h3>
-                <p class="features__text">Jeśli podeślesz zdjęcie produktu w swojej przestrzeni, chętnie pokażemy je w
-                  galerii. Symboliczny rabat za opinię — do ustalenia.</p>
+              <div class="contact__field reveal reveal--left" data-reveal-order="2">
+                <label for="topic" class="contact__label"
+                  >Temat <span class="contact__label-span">(opcjonalnie)</span></label
+                >
+                <input
+                  type="text"
+                  id="topic"
+                  class="contact__input"
+                  placeholder="np. Zapytanie o personalizację"
+                  minlength="3"
+                />
               </div>
-            </div>
-          </div>
-        </section>
-      </div>
-    </section>
-    <!-- SEKCJA POMOC (MATI) -->
-    <section class="help__section section" id="faq">
-      <div class="section__wrapper">
-        <div class="help__wrapper">
-          <div class="help reveal reveal--up">
-            <span class="help__span">Pomoc</span>
-            <h1 class="help__title">Najczęstsze <span class="help__title-italic">pytania</span></h1>
-          </div>
-          <div class="help__tabs reveal reveal--fade">
-            <button class="help__tab help__tab--active">Pielęgnacja</button>
-            <button class="help__tab">Wysyłka</button>
-            <button class="help__tab">Zwroty</button>
-            <button class="help__tab">Zamówienia custom</button>
-            <button class="help__tab">Szczegóły techniczne</button>
-            <button class="help__tab">Ogólne</button>
-          </div>
-          <div class="help__item help__item--active reveal reveal--up">
-            <div class="help__question">
-              <span class="help__question-span">Jak to myć?</span>
-              <p class="help__question-text">Wodą (np. pod kranem) i miękką gąbką. Przy mocniejszych zabrudzeniach
-                wystarczy delikatny środek do mycia.
-              </p>
-              <div class="help__icon-container">
-                <span class="help__icon">+</span>
-              </div>
-            </div>
-            <div class="help__question">
-              <span class="help__question-span">Czy można używać na zewnątrz?</span>
-              <p class="help__question-text">Tak — produkty nadają się do wnętrz i na zewnątrz. Pamiętaj tylko, by nie
-                zostawiać ich zalanych wodą na mrozie.
-              </p>
-              <div class="help__icon-container">
-                <span class="help__icon">+</span>
-              </div>
-            </div>
-            <div class="help__question">
-              <span class="help__question-span">Czy beton się farbuje / odbarwia?</span>
-              <p class="help__question-text">Nie powinien przy normalnym użytkowaniu. Lakierowana powierzchnia pomaga w
-                ochronie przed plamami.</p>
-              <div class="help__icon-container">
-                <span class="help__icon">+</span>
-              </div>
-            </div>
-            <div class="help__question">
-              <span class="help__question-span">Co zrobić w przypadku zadrapania lub odprysku?</span>
-              <p class="help__question-text">Nie zalecamy samodzielnych napraw — mogą powodować nieszczelności. Napisz
-                do nas, a podpowiemy najlepsze rozwiązanie.</p>
-              <div class="help__icon-container">
-                <span class="help__icon">+</span>
-              </div>
-            </div>
-            <div class="help__question">
-              <span class="help__question-span">Jak impregnować beton?</span>
-              <p class="help__question-text">Nie musisz — produkt przychodzi już zaimpregnowany.</p>
-              <div class="help__icon-container">
-                <span class="help__icon">+</span>
-              </div>
-            </div>
-            <div class="help__question">
-              <span class="help__question-span">Czy produkty są wodoodporne?</span>
-              <p class="help__question-text">Tak, są zabezpieczone do użytkowania z wodą.
-              </p>
-              <div class="help__icon-container">
-                <span class="help__icon">+</span>
-              </div>
-            </div>
-          </div>
-          <div class="help__item reveal reveal--up">
-            <div class="help__question">
-              <span class="help__question-span">Ile czekam na paczkę?</span>
-              <p class="help__question-text">Proponujemy wysyłkę do paczkomatów InPost. Standardowo realizacja do 2 dni roboczych (często 1 dzień).</p>
-              <div class="help__icon-container">
-                <span class="help__icon">+</span>
-              </div>
-            </div>
-            <div class="help__question">
-              <span class="help__question-span">Jak to pakujecie?</span>
-              <p class="help__question-text">Karton + solidne zabezpieczenie (np. folia bąbelkowa). Chodzi o to, żeby beton
-                dotarł w idealnym stanie.</p>
-              <div class="help__icon-container">
-                <span class="help__icon">+</span>
-              </div>
-            </div>
-            <div class="help__question">
-              <span class="help__question-span">Czy wysyłacie za granicę?</span>
-              <p class="help__question-text">Na ten moment — nie.</p>
-              <div class="help__icon-container">
-                <span class="help__icon">+</span>
-              </div>
-            </div>
-            <div class="help__question">
-              <span class="help__question-span">Ile kosztuje przesyłka?</span>
-              <p class="help__question-text">Zgodnie z cennikiem Allegro (na ten moment).</p>
-              <div class="help__icon-container">
-                <span class="help__icon">+</span>
-              </div>
-            </div>
-            <div class="help__question">
-              <span class="help__question-span">Czy mogę odebrać osobiście?</span>
-              <p class="help__question-text">Tak — po wcześniejszym ustaleniu.</p>
-              <div class="help__icon-container">
-                <span class="help__icon">+</span>
-              </div>
-            </div>
-            <div class="help__question">
-              <span class="help__question-span">Co jeśli paczka przyjdzie uszkodzona?</span>
-              <p class="help__question-text">Poprosimy o zdjęcia i zaproponujemy rozwiązanie: ponowną wysyłkę lub inną formę
-                pomocy.</p>
-              <div class="help__icon-container">
-                <span class="help__icon">+</span>
-              </div>
-            </div>
-          </div>
-          <div class="help__item reveal reveal--up">
-            <div class="help__question">
-              <span class="help__question-span">Jaka jest wasza polityka zwrotów?</span>
-              <p class="help__question-text">Szczegóły są opisane w regulaminie i wynikają z obowiązujących przepisów.
-                Konsument ma prawo odstąpić od umowy zawartej na odległość w ustawowym terminie (standardowo 14 dni).
-              </p>
-              <div class="help__icon-container">
-                <span class="help__icon">+</span>
-              </div>
-            </div>
-            <div class="help__question">
-              <span class="help__question-span">Ile mam czasu na zwrot?</span>
-              <p class="help__question-text">Termin liczony jest od otrzymania produktu; po złożeniu oświadczenia
-                produkt należy odesłać w ustawowym terminie.
-              </p>
-              <div class="help__icon-container">
-                <span class="help__icon">+</span>
-              </div>
-            </div>
-            <div class="help__question">
-              <span class="help__question-span">Czy mogę wymienić produkt na inny?</span>
-              <p class="help__question-text">Tak — w miarę dostępności. Alternatywnie możliwy zwrot i ponowny zakup.
-              </p>
-              <div class="help__icon-container">
-                <span class="help__icon">+</span>
-              </div>
-            </div>
-            <div class="help__question">
-              <span class="help__question-span">Co w przypadku wady fabrycznej?</span>
-              <p class="help__question-text">W razie wady prosimy o kontakt; obowiązuje rękojmia dla konsumentów.
-              </p>
-              <div class="help__icon-container">
-                <span class="help__icon">+</span>
-              </div>
-            </div>
-            <div class="help__question">
-              <span class="help__question-span">Kto pokrywa koszty odesłania?</span>
-              <p class="help__question-text">Zasadniczo kupujący, chyba że regulamin stanowi inaczej lub zwrot dotyczy
-                reklamacji.
-              </p>
-              <div class="help__icon-container">
-                <span class="help__icon">+</span>
-              </div>
-            </div>
-
-          </div>
-          <div class="help__item reveal reveal--up">
-            <div class="help__question">
-              <span class="help__question-span">Jak zamówić produkt na wymiar?</span>
-              <p class="help__question-text">Przez formularz zgłoszeniowy — opisz, czego potrzebujesz, a my wrócimy z
-                informacją, co możemy przygotować.
-              </p>
-              <div class="help__icon-container">
-                <span class="help__icon">+</span>
-              </div>
-            </div>
-            <div class="help__question">
-              <span class="help__question-span">Ile kosztuje personalizacja?</span>
-              <p class="help__question-text">Wycena jest indywidualna i zależy od zakresu zmian.
-              </p>
-              <div class="help__icon-container">
-                <span class="help__icon">+</span>
-              </div>
-            </div>
-            <div class="help__question">
-              <span class="help__question-span">Jak długo czekam na produkt indywidualny?</span>
-              <p class="help__question-text">Termin ustalamy po zaakceptowaniu zakresu zmian i możliwości realizacji.
-              </p>
-              <div class="help__icon-container">
-                <span class="help__icon">+</span>
-              </div>
-            </div>
-            <div class="help__question">
-              <span class="help__question-span">Czy mogę zobaczyć projekt przed realizacją?</span>
-              <p class="help__question-text">Tak — przed startem realizacji potwierdzimy szczegóły.
-              </p>
-              <div class="help__icon-container">
-                <span class="help__icon">+</span>
-              </div>
-            </div>
-            <div class="help__question">
-              <span class="help__question-span">Jaka jest minimalna wartość zamówienia?</span>
-              <p class="help__question-text">Do ustalenia — zależnie od projektu.</p>
-              <div class="help__icon-container">
-                <span class="help__icon">+</span>
-              </div>
-            </div>
-
-          </div>
-          <div class="help__item reveal reveal--up">
-            <div class="help__question">
-              <span class="help__question-span">Jak ciężkie są wasze produkty?</span>
-              <p class="help__question-text">Informacje będą uzupełnione w kartach produktów dla każdego modelu.
-              </p>
-              <div class="help__icon-container">
-                <span class="help__icon">+</span>
-              </div>
-            </div>
-            <div class="help__question">
-              <span class="help__question-span">Jakie wymiary mają standardowe produkty?</span>
-              <p class="help__question-text">Wymiary będą podane przy produktach (w przygotowaniu).
-              </p>
-              <div class="help__icon-container">
-                <span class="help__icon">+</span>
-              </div>
-            </div>
-            <div class="help__question">
-              <span class="help__question-span">Z jakiego betonu są wykonane produkty?</span>
-              <p class="help__question-text">Z autorskiej mieszanki betonu (szczegóły do uzupełnienia w opisach).
-              </p>
-              <div class="help__icon-container">
-                <span class="help__icon">+</span>
-              </div>
-            </div>
-            <div class="help__question">
-              <span class="help__question-span">Czy produkty mają otwory / odpływy?</span>
-              <p class="help__question-text">Tak — proponujemy opcję zakupu: z otworem lub bez otworu.
-              </p>
-              <div class="help__icon-container">
-                <span class="help__icon">+</span>
-              </div>
-            </div>
-            <div class="help__question">
-              <span class="help__question-span">Czy do doniczek trzeba osobne wkłady?</span>
-              <p class="help__question-text">Nie.</p>
-              <div class="help__icon-container">
-                <span class="help__icon">+</span>
-              </div>
-            </div>
-            <div class="help__question">
-              <span class="help__question-span">Jakie świece pasują do świeczników?</span>
-              <p class="help__question-text">Docelowo rekomendujemy nasze wkłady / świece dopasowane do modeli (w
-                przygotowaniu).
-              </p>
-              <div class="help__icon-container">
-                <span class="help__icon">+</span>
-              </div>
-            </div>
-
-          </div>
-          <div class="help__item reveal reveal--up">
-            <div class="help__question">
-              <span class="help__question-span">Czy każdy produkt jest unikatowy?</span>
-              <p class="help__question-text">Tak — każdy egzemplarz jest wykonywany ręcznie i może się delikatnie
-                różnić.
-              </p>
-              <div class="help__icon-container">
-                <span class="help__icon">+</span>
-              </div>
-            </div>
-            <div class="help__question">
-              <span class="help__question-span">Dlaczego beton jako materiał?</span>
-              <p class="help__question-text">Jest elegancki w swojej prostocie, trwały i pasuje do nowoczesnych wnętrz.
-              </p>
-              <div class="help__icon-container">
-                <span class="help__icon">+</span>
-              </div>
-            </div>
-            <div class="help__question">
-              <span class="help__question-span">Czy prowadzicie warsztaty?</span>
-              <p class="help__question-text">Na ten moment — nie planujemy.
-              </p>
-              <div class="help__icon-container">
-                <span class="help__icon">+</span>
-              </div>
-            </div>
-            <div class="help__question">
-              <span class="help__question-span">Czy sprzedajecie hurtowo?</span>
-              <p class="help__question-text">Tak — ceny hurtowe powyżej 10 sztuk danego modelu.
-              </p>
-              <div class="help__icon-container">
-                <span class="help__icon">+</span>
-              </div>
-            </div>
-
-
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- SEKCJA KONTAKT (KUNA) -->
-    <section class="section__contact section" id="contact">
-      <div class="section__wrapper">
-        <div class="section__header contact__header reveal reveal--up">
-          <p class="section__eyebrow">Kontakt</p>
-          <h2 class="section__title">Twórzmy <span class="section__title-italic">razem</span></h2>
-          <p class="contact__header-text">Masz pytanie o produkt, dostępność albo chcesz wersję na wymiar? Napisz —
-            wrócimy z odpowiedzią.</p>
-          <p class="contact__header-text-muted">Odpowiadamy w ciągu 24–48 godzin.</p>
-        </div>
-        <div class="contact__grid">
-          <div class="contact__form" data-reveal-group data-reveal-stagger="0.08">
-            <div class="contact__field reveal reveal--left" data-reveal-order="0">
-              <label for="name" class="contact__label">Imię</label>
-              <input type="text" id="name" class="contact__input" placeholder="Twoje imię" required minlength="3">
-            </div>
-            <div class="contact__field reveal reveal--left" data-reveal-order="1">
-              <label for="email" class="contact__label">E-mail</label>
-              <input type="email" id="email" class="contact__input" placeholder="twoj@email.com" required minlength="3">
-            </div>
-            <div class="contact__field reveal reveal--left" data-reveal-order="2">
-              <label for="topic" class="contact__label">Temat <span
-                  class="contact__label-span">(opcjonalnie)</span></label>
-              <input type="text" id="topic" class="contact__input" placeholder="np. Zapytanie o personalizację"
-                minlength="3">
-            </div>
-            <div class="contact__field reveal reveal--left" data-reveal-order="3">
-              <label for="messege" class="contact__label">Wiadomość</label>
-              <textarea id="messege" class="contact__input" placeholder="Opisz swoje pytanie lub prośbę..." required
-                rows="4" maxlength="1000"></textarea>
-            </div>
-
-            <button class="form__button reveal reveal--up" data-reveal-order="4">Wyślij wiadomość <i data-lucide="arrow-right"></i></button>
-
-            <div class="contact__details">
-              <a href="mailto:hello@koja.studio" class="contact__detail reveal reveal--fade" data-reveal-order="5">
-                <i data-lucide="mail"></i>
-                <p class="contact__text">hello@koja.studio</p>
-              </a>
-              <a href="tel:+48123456789" class="contact__detail reveal reveal--fade" data-reveal-order="6">
-                <i data-lucide="phone"></i>
-                <p class="contact__text">+48 123 456 789</p>
-              </a>
-              <div class="contact__detail reveal reveal--fade" data-reveal-order="7">
-                <i data-lucide="map-pin"></i>
-                <p class="contact__text">Do uzupełnienia po założeniu działalności</p>
-              </div>
-            </div>
-            <div class="contact__social reveal reveal--fade" data-reveal-order="8">
-              <p class="social__title">Social media</p>
-              <div class="social__container">
-                <a href="#" class="social__link"><i class="fa-brands fa-square-instagram social__icon"></i>Instagram —
-                  w
-                  przygotowaniu</a>
-                <a href="#" class="social__link"><i class="fa-brands fa-square-facebook social__icon"></i>Facebook —
-                  w przygotowaniu</a>
-              </div>
-            </div>
-          </div>
-          <div class="contact__order reveal reveal--right">
-            <h3 class="contact__order-title">Zamówienia indywidualne</h3>
-
-            <p class="contact__order-description">Masz nietypową prośbę? Napisz do nas przez formularz — opisz czego
-              szukasz, a wrócimy z wceną i propozycją.</p>
-            <p class="contact__order-description">Standardowe zamówienia realizujemy przez <a href="https://allegro.pl/TODO" target="_blank" rel="noopener noreferrer"
-                class="contact__order-description--link">Allegro</a>.</p>
-
-            <div class="contact__order-details">
-              <div class="contact__order-row">
-                <span class="contact__order-label">Czas odpowiedzi</span>
-                <span class="contact__order-value">24–48 h</span>
+              <div class="contact__field reveal reveal--left" data-reveal-order="3">
+                <label for="messege" class="contact__label">Wiadomość</label>
+                <textarea
+                  id="messege"
+                  class="contact__input"
+                  placeholder="Opisz swoje pytanie lub prośbę..."
+                  required
+                  rows="4"
+                  maxlength="1000"
+                ></textarea>
               </div>
 
-              <div class="contact__order-row">
-                <span class="contact__order-label">Wysyłka</span>
-                <span class="contact__order-value">InPost do paczkomatu</span>
-              </div>
+              <button class="form__button reveal reveal--up" data-reveal-order="4">
+                Wyślij wiadomość <i data-lucide="arrow-right"></i>
+              </button>
 
-              <div class="contact__order-row">
-                <span class="contact__order-label">Realizacja</span>
-                <span class="contact__order-value">Do 2 dni roboczych</span>
+              <div class="contact__details">
+                <a href="mailto:hello@koja.studio" class="contact__detail reveal reveal--fade" data-reveal-order="5">
+                  <i data-lucide="mail"></i>
+                  <p class="contact__text">hello@koja.studio</p>
+                </a>
+                <a href="tel:+48123456789" class="contact__detail reveal reveal--fade" data-reveal-order="6">
+                  <i data-lucide="phone"></i>
+                  <p class="contact__text">+48 123 456 789</p>
+                </a>
+                <div class="contact__detail reveal reveal--fade" data-reveal-order="7">
+                  <i data-lucide="map-pin"></i>
+                  <p class="contact__text">Do uzupełnienia po założeniu działalności</p>
+                </div>
+              </div>
+              <div class="contact__social reveal reveal--fade" data-reveal-order="8">
+                <p class="social__title">Social media</p>
+                <div class="social__container">
+                  <a href="#" class="social__link"
+                    ><i class="fa-brands fa-square-instagram social__icon"></i>Instagram — w przygotowaniu</a
+                  >
+                  <a href="#" class="social__link"
+                    ><i class="fa-brands fa-square-facebook social__icon"></i>Facebook — w przygotowaniu</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="contact__order reveal reveal--right">
+              <h3 class="contact__order-title">Zamówienia indywidualne</h3>
+
+              <p class="contact__order-description">
+                Masz nietypową prośbę? Napisz do nas przez formularz — opisz czego szukasz, a wrócimy z wceną i
+                propozycją.
+              </p>
+              <p class="contact__order-description">
+                Standardowe zamówienia realizujemy przez
+                <a
+                  href="https://allegro.pl/TODO"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact__order-description--link"
+                  >Allegro</a
+                >.
+              </p>
+
+              <div class="contact__order-details">
+                <div class="contact__order-row">
+                  <span class="contact__order-label">Czas odpowiedzi</span>
+                  <span class="contact__order-value">24–48 h</span>
+                </div>
+
+                <div class="contact__order-row">
+                  <span class="contact__order-label">Wysyłka</span>
+                  <span class="contact__order-value">InPost do paczkomatu</span>
+                </div>
+
+                <div class="contact__order-row">
+                  <span class="contact__order-label">Realizacja</span>
+                  <span class="contact__order-value">Do 2 dni roboczych</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- SEKCJA FOOTER (KUNA) -->
-    <section class="footer">
-      <div class="footer__wrapper">
-        <div class="footer__link-container">
-          <a href="#about" class="footer__link">O nas</a>
-          <a href="#shop" class="footer__link">Sklep</a>
-          <a href="#gallery" class="footer__link">Galeria</a>
-          <a href="#process" class="footer__link">Proces</a>
-          <a href="#custom" class="footer__link">Na wymiar</a>
-          <a href="#materials" class="footer__link">Materiały</a>
-          <a href="#faq" class="footer__link">FAQ</a>
-          <a href="#contact" class="footer__link">Kontakt</a>
+      </section>
+      <!-- SEKCJA FOOTER (KUNA) -->
+      <section class="footer">
+        <div class="footer__wrapper">
+          <div class="footer__link-container">
+            <a href="#about" class="footer__link">O nas</a>
+            <a href="#shop" class="footer__link">Sklep</a>
+            <a href="#gallery" class="footer__link">Galeria</a>
+            <a href="#process" class="footer__link">Proces</a>
+            <a href="#custom" class="footer__link">Na wymiar</a>
+            <a href="#materials" class="footer__link">Materiały</a>
+            <a href="#faq" class="footer__link">FAQ</a>
+            <a href="#contact" class="footer__link">Kontakt</a>
+          </div>
         </div>
-      </div>
 
-      <div class="footer__end">
-        <a href="#" class="logo logo--footer">Koja</a>
-        <div class="footer__end-details">
-          <a href="mailto:hello@koja.studio" class="footer__detail">hello@koja.studio</a>
-          <p class="footer__detail">&copy;
-            <script>
-              document.write(new Date().getFullYear())
-            </script> Koja Solid Form
-          </p>
-          <a href="./polityka-prywatnosci/index.html" class="footer__detail">Polityka prywatności</a>
-          <a href="./regulamin/index.html" class="footer__detail">Regulamin</a>
+        <div class="footer__end">
+          <a href="#" class="logo logo--footer">Koja</a>
+          <div class="footer__end-details">
+            <a href="mailto:hello@koja.studio" class="footer__detail">hello@koja.studio</a>
+            <p class="footer__detail">
+              &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              Koja Solid Form
+            </p>
+            <a href="./polityka-prywatnosci/index.html" class="footer__detail">Polityka prywatności</a>
+            <a href="./regulamin/index.html" class="footer__detail">Regulamin</a>
+          </div>
         </div>
-      </div>
-
-    </section>
-  </main>
-</body>
-<script src="https://unpkg.com/lucide@latest"></script>
-<script src="./script/proces.js"></script>
-<script src="./script/hero.js"></script>
-<script>
-  lucide.createIcons();
-</script>
-
+      </section>
+    </main>
+  </body>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="./script/proces.js"></script>
+  <script src="./script/hero.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
 </html>
 
 <!--             POD DOŁEM TO SKOPIUJCIE I WKLEJCIE W TERMINAL ZEBY WAM ZAMIENIAŁO SCSS NA CSS              -->
 <!--             sass --watch styles/style.scss:styles/style.css styles/privacy.scss:styles/privacy.css     -->
-
-
-
